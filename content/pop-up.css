@@ -1,0 +1,10 @@
+body {
+  position: relative; }
+  body .pop-up {
+    border: 1px solid #ccc;
+    max-width: 345px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 165px;
+    width: 100%; }

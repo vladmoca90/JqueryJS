@@ -1,0 +1,17 @@
+@import 'variables/variables.scss';
+
+@import 'mixins/mixins.scss';
+
+body {
+    position: relative;
+
+    .pop-up {
+        border: 1px solid #ccc;
+        max-width: 345px;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 165px;
+        width: 100%;
+    }
+}

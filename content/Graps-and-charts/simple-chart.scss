@@ -1,0 +1,10 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+#simple-chart {
+  max-width: 430px;
+  margin: auto;
+  max-height: 430px;
+  margin: 50px auto 0;
+}

@@ -1,0 +1,21 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.box {
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 350px;
+
+    &__input {
+        flex-direction: column;
+        font-size: 15px;
+        margin: 0 auto;
+        max-width: 140px;
+    }
+
+    &__buttons {
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

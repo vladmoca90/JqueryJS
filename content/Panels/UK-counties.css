@@ -1,0 +1,32 @@
+.counties {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 500px;
+  padding-top: 15px; }
+  .counties__title {
+    font-size: 36px;
+    margin: 0; }
+  .counties__input {
+    border-top: 1px;
+    border-right: 0;
+    border-bottom: 1px;
+    border-left: 0;
+    border-style: solid;
+    border-color: #ccc;
+    display: inline-block;
+    margin: 20px auto 40px;
+    padding: 5px; }
+    .counties__input:focus {
+      outline: 0; }
+  .counties__container {
+    background-color: #eee;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding: 20px; }
+  .counties__heading {
+    font-size: 24px;
+    margin-bottom: 15px; }
+  .counties__text {
+    margin: 0; }

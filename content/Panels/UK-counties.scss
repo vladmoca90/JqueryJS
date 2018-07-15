@@ -1,0 +1,38 @@
+@import '../mixins/mixins.scss';
+
+@import '../variables/variables.scss';
+
+.counties {
+    color: $font-color;
+    font-family: $arial;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 15px;
+    &__title {
+        font-size: 36px;
+        margin: 0;
+    }
+    &__input {
+        @include borders(1px, 0, 1px, 0, solid, #ccc);
+        display: inline-block;
+        margin: 20px auto 40px;
+        padding: 5px;
+        &:focus {
+            outline: 0;
+        }
+    }
+    &__container {
+        background-color: #eee;
+        border-radius: 8px;
+        font-size: 14px;
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    &__heading {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        margin: 0;
+    }
+}

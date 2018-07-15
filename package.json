@@ -1,0 +1,45 @@
+{
+  "name": "javascript-jquery-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "all": "^0.0.0",
+    "jasmine-core": "^3.1.0",
+    "jasmine": "^3.1.0",
+    "jquery": "^3.2.1",
+    "karma-cli": "^1.0.1",
+    "karma-jquery": "^0.2.2",
+    "karma": "^2.0.0",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-requirejs": "^1.1.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "npm": "^5.8.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "pkg": "^4.3.1",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "gulp-minify": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmoca90/Javascript-JQuery-Practice.git"
+  },
+  "author": "ag_dubs <vladmoca90@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladmoca90/Javascript-JQuery-Practice/issues"
+  },
+  "homepage": "https://github.com/vladmoca90/Javascript-JQuery-Practice#readme"
+}

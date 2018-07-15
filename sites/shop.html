@@ -1,0 +1,84 @@
+<html>
+
+<head>
+
+    <title>Shop</title>
+
+    <meta charset="utf-8" />
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../content/utilities/utilities.css" />
+
+    <link rel="stylesheet" href="../content/shop.css" />
+
+</head>
+
+<body>
+    <section id="main">
+        <div id="productTomatoes" class="product d-flex u-border">
+            <div class="product__box d-flex">
+                <img src="../images/shop/tomatoes.jpg" class="product__img" />
+                <div class="product__content">
+                    <p class="product__text">£1.50</p>
+                    <div class="d-flex">
+                        <div class="product__btn product__btn--add" product-id="1">
+                            <span>+</span>
+                        </div>
+                        <div class="product__btn product__btn--remove" product-id="1">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="productCatFood" class="product__box d-flex">
+                <img src="../images/shop/cat-food.jpg" class="product__img" />
+                <div class="product__content">
+                    <p class="product__text">£7.49</p>
+                    <div class="d-flex">
+                        <div class="product__btn product__btn--add" product-id="2">
+                            <span>+</span>
+                        </div>
+                        <div class="product__btn product__btn--remove" product-id="2">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="productCoffee" class="product__box d-flex">
+                <img src="../images/shop/coffee.jpg" class="product__img" />
+                <div class="product__content">
+                    <p class="product__text">£4.20</p>
+                    <div class="d-flex">
+                        <div class="product__btn product__btn--add" product-id="3">
+                            <span>+</span>
+                        </div>
+                        <div class="product__btn product__btn--remove" product-id="3">
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__total"><strong>Total:</strong>
+            Items:&nbsp;<span id="totalItems"></span>&nbsp;
+            Price&nbsp;<span id="totalPrice"></span>
+        </div>
+    </section>
+</body>
+<script src="../scripts/jquery.min.js"></script>
+<script src="../scripts/JQuery/shop.js"></script>
+
+</html>

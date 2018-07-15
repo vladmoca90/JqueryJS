@@ -1,0 +1,84 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+body {
+    font-family: $gill-sans;
+
+    .header__menu {
+        background-color: $green-dark;
+        border-bottom: 15px solid $green-light;
+        padding: 13px;
+
+        &-text {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+
+    .header__cover {
+        background-position-y: -30px;
+        @include background(local, url('../../images/train-tickets/GWR-cover.jpg'), no-repeat, cover);
+        max-height: 350px;
+        position: relative;
+    }
+
+    .header__logo {
+        filter: brightness(100);
+        left: 0;
+        margin: 0 auto;
+        max-height: 212px;
+        max-width: 300px;
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+
+    .content {
+    
+        &__panel {
+            background-color: $green-dark;
+            margin: 40px auto;
+            padding: 10px 15px;
+
+            &__logo {
+                filter: brightness(100);
+            }
+
+            div {
+                flex-direction: column;
+            }
+
+            &-text {
+                color: #fff;
+                font-size: 18px;
+                margin-bottom: 4px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-stations {
+            flex-flow: row wrap;
+            font-size: 16px;
+            justify-content: space-between;
+            text-transform: uppercase;
+
+            &__col {
+                background-color: #0a493e;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+                margin-bottom: 15px;
+                min-width: 350px;
+                padding: 15px 0;
+                text-align: center;
+            }
+        }
+    }
+    .footer {
+
+    }
+}

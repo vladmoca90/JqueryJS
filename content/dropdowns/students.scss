@@ -1,0 +1,10 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.dropdown-box {
+    font-size: 15px;
+    justify-content: space-between;
+    margin: 25px auto 0;
+    max-width: 280px;
+}

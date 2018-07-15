@@ -1,0 +1,34 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.pages {
+    justify-content: space-between;
+    margin: 25px auto;
+    max-width: 420px;
+
+    > .btn-page {
+        border: 0;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 15px;
+        height: 40px;
+        letter-spacing: 1px;
+        padding: 0 20px;
+    }
+
+    #citiesList {
+        li {
+            font-size: 16px;
+            list-style-type: none;
+        }
+    }
+
+    > #prev {
+        background-color: $red;
+    }
+
+    > #next {
+        background-color: $green-light;
+    }
+}

@@ -1,0 +1,19 @@
+.pages {
+  justify-content: space-between;
+  margin: 25px auto;
+  max-width: 420px; }
+  .pages > .btn-page {
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    height: 40px;
+    letter-spacing: 1px;
+    padding: 0 20px; }
+  .pages #citiesList li {
+    font-size: 16px;
+    list-style-type: none; }
+  .pages > #prev {
+    background-color: #c0002b; }
+  .pages > #next {
+    background-color: #317c2e; }

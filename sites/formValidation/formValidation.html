@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+
+    <title>Form Validation</title>
+
+    <meta charset="utf-8" />
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" href="../../content/utilities/utilities.css" />
+
+    <link href="../../content/formValidation/formValidation.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../scripts/Vanilla-Javascript/formValidation/formValidation.js"></script>
+
+</head>
+
+<body>
+
+    <form role="form" class="form-validation form-horizontal u-full-width u-border">
+        <div role="group" class="form-group">
+            <label for="firstName">First Name:</label>
+            <input role="textbox" class="form-control" type="text" name="firstName" id="firstName" onblur="firstName()" />
+            <span></span>
+        </div>
+        <div role="group" class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input role="textbox" class="form-control" type="text" name="lastName" id="lastName" onblur="lastName()" />
+            <span></span>
+        </div>
+        <div role="group" class="form-group">
+            <label for="validEmail">Email:</label>
+            <input role="textbox" class="form-control" type="email" name="mail" id="mail" onblur="mailValidation()" />
+            <span></span>
+        </div>
+        <div role="group" class="form-group">
+            <label for="pass">Password:</label>
+            <input role="textbox" class="form-control" type="password" name="pass" id="pass" onblur="passValidation()" />
+            <span></span>
+            <span></span>
+        </div>
+        <div role="group" class="form-group">
+            <label for="dateOfBirth">Date of birth:</label>
+            <input class="form-control" type="date" name="dateOfBirth" id="dateOfBirth" />
+        </div>
+        <div role="group" class="form-group">
+            <label for="age">Age:</label>
+            <input role="textbox" class="form-control" type="text" name="age" id="age" />
+            <span></span>
+        </div>
+        <div role="group" class="form-group">
+            <label for="location">Location:</label>
+            <div class="location-container u-full-width">
+                <select class="form-control">
+                    <option value="United Kingdom" aria-selected="false">United Kingdom</option>
+                    <option value="Ireland" selected="selected" aria-selected="true">Ireland</option>
+                    <option value="European Union" aria-selected="false">European Union</option>
+                    <option value="United States" aria-selected="false">United States</option>
+                    <option value="Canada" aria-selected="false">Canada</option>
+                    <option value="Australia/New Zealand" aria-selected="false">Australia/New Zealand</option>
+                    <option value="South Africa" aria-selected="false">South Africa</option>
+                </select>
+            </div>
+        </div>
+        <div role="radiogroup" class="form-group">
+            <label for="occupation">Occupation:</label>
+            <div class="buttons-container u-full-width" role="radiogroup">
+                Employed: <input role="radio" type="radio" name="occupation" checked="checked" aria-checked="true" /> <br /> Unemployed: <input role="radio" type="radio" name="occupation" aria-checked="false" /> <br /> Student: <input role="radio" type="radio"
+                    name="occupation" aria-checked="false" /> <br /> Retired: <input role="radio" type="radio" name="occupation" aria-checked="false" /> <br /> Disabled: <input role="radio" type="radio" name="occupation" aria-checked="false" />
+            </div>
+        </div>
+        <div role="group" class="form-group">
+            <label for="languages">Languages:</label>
+            <div class="buttons-container">
+                English: <input role="checkbox" type="checkbox" name="languages" checked="checked" aria-checked="true" /> <br /> French: <input role="checkbox" type="checkbox" name="languages" aria-checked="false" /> <br /> Spanish: <input role="checkbox"
+                    type="checkbox" name="languages" checked="checked" aria-checked="true" /> <br /> German: <input role="checkbox" type="checkbox" name="languages" checked="checked" aria-checked="true" /> <br /> Italian: <input role="checkbox" type="checkbox"
+                    name="languages" aria-checked="false" />
+            </div>
+        </div>
+        <div role="group" class="form-group">
+            <label for="personalNote">Personal note:</label>
+            <textarea role="textbox" rows="3" cols="60"></textarea>
+        </div>
+        <div role="group" class="submit-reset u-full-width">
+            <button role="button" type="submit" onclick="sendForm()">Submit</button>
+            <button role="button" type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

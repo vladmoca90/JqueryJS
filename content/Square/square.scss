@@ -1,0 +1,8 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.square {
+    max-height: 450px;
+    max-width: 450px;
+}

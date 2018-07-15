@@ -1,0 +1,29 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.dropdown {
+    border-radius: 8px;
+    @include font-prop(16px, $font-color, $arial);
+    margin: 50px auto;
+    max-width: 200px;
+    text-align: center;
+
+    &__button {
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    &__list {
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        &-item {
+            border-top: $side-gray;
+            cursor: pointer;
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+
+    <title>Triangle Method</title>
+
+    <meta charset="utf-8" />
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css" />
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../../../content/JavascriptCalculus/JavascriptCalculus.css" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../content/JavascriptCalculus/Sarus-Rule.css" />
+
+    <script src="../../../../scripts/Vanilla-Javascript/JavascriptCalculus/Numbers/Determinants and Matrices/TriangleMethod.js"></script>
+
+</head>
+
+<body>
+
+    <div role="main" class="main">
+        <div class="Sarus-Rule">
+            <table>
+                <tr>
+                    <td>a</td>
+                    <td>d</td>
+                    <td>g</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>e</td>
+                    <td>h</td>
+                </tr>
+                <tr>
+                    <td>c</td>
+                    <td>f</td>
+                    <td>i</td>
+                </tr>
+            </table>
+        </div>
+
+        <p></p>
+
+        <p><strong>You note the determinante with an x</strong></p>
+
+        <p></p>
+
+        <p>This way you will have <strong>x = aei + dhc + gbf - ceg - afh - dbi</strong></p>
+
+        a: <input type="text" id="a" /> b: <input type="text" id="b" /> c: <input type="text" id="c" /> d: <input type="text" id="d" /> e: <input type="text" id="e" /> f: <input type="text" id="f" /> g: <input type="text" id="g" /> h: <input type="text"
+            id="h" /> i: <input type="text" id="i" />
+
+        <button class="btn btn-warning" id="calcTriangl">Calculate</button>
+        <p class="calc-result">x = <span id="result"></span></p>
+    </div>
+
+</body>
+
+</html>

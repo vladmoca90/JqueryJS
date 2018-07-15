@@ -1,0 +1,16 @@
+.account {
+  font-size: 15px;
+  margin: 20px auto;
+  max-width: 215px;
+  padding: 15px; }
+  .account div.d-flex {
+    flex-flow: column nowrap; }
+  .account__input, .account__dropdown, .account__check {
+    margin-bottom: 15px; }
+  .account #firstName,
+  .account #lastName {
+    padding-left: 4px; }
+  .account__check .add-overdraft__value {
+    display: none; }
+  .account__check #checkOverdraft:checked + .add-overdraft__value {
+    display: block; }

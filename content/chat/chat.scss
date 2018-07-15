@@ -1,0 +1,58 @@
+﻿@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+
+h1 {
+    text-align: center;
+}
+#conversation {
+  width: 100%;
+  max-width: 650px;
+  margin: 3% auto;
+  font-family: Tahoma;
+  .container {
+        border: 1px solid #FF0000;
+        padding: 5px;
+        margin-top: 5px;
+        width: 100%;
+        float: left;
+        clear: both;
+        .alex>.picture,
+        .alexText,
+        .alexTime,
+        .vlad>.picture,
+        .vladText,
+        .vladTime {
+            float: left; 
+        }
+        .alexTime,
+        .vladTime {
+            margin: 4% 0% 0% 2.5%;
+            font-weight: bold;
+            font-size: 12px;
+            color: lightslategrey;
+        }
+        .delete-button {
+            font-size: 24px;
+            color: #FF0000;
+            margin-left: 2%;
+        }
+    }
+    .alexText,
+    .vladText {
+        margin-top: 13px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .alexText {
+        background: #F0F4F8;
+    }
+    .vladText {
+        background: #C7EDFC;
+    }
+    .text {
+        width: 70%;
+    }
+    .picture,
+    .time {
+        width: 10%;
+    }
+}

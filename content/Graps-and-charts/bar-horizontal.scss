@@ -1,0 +1,10 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+#bar-horizontal {
+    font-family: $gill-sans;
+    max-height: 500px; 
+    margin: 50px auto 0;
+    max-width: 620px; 
+}

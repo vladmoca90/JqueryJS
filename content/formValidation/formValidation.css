@@ -1,0 +1,55 @@
+.form-validation {
+  background-color: #F6F6F6;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px; }
+  .form-validation div[class="form-group"] {
+    line-height: 34px;
+    margin-left: 0px;
+    margin-right: 0px; }
+  .form-validation input[name="firstName"],
+  .form-validation input[name="lastName"],
+  .form-validation input[type="password"],
+  .form-validation input[type="email"] {
+    float: right; }
+  .form-validation input[type="text"],
+  .form-validation input[type="password"],
+  .form-validation input[type="email"] {
+    width: 75%; }
+  .form-validation input[type="date"] {
+    width: 37%; }
+  .form-validation input[name="age"] {
+    width: 10%; }
+
+.form-validation label,
+input[name="age"],
+input[name="dateOfBirth"],
+.location-container,
+.buttons-container {
+  float: left; }
+
+.buttons-container {
+  margin-left: 7% !important; }
+
+input[name="dateOfBirth"] {
+  margin-left: 5%; }
+
+input[name="age"] {
+  margin-left: 18%; }
+
+.location-container {
+  margin-left: 10% !important;
+  max-width: 200px; }
+
+.buttons-container {
+  max-width: 130px; }
+
+.submit-reset {
+  clear: both;
+  margin: 0 auto;
+  max-width: 150px; }
+
+.rootCondition {
+  color: #c0002b;
+  font-weight: bold;
+  text-indent: 15px; }

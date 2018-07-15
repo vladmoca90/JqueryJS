@@ -1,0 +1,26 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+.dropdown-container {
+    background-color: cornflowerblue;
+    @include font-prop(14px, $font-color, $arial);
+    margin: 50px auto;
+    max-width: 550px;
+    padding: 5px;
+    text-align: center;
+}
+
+.dropdown-selection {
+    #makeDropdown {
+        select {
+            padding: 5px;
+        }
+    }
+}
+
+.dropdown-total {
+    color: #fff;
+    font-weight: 700;
+    margin-left: auto;
+}
