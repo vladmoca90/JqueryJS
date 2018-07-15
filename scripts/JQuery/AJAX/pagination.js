@@ -2,7 +2,9 @@ $(function () {
 
     $('#prev').css('visibility', 'hidden');
 
-    var pagesSizes = [10, 25, 50];
+    var pageSize = 10;
+
+    var sizes = [10, 25, 50];
 
     var nextUrl = '';
     var prevUrl = '';
@@ -25,27 +27,34 @@ $(function () {
 
     function populateDropWithPageSizes(pagesSizes) {
 
-        var blank = $('<option></option>');
+        // var blank = $('<option></option>');
 
-        $('#pagesDrop').append(blank);
+        // $('#pagesDrop').append(blank);
 
-        for (var i = 0; i < pagesSizes.length; i++) {
+        for (var i = 0; i < sizes.length; i++) {
             var option = $('<option></option>');
 
-            option.attr('value', pagesSizes[i]);
-            option.html(pagesSizes[i]);
+            option.attr('value', sizes[i]);
+            option.html(sizes[i]);
 
             $('#pagesDrop').append(option);
         }
     }
 
-    populateDropWithPageSizes(pagesSizes);
+    populateDropWithPageSizes(sizes);
 
     $('#pagesDrop').change(function() {
-        
+        var selectedOption = $(this).find(':selected').val();
+
+        Cookies.set('pageSizeValue', selectedOption);
+        window.location.reload();
     });
 
-    var pagesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/Pagination?pageNumber=0&pageSize=10';
+    if(Cookies.get('pageSizeValue')) {
+        pageSize = Cookies.get('pageSizeValue');
+    }
+
+    var pagesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/Pagination?pageNumber=0&pageSize='+ pageSize;
 
     $.ajax(pagesUrl, {
         method: 'GET',
@@ -98,7 +107,6 @@ $(function () {
                     $('#prev').css('visibility', 'hidden');
                 }
 
-
                 populateListWithCities(response.cities);
             },
             error: function (err) {
@@ -129,7 +137,6 @@ $(function () {
                 } else {
                     $('#prev').css('visibility', 'hidden');
                 }
-
 
                 populateListWithCities(response.cities);
             },
