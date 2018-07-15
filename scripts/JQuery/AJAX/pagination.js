@@ -25,6 +25,10 @@ $(function () {
 
     function populateDropWithPageSizes(pagesSizes) {
 
+        var blank = $('<option></option>');
+
+        $('#pagesDrop').append(blank);
+
         for (var i = 0; i < pagesSizes.length; i++) {
             var option = $('<option></option>');
 
@@ -36,6 +40,10 @@ $(function () {
     }
 
     populateDropWithPageSizes(pagesSizes);
+
+    $('#pagesDrop').change(function() {
+        
+    });
 
     var pagesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/Pagination?pageNumber=0&pageSize=10';
 
