@@ -3,9 +3,10 @@
 @import '../mixins/mixins.scss';
 
 .pages {
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin: 25px auto;
-    max-width: 420px;
+    max-width: 480px;
 
     > .btn-page {
         border: 0;

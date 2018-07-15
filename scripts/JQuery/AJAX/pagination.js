@@ -2,6 +2,8 @@ $(function () {
 
     $('#prev').css('visibility', 'hidden');
 
+    var pagesSizes = [10, 25, 50];
+
     var nextUrl = '';
     var prevUrl = '';
 
@@ -20,6 +22,20 @@ $(function () {
             $('#citiesList').append(listItem);
         }
     }
+
+    function populateDropWithPageSizes(pagesSizes) {
+
+        for (var i = 0; i < pagesSizes.length; i++) {
+            var option = $('<option></option>');
+
+            option.attr('value', pagesSizes[i]);
+            option.html(pagesSizes[i]);
+
+            $('#pagesDrop').append(option);
+        }
+    }
+
+    populateDropWithPageSizes(pagesSizes);
 
     var pagesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/Pagination?pageNumber=0&pageSize=10';
 

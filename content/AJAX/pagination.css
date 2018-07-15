@@ -1,7 +1,8 @@
 .pages {
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin: 25px auto;
-  max-width: 420px; }
+  max-width: 480px; }
   .pages > .btn-page {
     border: 0;
     border-radius: 6px;
