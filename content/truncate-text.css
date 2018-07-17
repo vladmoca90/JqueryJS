@@ -1,0 +1,12 @@
+.content {
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 450px; }
+  .content input {
+    height: 30px; }
+    .content input#textContent {
+      width: 200px; }
+    .content input#numberValue {
+      width: 50px; }
+  .content #textTruncated {
+    font-size: 15px; }

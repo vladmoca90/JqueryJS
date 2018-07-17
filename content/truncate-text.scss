@@ -2,5 +2,23 @@
 
 @import 'mixins/mixins.scss';
 
-body {
+.content {
+    justify-content: space-between;
+    margin: 30px auto; 
+    width: 450px;
+
+    input {
+        height: 30px;
+
+        &#textContent {
+            width: 200px;
+        }
+        &#numberValue {
+            width: 50px;
+        }
+    }
+
+    #textTruncated {
+        font-size: 15px;
+    }
 }
