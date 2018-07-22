@@ -41,7 +41,7 @@ $(function () {
         buildDropdown(countries2, '#toCountryDropdown');
     });
 
-        function createDictionary(countries) {
+    function createDictionary(countries) {
 
         for (var i = 0; i < countries.length; i++) {
             pointsDict[countries[i].code] = {
@@ -97,13 +97,13 @@ $(function () {
 
         var votesUrl = rootUrl.replace('{fromCountry}', fromCountry).replace('{toCountry}', toCountry);
 
-        if(pointsDict[fromCountry].points.indexOf(pointsGiven) != -1) {
+        if (pointsDict[fromCountry].points.indexOf(pointsGiven) != -1) {
             return;
         }
 
         pointsDict[fromCountry].points.push(pointsGiven);
 
-        if(pointsDict[fromCountry].countries.indexOf(toCountry) != -1) {
+        if (pointsDict[fromCountry].countries.indexOf(toCountry) != -1) {
             return;
         }
 
