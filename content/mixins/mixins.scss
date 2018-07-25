@@ -51,6 +51,12 @@
     color: $color;
 }
 
+@mixin text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @mixin overflow-x-y($x, $y) {
     overflow: {
         x: $x;
