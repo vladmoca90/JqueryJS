@@ -24,12 +24,14 @@ $green-light: #317c2e;
 
 //device breakpoints
 
-$break-phone: 480px;
+$break-mobile: 480px;
 
-$break-phone-landscape: 600px;
+$break-mobile-landscape: 600px;
 
-$break-tablet: 720px;
+$break-tablet: 768px;
 
 $break-desktop: 960px;
 
 $break-big-desktop: 1200px;
+
+$break-wide-desktop: 1440px;
