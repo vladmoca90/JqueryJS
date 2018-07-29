@@ -1,4 +1,5 @@
-var cars = [{
+var cars = [
+    {
         model: 'Mercedes-Benz',
         make: 'E50',
     },
@@ -74,13 +75,15 @@ $(function () {
     includeStocksInCars(stocks);
 
     $('#makeDrop').change(function () {
+        var stockNumber = $('<span></span>');
 
         for (var i = 0; i < cars.length; i++) {
             Object.assign(cars[i], {
                 stock: stocks[i]
             });
 
-            $('#stock').html(cars[i].stock);
+            stockNumber.html(cars[i].stock);
+            $('#stock').append(stockNumber);
         }
     });
 });
