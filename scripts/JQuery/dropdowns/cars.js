@@ -21,7 +21,7 @@ var stocks = [3, 1, 4, 1];
 $(function () {
     function addModelsToDrop(cars, dropId) {
         if (cars.length == 0) {
-            throw new Error('The cars list ust be given');
+            throw new Error('Cars list list be given');
         }
 
         $(dropId).empty();
@@ -43,6 +43,8 @@ $(function () {
     addModelsToDrop(cars, '#modelDrop');
 
     $('#modelDrop').change(function () {
+        $('#makeDrop').empty();
+
         var selectedOption = $(this).find(':selected');
         var carCode = selectedOption.val();
         var blank = $('<option></option>');
@@ -61,28 +63,24 @@ $(function () {
         }
     });
 
-    function displayStocksDrop() {
-        $('#stocksDrop').css('display', 'none');
-
-        if($('#displayStocks').is(':checked')) {
-            $('#stocksDrop').css('display', 'block');
+    function includeStocksInCars(stocks) {
+        if (stocks.lenght == 0) {
+            throw new Error('Stocks list must be given');
         }
+
+        return cars.push(stocks);
     }
 
-    displayStocksDrop();
+    includeStocksInCars(stocks);
 
-    // function addStocksToDrop(stocks) {
-    //     $('#stocksDrop').css('display', 'none');
-    //     $('#stocksDrop').empty();
+    $('#makeDrop').change(function () {
 
-    //     var blank = $('<option></option>');
+        for (var i = 0; i < cars.length; i++) {
+            Object.assign(cars[i], {
+                stock: stocks[i]
+            });
 
-    //     $('#stocksDrop').append(blank);
-
-    //     if($('#displayStocks').is(':checked')) {
-    //         $('#stocksDrop').css('display', 'block');
-    //     }
-    // }
-
-    // addStocksToDrop(stocks);
+            $('#stock').html(cars[i].stock);
+        }
+    });
 });
