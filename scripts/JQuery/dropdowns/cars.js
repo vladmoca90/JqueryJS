@@ -44,10 +44,45 @@ $(function () {
 
     $('#modelDrop').change(function () {
         var selectedOption = $(this).find(':selected');
-        var carCode = ;
+        var carCode = selectedOption.val();
+        var blank = $('<option></option>');
+
+        $('#makeDrop').append(blank);
 
         for (var i = 0; i < cars.length; i++) {
+            var option = $('<option></option>');
 
+            if (cars[i].model == carCode) {
+                option.val(cars[i].make);
+                option.html(cars[i].make);
+
+                $('#makeDrop').append(option);
+            }
         }
     });
+
+    function displayStocksDrop() {
+        $('#stocksDrop').css('display', 'none');
+
+        if($('#displayStocks').is(':checked')) {
+            $('#stocksDrop').css('display', 'block');
+        }
+    }
+
+    displayStocksDrop();
+
+    // function addStocksToDrop(stocks) {
+    //     $('#stocksDrop').css('display', 'none');
+    //     $('#stocksDrop').empty();
+
+    //     var blank = $('<option></option>');
+
+    //     $('#stocksDrop').append(blank);
+
+    //     if($('#displayStocks').is(':checked')) {
+    //         $('#stocksDrop').css('display', 'block');
+    //     }
+    // }
+
+    // addStocksToDrop(stocks);
 });
