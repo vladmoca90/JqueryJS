@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+		<!-- <link href="styles/index.css" /> -->
+		<style>
+            .display {
+                margin: 25px auto;
+                max-width: 115px;
+                text-align: center;
+            }
+			.container {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                margin: 25px auto 0;
+                max-width: 115px;
+            }
+
+            .container > .digit {
+                font-size: 15px;
+                margin-bottom: 5px;
+                padding: 10px;
+            }
+		</style>
+
+</head>
+
+<body>
+
+    <!-- 7 8 9 -->
+    <!-- 4 5 6 -->
+    <!-- 1 2 3 -->
+    <!--   0   -->
+
+	<div id="display">
+		<span>0</span>
+	</div>
+
+    <div class="container">
+        <button class="digit">7</button>
+        <button class="digit">8</button>
+        <button class="digit">9</button>
+        <button class="digit">4</button>
+        <button class="digit">5</button>
+        <button class="digit">6</button>
+        <button class="digit">1</button>
+        <button class="digit">2</button>
+        <button class="digit">3</button>
+        <button class="digit">0</button>
+    </div>
+
+	<!-- TODO: 
+		1. Add +, -, /, * 
+		2. Add click events for these operators that are almost identical to the digit click event: you simply click the button and this will add a span to the #display
+
+		sample result:
+
+		<span class="number">2</span><span class="operator">+</span><span>5</span><span>*</span><span>2</span>
+	-->
+
+	<script>
+		// selector is a string (a CSS selector)
+		function getElement(selector) {
+			return $(selector);
+		}
+
+		$(function() {
+			getElement('.digit').click(function(e) {
+				var btnValue = $(e.target).html();
+
+				// call function that:
+				// creates span with the given value
+				// adds span to #display
+
+				console.log('clicked digit: ' + btnValue);
+			});
+		})
+	</script>
+	
+
+</body>
+
+</html>
