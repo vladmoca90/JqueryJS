@@ -4,27 +4,39 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-		<!-- <link href="styles/index.css" /> -->
-		<style>
-            .display {
-                margin: 25px auto;
-                max-width: 115px;
-                text-align: center;
-            }
-			.container {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-evenly;
-                margin: 25px auto 0;
-                max-width: 115px;
-            }
+    <!-- <link href="styles/index.css" /> -->
+    <style>
+        #display {
+            margin: 25px auto;
+            max-width: 115px;
+            text-align: center;
+        }
 
-            .container > .digit {
-                font-size: 15px;
-                margin-bottom: 5px;
-                padding: 10px;
-            }
-		</style>
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin: 25px auto 0;
+            max-width: 115px;
+        }
+
+        .container>.digit {
+            font-size: 15px;
+            margin-bottom: 5px;
+            padding: 10px;
+        }
+
+        .container>.operators {
+            margin-top: 10px;
+        }
+
+        .operators #addition,
+        .operators #substraction,
+        .operators #multiplication,
+        .operators #division {
+            font-size: 18px;
+        }
+    </style>
 
 </head>
 
@@ -35,9 +47,9 @@
     <!-- 1 2 3 -->
     <!--   0   -->
 
-	<div id="display">
-		<span>0</span>
-	</div>
+    <div id="display">
+        <span id="zero">0</span>
+    </div>
 
     <div class="container">
         <button class="digit">7</button>
@@ -50,9 +62,15 @@
         <button class="digit">2</button>
         <button class="digit">3</button>
         <button class="digit">0</button>
+        <div class="operators">
+            <button id="addition">+</button>
+            <button id="substraction">-</button>
+            <button id="multiplication">*</button>
+            <button id="division">/</button>
+        </div>
     </div>
 
-	<!-- TODO: 
+    <!-- TODO: 
 		1. Add +, -, /, * 
 		2. Add click events for these operators that are almost identical to the digit click event: you simply click the button and this will add a span to the #display
 
@@ -61,25 +79,29 @@
 		<span class="number">2</span><span class="operator">+</span><span>5</span><span>*</span><span>2</span>
 	-->
 
-	<script>
-		// selector is a string (a CSS selector)
-		function getElement(selector) {
-			return $(selector);
-		}
+    <script>
+        $(function () {
+            $('.digit').click(function () {
+                // call function that:
+                // creates span with the given value
+                // adds span to #display
 
-		$(function() {
-			getElement('.digit').click(function(e) {
-				var btnValue = $(e.target).html();
+                var number = $('<span class="number"></span>');
 
-				// call function that:
-				// creates span with the given value
-				// adds span to #display
+                $('#zero').css('display', 'none');
+                number.html($(this).html());
+                $('#display').append(number);
+            });
 
-				console.log('clicked digit: ' + btnValue);
-			});
-		})
-	</script>
-	
+            $('.operators button').click(function () {
+                var operator = $('<span class="operator"></span>');
+
+                operator.html($(this).html());
+                $('#display').append(operator);
+            });
+        })
+    </script>
+
 
 </body>
 
