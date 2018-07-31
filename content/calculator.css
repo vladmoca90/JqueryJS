@@ -15,9 +15,5 @@
     padding: 10px; }
     .container .digit .operators {
       margin-top: 10px; }
-      .container .digit .operators #addition, .container .digit .operators #substraction,
-      .container .digit .operators #multiplication, .container .digit .operators #division {
-        font-size: 18px; }
   .container .result > #equal {
-    font-size: 18px;
     margin-top: 10px; }

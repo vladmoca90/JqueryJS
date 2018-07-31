@@ -26,34 +26,13 @@ $(function () {
         $('#display').append(operator);
     });
 
-    $('.result > #equal').click(function () {
-        var result = 0;
-        var finalResult = $('<span class="result"></span>');
-        var calculus = [];
-
-
-
-    });
-
     // $('.result > #equal').click(function() {
-    //     var result = 0;
+    //     var result = $('.number').html();
     //     var finalResult = $('<span class="result"></span>');
-
-    //     if($('.operator').html() == '+') {
-    //         result += $('.number').html();
-    //     }
-    //     if($('.operator').html() == '-') {
-    //         result -= $('.number').html();
-    //     }
-    //     if($('.operator').html() == '*') {
-    //         result *= $('.number').html();
-    //     }
-    //     if($('.operator').html() == '/') {
-    //         result /= $('.number').html();
-    //     }
 
     //     $('#display .number').css('display', 'none');
     //     $('#display .operator').css('display', 'none');
+    //     finalResult.html(result);
     //     $('#display').append(finalResult);
     // });
 });
