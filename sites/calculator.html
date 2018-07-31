@@ -1,43 +1,12 @@
 <html>
-
+<title>Calculator</title>
 <head>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 
-    <!-- <link href="styles/index.css" /> -->
-    <style>
-        #display {
-            margin: 25px auto;
-            max-width: 115px;
-            text-align: center;
-        }
+    <link href="../content/calculator.css" />
 
-        .container {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-evenly;
-            margin: 25px auto 0;
-            max-width: 115px;
-        }
-
-        .container>.digit {
-            font-size: 15px;
-            margin-bottom: 5px;
-            padding: 10px;
-        }
-
-        .container>.operators {
-            margin-top: 10px;
-        }
-
-        .operators #addition,
-        .operators #substraction,
-        .operators #multiplication,
-        .operators #division {
-            font-size: 18px;
-        }
-    </style>
-
+    <script src="../scripts/JQuery/calculator.js"></script>
 </head>
 
 <body>
@@ -68,40 +37,10 @@
             <button id="multiplication">*</button>
             <button id="division">/</button>
         </div>
+        <div class="result">
+            <button id="equal">=</button>
+        </div>
     </div>
-
-    <!-- TODO: 
-		1. Add +, -, /, * 
-		2. Add click events for these operators that are almost identical to the digit click event: you simply click the button and this will add a span to the #display
-
-		sample result:
-
-		<span class="number">2</span><span class="operator">+</span><span>5</span><span>*</span><span>2</span>
-	-->
-
-    <script>
-        $(function () {
-            $('.digit').click(function () {
-                // call function that:
-                // creates span with the given value
-                // adds span to #display
-
-                var number = $('<span class="number"></span>');
-
-                $('#zero').css('display', 'none');
-                number.html($(this).html());
-                $('#display').append(number);
-            });
-
-            $('.operators button').click(function () {
-                var operator = $('<span class="operator"></span>');
-
-                operator.html($(this).html());
-                $('#display').append(operator);
-            });
-        })
-    </script>
-
 
 </body>
 
