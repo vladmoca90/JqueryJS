@@ -10,23 +10,20 @@
     justify-content: space-evenly;
     margin: 25px auto 0;
     max-width: 115px;
-}
-
-.container>.digit {
-    font-size: 15px;
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.container>.operators,
-.result>#equal {
-    margin-top: 10px;
-}
-
-.operators #addition,
-.operators #substraction,
-.operators #multiplication,
-.operators #division,
-.result>#equal {
-    font-size: 18px;
+    .digit {
+        font-size: 15px;
+        margin-bottom: 5px;
+        padding: 10px;
+        .operators {
+            margin-top: 10px;
+            #addition, #substraction,
+            #multiplication, #division {
+                font-size: 18px;
+            }
+        }
+    }
+    .result>#equal {
+        font-size: 18px;
+        margin-top: 10px;
+    }
 }
