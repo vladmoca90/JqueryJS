@@ -38,7 +38,7 @@ window.onload = function () {
                 type: 'column',
                 name: 'Proven Oil Reserves (bn)',
                 legendText: 'Proven Oil Reserves',
-                fillOpacity: .6,
+                fillOpacity: .75,
                 showInLegend: true,
                 dataPoints: [{
                         label: 'Saudi Arabia',
@@ -71,7 +71,7 @@ window.onload = function () {
                 name: 'Oil Production (million/day)',
                 legendText: 'Oil Production',
                 axisYType: 'secondary',
-                fillOpacity: .6,
+                fillOpacity: .75,
                 showInLegend: true,
                 dataPoints: [{
                         label: 'Saudi Arabia',
