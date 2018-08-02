@@ -1,13 +1,13 @@
 window.onload = function () {
-    var chart = new CanvasJS.Chart("line-bar",
+    var chart = new CanvasJS.Chart('line-bar',
     {
 
       title:{
-      text: "Earthquakes - per month"
+      text: 'Earthquakes - per month'
       },
        data: [
       {
-        type: "line",
+        type: 'line',
 
         dataPoints: [
         { x: new Date(2012, 00, 1), y: 450 },
