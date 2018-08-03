@@ -1,21 +1,21 @@
 window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer", {
+    var chart = new CanvasJS.Chart('temperature1', {
         title: {
-            text: "Basic Range Column Chart"
+            text: 'Basic Range Column Chart'
         },
         axisY: {
             includeZero: false,
             interval: 10,
-            title: "Temperature (C)"
+            title: 'Temperature (C)'
         },
         axisX: {
             interval: 1,
-            intervalType: "month",
-            valueFormatString: "MMM"
+            intervalType: 'month',
+            valueFormatString: 'MMM'
         },
         data: [{
-            type: "rangeColumn",
-            color: "#369EAD",
+            type: 'rangeColumn',
+            color: '#369EAD',
             dataPoints: [{
                     x: new Date(2012, 00, 01),
                     y: [-9.7, 10.4]
