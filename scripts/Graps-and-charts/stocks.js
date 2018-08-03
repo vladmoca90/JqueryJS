@@ -2,21 +2,24 @@ window.onload = function () {
 	var chart = new CanvasJS.Chart('stocks',
 	{
 		title:{
-			text: 'IBM Stock Prices for June & July 2014'
+            fontSize: 21,
+			text: 'IBM Stock Prices for June & July 2014',
+            padding: 20,
 		},
 		axisY: {
 			includeZero:false,
+            fontSize: 13,
 			prefix: '$ ',
 			title: 'Prices'
 		},     
 		axisX: {
-			interval:1,
+			interval: 1,
 			valueFormatString: 'MMM-DD'
 		},
 		data: [
 		{
 			type: 'ohlc',
-			color: 'brown',
+			color: '#cb2049',
 			dataPoints: [   // Y: [Open, High ,Low, Close]
 				{x: new Date(2014,05,2 ), y:[184.76, 186.28, 184.67, 185.69]},
 				{x: new Date(2014,05,3 ), y:[185.55, 185.76, 184.12, 184.37]},
