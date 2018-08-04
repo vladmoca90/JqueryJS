@@ -1,25 +1,29 @@
  window.onload = function () {
-     var chart = new CanvasJS.Chart('doughnut-chart', {
+     var chart = new CanvasJS.Chart('browser-chart', {
          title: {
-             text: 'Top U.S Smartphone Operating Systems By Market Share, Q3 2012'
+             text: '% Browser usage'
+         },
+         axisY: {
+             suffix: '%',
          },
          data: [{
+             innerRadius: 50,
              type: 'doughnut',
              dataPoints: [{
-                     y: 53.37,
-                     indexLabel: 'Android'
+                     y: 37,
+                     indexLabel: 'Chrome'
                  },
                  {
-                     y: 35.0,
-                     indexLabel: 'Apple iOS'
+                     y: 35,
+                     indexLabel: 'Firefox'
                  },
                  {
-                     y: 7,
-                     indexLabel: 'Blackberry'
+                     y: 18,
+                     indexLabel: 'Safari'
                  },
                  {
-                     y: 2,
-                     indexLabel: 'Windows Phone'
+                     y: 5,
+                     indexLabel: 'IE'
                  },
                  {
                      y: 5,
