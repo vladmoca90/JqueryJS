@@ -20,7 +20,7 @@ $(function () {
 
             var digit = n.toString()[m];
 
-            return $('p').text(parseInt(digit));
+            $('p').text(parseInt(digit));
         }
     });
 
