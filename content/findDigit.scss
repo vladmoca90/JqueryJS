@@ -1,0 +1,27 @@
+@import 'variables/variables.scss';
+
+@import 'mixins/mixins.scss';
+
+.content {
+    margin: 30px auto;
+    width: 450px;
+
+    >div {
+        justify-content: space-between;
+        width: 450px;
+
+        input {
+            height: 30px;
+
+            &#number {
+                width: 200px;
+            }
+            &#digit {
+                width: 50px;
+            }
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}

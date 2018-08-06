@@ -1,0 +1,14 @@
+.content {
+  margin: 30px auto;
+  width: 450px; }
+  .content > div {
+    justify-content: space-between;
+    width: 450px; }
+    .content > div input {
+      height: 30px; }
+      .content > div input#number {
+        width: 200px; }
+      .content > div input#digit {
+        width: 50px; }
+    .content > div p {
+      font-size: 15px; }
