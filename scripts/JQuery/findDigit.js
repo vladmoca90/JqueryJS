@@ -22,7 +22,7 @@ $(function () {
 
             $('p').text(parseInt(digit));
         }
-    });
 
-    findDigit(n, digit);
+        findDigit(n, m);
+    });
 });
