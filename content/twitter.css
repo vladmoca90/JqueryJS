@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0;
+  width: 350px; }
+  .content #commentSection {
+    font-size: 15px;
+    width: 350px; }
+  .content button {
+    float: right;
+    margin-top: 20px;
+    width: 100px; }
+  .content .content-comments {
+    padding-top: 10px;
+    width: 350px; }
+  .content #commentDisplay .text {
+    background-color: aquamarine;
+    border-radius: 8px;
+    color: #444;
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px 13px; }
