@@ -1,0 +1,20 @@
+.content {
+    margin: 30px auto;
+    width: 450px;
+
+    >div {
+        justify-content: space-between;
+
+        input {
+            height: 30px;
+
+            &#text {
+                width: 250px;
+            }
+        }
+        button,
+        #numberOfVowels {
+            font-size: 15px;
+        }
+    }
+}
