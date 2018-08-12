@@ -7,17 +7,27 @@
     font-size: 15px;
     width: 350px; }
   .content button {
+    background-color: #03A9F4;
+    border-color: #03A9F4;
     float: right;
     margin-top: 20px;
+    outline: none;
+    text-transform: uppercase;
     width: 100px; }
+    .content button:hover {
+      background-color: #0288D1;
+      border-color: #0288D1; }
   .content .content-comments {
     padding-top: 10px;
     width: 350px; }
   .content #commentDisplay .text {
-    background-color: aquamarine;
-    border-radius: 8px;
-    color: #444;
+    background-color: #B3E5FC;
+    border-radius: 6px;
+    color: #757575;
     font-size: 15px;
     list-style-type: none;
-    margin-bottom: 10px;
-    padding: 10px 13px; }
+    margin-bottom: 13px;
+    padding: 10px 13px;
+    position: relative; }
+    .content #commentDisplay .text:after {
+      position: absolute; }
