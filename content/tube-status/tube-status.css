@@ -22,22 +22,17 @@ body {
         cursor: pointer; }
   body #main {
     padding: 30px; }
-    body #main .tube__container .tube__table {
-      border: 1px solid #ccc;
-      border-right: 0;
-      font-size: 15px;
-      min-width: 320px; }
-      body #main .tube__container .tube__table th {
-        text-align: left; }
-        body #main .tube__container .tube__table th:nth-of-type(2) {
-          border-left: 1px solid #ccc; }
-      body #main .tube__container .tube__table th,
-      body #main .tube__container .tube__table td {
-        border-bottom: 1px solid #ccc;
-        padding: 10px 0px;
-        text-indent: 8px; }
-        body #main .tube__container .tube__table th:nth-last-of-type(),
-        body #main .tube__container .tube__table td:nth-last-of-type() {
-          border-bottom: 0; }
-      body #main .tube__container .tube__table .tube__lines {
-        border-right: 1px solid #ccc; }
+    body #main .tube__container {
+      margin: 0 auto;
+      width: 400px; }
+      body #main .tube__container .tube__table {
+        border: 1px solid #ccc;
+        font-size: 15px;
+        width: 400px; }
+        body #main .tube__container .tube__table th {
+          text-align: left; }
+        body #main .tube__container .tube__table th,
+        body #main .tube__container .tube__table td {
+          border: 1px solid #ccc;
+          padding: 10px 0px;
+          text-indent: 8px; }
