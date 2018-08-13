@@ -1,31 +1,11 @@
 @import '../variables/variables.scss';
+
 @import '../mixins/mixins.scss';
+
 body {
     color: $font-color;
     margin: 0;
     padding: 0;
-    .header {
-        background-color: #2d3039;
-        justify-content: space-between;
-        min-height: 65px;
-        padding-right: 10px;
-        &__menu {
-            list-style-type: none;
-            margin-bottom: 0;
-        }
-        &__buttons {
-            color: #fff;
-            font-size: 17px;
-            margin-bottom: 0;
-            padding: 18px 10px 13px;
-            transition: all 0.5s;
-            &:hover {
-                background-color: #5a6072;
-                border-bottom: 5px solid #0000e6;
-                cursor: pointer;
-            }
-        }
-    }
     #main {
         padding: 30px;
         .tube__container {

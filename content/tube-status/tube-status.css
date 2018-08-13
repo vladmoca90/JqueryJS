@@ -2,24 +2,6 @@ body {
   color: #444;
   margin: 0;
   padding: 0; }
-  body .header {
-    background-color: #2d3039;
-    justify-content: space-between;
-    min-height: 65px;
-    padding-right: 10px; }
-    body .header__menu {
-      list-style-type: none;
-      margin-bottom: 0; }
-    body .header__buttons {
-      color: #fff;
-      font-size: 17px;
-      margin-bottom: 0;
-      padding: 18px 10px 13px;
-      transition: all 0.5s; }
-      body .header__buttons:hover {
-        background-color: #5a6072;
-        border-bottom: 5px solid #0000e6;
-        cursor: pointer; }
   body #main {
     padding: 30px; }
     body #main .tube__container {
