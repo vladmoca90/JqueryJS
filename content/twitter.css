@@ -31,3 +31,9 @@
     position: relative; }
     .content #commentDisplay .text:after {
       position: absolute; }
+  .content .high {
+    color: #000; }
+  .content .low {
+    color: #f49000; }
+  .content .negative {
+    color: #f00; }
