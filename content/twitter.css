@@ -27,15 +27,18 @@
     font-size: 15px;
     list-style-type: none;
     margin-bottom: 13px;
-    padding: 10px 13px;
-    position: relative; }
+    padding: 10px;
+    position: relative;
+    width: 300px; }
     .content #commentDisplay .text:after {
       position: absolute; }
+  .content #counter {
+    font-weight: bold; }
   .content .high {
     color: #000; }
   .content .medium {
     color: #070; }
   .content .low {
-    color: #f53; }
+    color: #f07; }
   .content .negative {
     color: #f00; }

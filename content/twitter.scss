@@ -36,12 +36,16 @@
             font-size: 15px;
             list-style-type: none;
             margin-bottom: 13px;
-            padding: 10px 13px;
+            padding: 10px;
             position: relative;
+            width: 300px;
             &:after {
                 position: absolute;
             }
         }
+    }
+    #counter {
+        font-weight: bold;
     }
     .high {
         color: #000;
@@ -50,7 +54,7 @@
         color: #070;
     }
     .low {
-        color: #f53;
+        color: #f07;
     }
     .negative {
         color: #f00;
