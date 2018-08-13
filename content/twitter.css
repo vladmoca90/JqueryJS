@@ -33,7 +33,9 @@
       position: absolute; }
   .content .high {
     color: #000; }
+  .content .medium {
+    color: #070; }
   .content .low {
-    color: #f49000; }
+    color: #f53; }
   .content .negative {
     color: #f00; }

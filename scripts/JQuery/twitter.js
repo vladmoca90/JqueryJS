@@ -2,6 +2,10 @@ $(function () {
     var maxCount = 140;
     var maxCharacters = $('<span id="maxCharacters"></span>');
 
+    $('#commentSection').change(function() {
+
+    });
+
     $('button').click(function () {
         var content = $('#commentSection').val();
         var tweet = $('<li class="text"></li>');
