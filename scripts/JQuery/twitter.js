@@ -1,27 +1,36 @@
 $(function () {
     var maxCount = 140;
-    var maxCharacters = $('<span id="maxCharacters"></span>');
+    // var maxCharacters = $('<span id="maxCharacters"></span>');
 
-    $('#commentSection').keyup(function () {
-        if ($(this).val().length > 0 && $(this).val().length <= 40) {
-            $('#counter').removeClass('negative');
+    function changeColor(id) {
+        $(id).removeClass('low');
+        $(id).removeClass('medium');
+        $(id).removeClass('high');
+        $(id).removeClass('negative');
+    }
+
+    $('#commentSection').keypress(function () {
+        var value = $(this).val().length;
+
+        if (value > 0 && value <= 40) {
+            changeColor('#counter');
             $('#counter').addClass('high');
-            $('#counter').html(maxCount - $(this).val().length);
+            $('#counter').html(maxCount - value);
         }
-        if ($(this).val().length >= 41 && $(this).val().length <= 100) {
-            $('#counter').removeClass('high');
+        if (value >= 41 && value <= 100) {
+            changeColor('#counter');
             $('#counter').addClass('medium');
-            $('#counter').html(maxCount - $(this).val().length);
+            $('#counter').html(maxCount - value);
         }
-        if ($(this).val().length >= 101 && $(this).val().length <= 140) {
-            $('#counter').removeClass('medium');
+        if (value >= 101 && value <= 140) {
+            changeColor('#counter');
             $('#counter').addClass('low');
-            $('#counter').html(maxCount - $(this).val().length);
+            $('#counter').html(maxCount - value);
         }
-        if ($(this).val().length > 140) {
-            $('#counter').removeClass('low');
+        if (value > 140) {
+            changeColor('#counter');
             $('#counter').addClass('negative');
-            $('#counter').html(maxCount - $(this).val().length);
+            $('#counter').html(maxCount - value);
         }
     });
 
