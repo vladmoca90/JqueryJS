@@ -2,7 +2,7 @@ $(function () {
     var maxCount = 140;
     var maxCharacters = $('<span id="maxCharacters"></span>');
 
-    $('#commentSection').change(function () {
+    $('#commentSection').keypress(function () {
         if ($(this).val().length > 0 && $(this).val().length <= 40) {
             $('#counter').removeClass('negative');
             $('#counter').addClass('high');
