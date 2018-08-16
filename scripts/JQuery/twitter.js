@@ -12,7 +12,7 @@ $(function () {
     $('#commentSection').on('input', function () {
         var value = $(this).val().length;
 
-        if (value == 0 || value > 0 && value <= 40) {
+        if (value >= 0 && value <= 40) {
             clearClasses('#counter');
             $('#counter').addClass('high');
             $('#counter').html(maxCount - value);
@@ -43,6 +43,8 @@ $(function () {
         }
 
         tweet.html(content);
+        $('#commentSection').val(' ');
+        $('#counter').html(maxCount);
         $('#commentDisplay').prepend(tweet);
     });
 });
