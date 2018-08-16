@@ -2,33 +2,33 @@ $(function () {
     var maxCount = 140;
     // var maxCharacters = $('<span id="maxCharacters"></span>');
 
-    function changeColor(id) {
+    function clearClasses(id) {
         $(id).removeClass('low');
         $(id).removeClass('medium');
         $(id).removeClass('high');
         $(id).removeClass('negative');
     }
 
-    $('#commentSection').keypress(function () {
+    $('#commentSection').on('input', function () {
         var value = $(this).val().length;
 
-        if (value > 0 && value <= 40) {
-            changeColor('#counter');
+        if (value == 0 || value > 0 && value <= 40) {
+            clearClasses('#counter');
             $('#counter').addClass('high');
             $('#counter').html(maxCount - value);
         }
         if (value >= 41 && value <= 100) {
-            changeColor('#counter');
+            clearClasses('#counter');
             $('#counter').addClass('medium');
             $('#counter').html(maxCount - value);
         }
         if (value >= 101 && value <= 140) {
-            changeColor('#counter');
+            clearClasses('#counter');
             $('#counter').addClass('low');
             $('#counter').html(maxCount - value);
         }
         if (value > 140) {
-            changeColor('#counter');
+            clearClasses('#counter');
             $('#counter').addClass('negative');
             $('#counter').html(maxCount - value);
         }
