@@ -43,7 +43,7 @@ $(function () {
         }
 
         tweet.html(content);
-        $('#commentSection').val(' ');
+        $('#commentSection').val(' ')
         $('#counter').html(maxCount);
         $('#commentDisplay').prepend(tweet);
     });
