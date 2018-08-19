@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../content/utilities/utilities.css" />
+    <link rel="stylesheet" href="../../content/utilities/utilities.css" />
 
-    <link rel="stylesheet" href="../content/cookie-popUp.css" />
+    <link rel="stylesheet" href="../../content/cookie-popUp.css" />
 
-    <link rel="stylesheet" href="../content/movies.css" />
+    <link rel="stylesheet" href="../../content/movies.css" />
 
 </head>
 
@@ -33,11 +33,19 @@
     <section id="moviesList">
         <div></div>
     </section>
+    <div id="templates">
+        <div id="movieTemplate" data-movie-id="">
+            <h2 class="movie-title"></h2>
+            <p class="movie-description"></p>
+            <img class="movie-image" />
+            <p class="movie-rating"></p>
+        </div>
+    </div>
 </body>
-<script src="../scripts/jquery.min.js"></script>
+<script src="../../scripts/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="../scripts/JQuery/Movies/movies.services.js"></script>
-<script src="../scripts/JQuery/Movies/movies.js"></script>
-<script src="../scripts/JQuery/Movies/movies.tools.js"></script>
-<script src="../scripts/JQuery/Cookies/cookie-popUp.js"></script>
+<script src="../../scripts/JQuery/Movies/movies.services.js"></script>
+<script src="../../scripts/JQuery/Movies/movies.js"></script>
+<script src="../../scripts/JQuery/Movies/movies.tools.js"></script>
+<script src="../../scripts/JQuery/Cookies/cookie-popUp.js"></script>
 </html>

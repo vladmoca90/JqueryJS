@@ -1,11 +1,30 @@
-function MoviesTools() {
-	this.createMovieElement = function(movie) {
+// given a movie (JSON object), returns a jquery element
+// that will contain the movie data
+function createMovieElement(movie) {
+	var clone = $('#movieTemplate').clone();
 
-	}
+	clone.attr('data-movie-id', movie.id);
+	clone.find('.movie-title').html(movie.title);
+	clone.find('.movie-description').html(movie.description);
+	clone.find('.movie-image').attr('src', movie.content_Url);
+	clone.find('.movie-rating').html(parseFloat(movie.rating));
+
+	return clone;
 }
 
-function Student(name, age) {
-	this.name 
-}
 
-var student = new Student("Alex Mocanu", 27);
+// function MoviesTools() {
+// 	// given a movie (JSON object), returns a jquery element
+// 	// that will contain the movie data
+// 	this.createMovieElement = function(movie) {
+// 		var clone = $('#movieTemplate').clone();
+
+// 		clone.attr('data-movie-id', movie.id);
+// 		clone.find('.movie-title').html(movie.title);
+// 		clone.find('.movie-description').html(movie.description);
+// 		clone.find('.movie-image').attr('src', movie.content_Url);
+// 		clone.find('.movie-rating').html(parseFloat(movie.rating));
+
+// 		return clone;
+// 	}
+// }
