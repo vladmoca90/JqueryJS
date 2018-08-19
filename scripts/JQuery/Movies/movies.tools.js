@@ -1,5 +1,5 @@
 function MoviesTools() {
-	this.createMovieElement() = function() {
+	this.createMovieElement = function(movie) {
 
 	}
 }
