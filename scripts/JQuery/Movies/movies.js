@@ -18,7 +18,7 @@ $(function () {
 
         searchMovies(searchQuery, function (result) {
             console.log(result);
-            $('#moviesList>div').empty();
+            $('#moviesList').empty();
 
             for (var i = 0; i < result.movies.length; i++) {
                 var searchElem = createMovieElement(result.movies[i]);
