@@ -2,5 +2,5 @@ body #searchList {
   margin: 25px auto;
   width: 400px; }
 
-body .pop-up {
-  top: 49vh; }
+body #moviesList div {
+  border-bottom: 1px solid #ccc; }
