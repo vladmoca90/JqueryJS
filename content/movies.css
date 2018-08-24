@@ -3,4 +3,6 @@ body #searchList {
   width: 400px; }
 
 body #moviesList div {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  width: 90%; }
