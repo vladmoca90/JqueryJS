@@ -96,10 +96,10 @@ $(function () {
     function addStatusColors(data) {
 
         for (i = 0; i < data.lines.length; i++) {
-            if (data.lines[i].status === 'Partially closed') {
+            if (data.lines[i].status == 'Partially closed') {
                 $('.tube__status').css('color', '#ff4560');
             }
-            if (data.lines[i].status === 'Closed') {
+            if (data.lines[i].status == 'Closed') {
                 $('.tube__status').css('color', '#cb2000');
             }
         }

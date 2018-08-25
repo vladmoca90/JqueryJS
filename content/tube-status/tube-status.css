@@ -9,12 +9,11 @@ body {
       width: 400px; }
       body #main .tube__container .tube__table {
         border: 1px solid #ccc;
-        font-size: 15px;
+        font-size: 16px;
         width: 400px; }
         body #main .tube__container .tube__table th {
           text-align: left; }
-        body #main .tube__container .tube__table th,
-        body #main .tube__container .tube__table td {
+        body #main .tube__container .tube__table th, body #main .tube__container .tube__table td {
           border: 1px solid #ccc;
           padding: 10px 0px;
           text-indent: 8px; }

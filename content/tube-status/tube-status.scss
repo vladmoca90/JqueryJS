@@ -1,25 +1,26 @@
-@import '../variables/variables.scss';
-
-@import '../mixins/mixins.scss';
 
 body {
-    color: $font-color;
+    color: #444;
     margin: 0;
     padding: 0;
+
     #main {
         padding: 30px;
+
         .tube__container {
             margin: 0 auto;
             width: 400px;
+
             .tube__table {
                 border: 1px solid #ccc;
-                font-size: 15px;
+                font-size: 16px;
                 width: 400px;
+
                 th {
                     text-align: left;
                 }
-                th,
-                td {
+
+                th, td {
                     border: 1px solid #ccc;
                     padding: 10px 0px;
                     text-indent: 8px;
