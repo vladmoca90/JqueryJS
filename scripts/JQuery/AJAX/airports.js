@@ -13,6 +13,9 @@ $(function() {
         },
         error: function (err) {
             console.err(err);
+        },
+        complete: function() {
+            $('img').addClass('hidden');
         }
     });
 });
