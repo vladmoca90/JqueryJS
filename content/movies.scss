@@ -12,8 +12,12 @@ body {
     #moviesList {
         div {
             border-bottom: 1px solid #ccc;
+            margin: 0 auto;
             padding: 20px;
             width: 90%;
+        }
+        h2 {
+            margin-bottom: 3px;
         }
     }
 }
