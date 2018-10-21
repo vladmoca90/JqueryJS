@@ -1,0 +1,5 @@
+#namesList {
+  list-style-type: none;
+  padding-left: 0; }
+  #namesList li {
+    margin-bottom: 10px; }

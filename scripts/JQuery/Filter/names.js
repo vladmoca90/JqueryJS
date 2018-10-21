@@ -16,6 +16,18 @@ var names = [{
     {
         name: "Libo Bian",
     },
+    {
+        name: "Zubair Hossain",
+    },
+    {
+        name: "Phil Gill",
+    },
+    {
+        name: "Liam Monticelli",
+    },
+    {
+        name: "Dara Djakovic",
+    },
 ];
 
 $(function () {
@@ -37,17 +49,21 @@ $(function () {
     addNamesToDropdown(names);
 
     function addNamesToList(names) {
-         if (names.length == 0) {
+        if (names.length == 0) {
             throw new Error('The list with names must be provided');
         }
 
         for (var i = 0; i < names.length; i++) {
             var nameItem = $('<li></li>');
 
-            $('.namesList').append(nameItem);
+            $('#namesList').append(nameItem);
             nameItem.html(names[i].name);
         }
     }
 
     addNamesToList(names);
+
+    function showSelectedElement(names) {
+        var selected = $('#names').find(':selected');
+    }
 });

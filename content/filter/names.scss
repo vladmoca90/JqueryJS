@@ -1,0 +1,13 @@
+@import '../variables/variables.scss';
+
+@import '../mixins/mixins.scss';
+
+
+#namesList {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
