@@ -63,7 +63,8 @@ $(function () {
 
     addNamesToList(names);
 
-    function showSelectedElement(names) {
-        var selected = $('#names').find(':selected');
-    }
+    $('#names').change(function() {
+        var selected = $(this).find(':selected');
+
+    });
 });
