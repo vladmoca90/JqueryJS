@@ -33,6 +33,7 @@ $(function () {
 
             $('#productsList').append(option);
             option.attr('value', products[i].id);
+            option.val(products[i].id);
             option.html(products[i].name);
         }
     }
@@ -45,10 +46,11 @@ $(function () {
 
         $('.product').remove();
 
-        var product = createProduct(selectedOption, selected.attr());
+        var product = createProduct(selected.html(), selectedOption);
         // append product
 
         $('.products-container').append(product);
+
     });
 
     function createProduct(productName, productId) {
@@ -73,4 +75,3 @@ $(function () {
         return element;
     }
 });
-    
