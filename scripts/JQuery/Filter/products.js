@@ -33,7 +33,6 @@ $(function () {
 
             $('#productsList').append(option);
             option.attr('value', products[i].id);
-            option.val(products[i].name);
             option.html(products[i].name);
         }
     }
