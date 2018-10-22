@@ -26,7 +26,7 @@ $(function () {
             throw new Error('The products list must be given');
         }
 
-        $('#productsList option:nth-of-type(1)').attr('value', 0);
+        // $('#productsList option:nth-of-type(1)').val(0);
 
         for (var i = 0; i < products.length; i++) {
             var option = $('<option></option>');
@@ -50,7 +50,6 @@ $(function () {
         // append product
 
         $('.products-container').append(product);
-
     });
 
     function createProduct(productName, productId) {
