@@ -41,7 +41,6 @@ $(function () {
             var option = $('<option></option>');
 
             $('#names').append(option);
-            $('option:nth-of-type(1)').attr('disabled', 'disabled');
             option.html(names[i].name);
         }
     }
@@ -63,8 +62,18 @@ $(function () {
 
     addNamesToList(names);
 
-    $('#names').change(function() {
+    $('#names').change(function () {
         var selected = $(this).find(':selected');
+        var selectedOption = selected.val();
 
+        $('#namesList li').remove();
+
+        if (selectedOption) {
+
+            var listItem = $('<li></li>');
+            var selectedName = listItem.html(selectedOption);
+
+            $('#namesList').append(selectedName);
+        }
     });
 });
