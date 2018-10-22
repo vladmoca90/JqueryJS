@@ -13,9 +13,9 @@ $(function () {
             var productsObject = new Object();
 
             productsObject.name = $('.product').eq(i).attr('data-product-name'),
-            productsObject.id = $('.product').eq(i).attr('data-product-id'),
+                productsObject.id = $('.product').eq(i).attr('data-product-id'),
 
-            products.push(productsObject);
+                products.push(productsObject);
         }
     }
 
@@ -26,13 +26,52 @@ $(function () {
             throw new Error('The products list must be given');
         }
 
-         for (var i = 0; i < products.length; i++) {
+        $('#productsList option:nth-of-type(1)').attr('value', 0);
+
+        for (var i = 0; i < products.length; i++) {
             var option = $('<option></option>');
 
             $('#productsList').append(option);
+            option.attr('value', products[i].id);
+            option.val(products[i].name);
             option.html(products[i].name);
         }
     }
 
     addProductsToList(products);
+
+    $('#productsList').change(function () {
+        var selected = $(this).find(':selected');
+        var selectedOption = selected.val();
+
+        $('.product').remove();
+
+        var product = createProduct(selectedOption, selected.attr());
+        // append product
+
+        $('.products-container').append(product);
+    });
+
+    function createProduct(productName, productId) {
+        var element = $('<div class="product">  \
+            <div class="product-description__left"> \
+                <h1>Product title</h1>\
+            </div>\
+            <div class="product-description__right">\
+                <img src="#"/>\
+            </div>\
+        </div>');
+
+        // use the parameters
+
+        // wtf are you doing? ai deja the right  parameters
+
+        // ce rahat faci aici? seteaza atributele
+
+        element.attr('data-product-name', productName);
+        element.attr('data-product-id', productId);
+
+        return element;
+    }
 });
+    
