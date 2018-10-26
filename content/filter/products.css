@@ -1,15 +1,15 @@
-#productsList {
+.box #productsList {
   font-size: 14px;
   height: 24px;
   padding: 2px;
   width: 120px; }
 
-.product {
+.box .product {
   border-bottom: 1px solid #ccc;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400; }
-  .product h3 {
+  .box .product h3 {
     text-transform: uppercase; }
-  .product img {
+  .box .product img {
     margin-left: -6%;
     max-width: 300px; }

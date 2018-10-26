@@ -44,39 +44,7 @@ $(function () {
         var selected = $(this).find(':selected');
         var selectedOption = selected.val();
 
-        if (selectedOption == 0) {
-            $('.product').show();
-        }
-        if (selectedOption !== 0) {
-
             $('.product').hide();
-
-            var product = createProduct(selected.html(), selectedOption);
-            // append product
-
-            $('.products-container').append(product);
-        }
     });
 
-    function createProduct(productName, productId) {
-        var element = $('<div class="product">  \
-            <div class="product-description__left"> \
-                <h1>Product title</h1>\
-            </div>\
-            <div class="product-description__right">\
-                <img src="#"/>\
-            </div>\
-        </div>');
-
-        // use the parameters
-
-        // wtf are you doing? ai deja the right  parameters
-
-        // ce rahat faci aici? seteaza atributele
-
-        element.attr('data-product-name', productName);
-        element.attr('data-product-id', productId);
-
-        return element;
-    }
 });
