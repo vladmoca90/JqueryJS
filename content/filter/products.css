@@ -2,14 +2,14 @@
   font-size: 14px;
   height: 24px;
   padding: 2px;
-  width: 120px; }
+  max-width: 120px; }
 
 .box .product {
   border-bottom: 1px solid #ccc;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  max-width: 300px; }
   .box .product h3 {
     text-transform: uppercase; }
   .box .product img {
-    margin-left: -6%;
     max-width: 300px; }
