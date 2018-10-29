@@ -10,12 +10,12 @@ $(function () {
         var productsList = $('.products-container').find('.product');
 
         for (var i = 0; i < productsList.length; i++) {
-            var productsObject = new Object();
+            var productsObj = new Object();
 
-            productsObject.name = $('.product').eq(i).attr('data-product-name'),
-            productsObject.id = $('.product').eq(i).attr('data-product-id'),
+            productsObj.name = $('.product').eq(i).attr('data-product-name'),
+            productsObj.id = $('.product').eq(i).attr('data-product-id'),
 
-            products.push(productsObject);
+            products.push(productsObj);
         }
     }
 
@@ -45,6 +45,15 @@ $(function () {
         var selectedOption = selected.val();
 
         $('.product').hide();
-    });
 
+        var matchedValue = `.product[data-product-id=${selectedOption}]`;
+
+        if(selectedOption == 0) {
+            $('.product').show();
+        }
+        if(selectedOption !== 0) {
+            $(matchedValue).show();
+        }
+
+    });
 });
