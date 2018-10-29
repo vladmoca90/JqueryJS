@@ -13,9 +13,9 @@ $(function () {
             var productsObject = new Object();
 
             productsObject.name = $('.product').eq(i).attr('data-product-name'),
-                productsObject.id = $('.product').eq(i).attr('data-product-id'),
+            productsObject.id = $('.product').eq(i).attr('data-product-id'),
 
-                products.push(productsObject);
+            products.push(productsObject);
         }
     }
 
@@ -44,7 +44,7 @@ $(function () {
         var selected = $(this).find(':selected');
         var selectedOption = selected.val();
 
-            $('.product').hide();
+        $('.product').hide();
     });
 
 });
