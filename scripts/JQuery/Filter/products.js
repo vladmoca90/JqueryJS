@@ -46,7 +46,7 @@ $(function () {
 
         $('.product').hide();
 
-        var matchedValue = `.product[data-product-id=${selectedOption}]`;
+        var matchedValue = `.product[data-product-id=Wrote with bak-tickes${selectedOption}]`;
 
         if(selectedOption == 0) {
             $('.product').show();
