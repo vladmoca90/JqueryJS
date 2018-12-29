@@ -124,9 +124,9 @@ $(function () {
 
         for (i = 0; i < data.stations.length; i++) {
             var stationOption = $('<div class="content-stations__col"></div>');
+
             stationOption.val(data.stations[i].name);
             stationOption.html(data.stations[i].name);
-
             stationContainer.append(stationOption);
         }
     }

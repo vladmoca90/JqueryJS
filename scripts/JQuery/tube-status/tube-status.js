@@ -85,6 +85,8 @@ $(function () {
             throw new Error('The line names and statuses must be given');
         }
 
+        var body = $('.tube__body');
+
         for (i = 0; i < data.lines.length; i++) {
             var row = $('<tr></tr>');
             var tubeLines = $('<td class="tube__lines"></td>');
@@ -96,20 +98,11 @@ $(function () {
             linesStatus.val(data.lines[i].status);
             linesStatus.html(data.lines[i].status);
 
-            $('.tube__body').append(row);
+            body.append(row);
             row.append(tubeLines);
             row.append(linesStatus);
         }
     }
 
     getTubeLines(data);
-
-    function addStatusColors(data) {
-
-        for (i = 0; i < data.lines.length; i++) {
-
-        }
-    }
-
-    addStatusColors(data);
 });

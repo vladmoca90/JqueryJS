@@ -29,9 +29,7 @@ $(function () {
 
     var dropList = $('.dropdown__list');
 
-    var dropItem = $('.dropdown__list-item');
-
-    dropBtn.click(function () {
+    dropBtn.on('click', function () {
         dropList.slideToggle(250);
     });
 
@@ -43,6 +41,7 @@ $(function () {
 
         for (i = 0; i < data.persons.length; i++) {
             var nameOption = $('<li class="dropdown__list-item"></li>');
+
             nameOption.val(data.persons[i].name);
             nameOption.html(data.persons[i].name);
 
