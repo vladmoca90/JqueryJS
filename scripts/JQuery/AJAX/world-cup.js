@@ -37,7 +37,6 @@ $(function () {
                 var loses = $('<td></td>');
                 var points = $('<td></td>');
 
-                name.val(groups[i].countries[j].name);
                 name.html(groups[i].countries[j].name);
                 matches.html(0);
                 wins.html(0);
