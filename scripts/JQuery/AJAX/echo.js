@@ -6,7 +6,7 @@ $(function () {
 
     var submit = $('#echoSubmit');
 
-    submit.click(function () {
+    submit.on('click', function () {
 
         var content = $('#echoPost').val();
 

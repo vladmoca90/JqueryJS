@@ -6,7 +6,6 @@ $(function () {
         var tableHead = $('<thead class="table-head"></thead>');
         var heading = $('<th colspan="6"></th>');
 
-        heading.val(group.groupLabel);
         heading.html(group.groupLabel);
 
         $('#main').append(table);
@@ -23,7 +22,6 @@ $(function () {
             var loses = $('<td></td>');
             var points = $('<td></td>');
 
-            name.val(group.countries[i].name);
             name.html(group.countries[i].name);
             matches.html(0);
             wins.html(0);

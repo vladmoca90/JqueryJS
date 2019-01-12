@@ -43,7 +43,7 @@ $(function () {
 
     populateDropWithPageSizes(sizes);
 
-    $('#pagesDrop').change(function() {
+    $('#pagesDrop').on('change', function () {
         var selectedOption = $(this).find(':selected').val();
 
         Cookies.set('pageSizeValue', selectedOption);
@@ -84,7 +84,7 @@ $(function () {
         }
     });
 
-    $('#next').click(function () {
+    $('#next').on('click', function () {
 
         $.ajax(nextUrl, {
             method: 'GET',
@@ -115,7 +115,7 @@ $(function () {
         });
     });
 
-    $('#prev').click(function () {
+    $('#prev').on('click', function () {
 
         $.ajax(prevUrl, {
             method: 'GET',

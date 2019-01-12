@@ -19,7 +19,6 @@ $(function () {
 
             groupLink.attr('href', 'world-cup-group.html?group=' + groups[i].groupLabel);
 
-            heading.val(groups[i].groupLabel);
             heading.html(groups[i].groupLabel);
 
             $('#main').append(groupLink);

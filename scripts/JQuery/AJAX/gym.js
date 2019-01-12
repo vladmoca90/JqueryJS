@@ -19,7 +19,7 @@ $(function () {
         throw new Error('The error code ' + errorCode + ' is not valid.');
     }
 
-    enter.click(function () {
+    enter.on('click', function () {
 
         var enterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/enter';
 
@@ -41,7 +41,7 @@ $(function () {
             },
         });
     });
-    exit.click(function () {
+    exit.on('click', function () {
 
         var exitUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/exit';
 
@@ -64,7 +64,7 @@ $(function () {
         });
     });
 
-    register.click(function () {
+    register.on('click', function () {
 
         var registerUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/register';
 
@@ -87,7 +87,7 @@ $(function () {
         });
     });
 
-    unregister.click(function () {
+    unregister.on('click', function () {
 
         var unregisterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/unregister';
 
