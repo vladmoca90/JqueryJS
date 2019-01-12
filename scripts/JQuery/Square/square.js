@@ -16,7 +16,7 @@
         "color": "#f00"
     });
 
-    $(".square__list").children("li").not("li.second").click(function() {
+    $(".square__list").children("li").not("li.second").on('click', function() {
         $(this).css("color", "#0000ff");
     });
 

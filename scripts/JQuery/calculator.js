@@ -26,7 +26,7 @@ $(function () {
         $('#display').append(operator);
     });
 
-    // $('.result > #equal').click(function() {
+    // $('.result > #equal').on('click', function() {
     //     var result = $('.number').html();
     //     var finalResult = $('<span class="result"></span>');
 

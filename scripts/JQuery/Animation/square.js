@@ -1,7 +1,7 @@
 ﻿$(function () {
 
 
-    $("#button").click(function() {
+    $("#button").on('click', function() {
 
          $(".square, .square__child").animate({
             borderRadius: "100%",
