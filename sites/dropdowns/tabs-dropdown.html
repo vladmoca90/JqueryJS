@@ -31,14 +31,14 @@
         <form class="search-form">
             <div class="container">
                 <div class="form-tabs">
-                    <input type="radio" id="carsTab" name="button" value="cars" checked="checked"/>
+                    <input type="radio" id="cars" name="button" value="cars"/>
                     <label for="carsTab">Cars</label>
 
-                    <input type="radio" id="vansTab" name="button" value="vans" />
+                    <input type="radio" id="vans" name="button" value="vans" />
                     <label for="vansTab">Vans</label>
                 </div>
-                <ul class="search-panel list-unstyled">
-                    <li id="carsMakesModels" data-name="cars">
+                <ul class="search-panel list-unstyled" id="carsTab" class="tab">
+                    <li>
                         <select class="search-by-make" name="make">
                             <option value="any">Make cars</option>
                             <option value="ABARTH">Abarth</option>
@@ -69,8 +69,8 @@
                         </select>
                     </li>
                 </ul>
-                <ul class="search-panel list-unstyled">
-                    <li id="vansMakesModels" data-name="vans">
+                <ul class="search-panel list-unstyled" id="vansTab" class="tab">
+                    <li>
                         <select class="search-by-make" name="make">
                             <option value="any">Make vans</option>
                             <option value="ABARTH">Abarth</option>
