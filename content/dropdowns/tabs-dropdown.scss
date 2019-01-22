@@ -6,6 +6,14 @@
     display: block;
 }
 
-.forms-tab input {
-    display: none;
+.form-tabs {
+    input {
+        display: none;
+    }
+
+    label {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 7px 12px;
+    }
 }
