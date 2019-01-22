@@ -1,9 +1,9 @@
-$(function() {
+$(function () {
 
     $('#vanMakesModels').addClass('hide-select');
 
-    $('.form-tabs button').click(function() {
-
+    $('.form-tabs button').click(function () {
+       
     });
 
 });
