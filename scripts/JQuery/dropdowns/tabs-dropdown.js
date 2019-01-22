@@ -4,15 +4,15 @@ $(function () {
     $('#carsMakesModels').show();
 
     $('.form-tabs label').click(function () {
-       if($('#carsTab').is(':checked')) {
-           $('#vansMakesModels').hide();
+        if ($('#carsTab').is(':checked')) {
+            $('#vansMakesModels').hide();
             $('#carsMakesModels').show();
-       }
-       if($('#vansTab').is(':checked')) {
-           $('#carsMakesModels').hide();
+        }
+        if ($('#vansTab').is(':checked')) {
+            $('#carsMakesModels').hide();
             $('#vansMakesModels').show();
-       }
-       
+        }
+
     });
 
 });
