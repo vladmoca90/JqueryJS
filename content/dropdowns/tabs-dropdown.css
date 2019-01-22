@@ -4,10 +4,17 @@
 .show-select {
   display: block; }
 
-.form-tabs input {
-  display: none; }
-
-.form-tabs label {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 7px 12px; }
+.form-tabs {
+  margin: 20px 0; }
+  .form-tabs input {
+    display: none; }
+  .form-tabs label {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    transition: color .75s ease-in;
+    width: 90px; }
+    .form-tabs label:hover {
+      background-color: #ddd; }

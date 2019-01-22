@@ -1,8 +1,17 @@
 $(function () {
 
-    $('#vanMakesModels').addClass('hide-select');
+    $('#vansMakesModels').hide();
+    $('#carsMakesModels').show();
 
-    $('.form-tabs button').click(function () {
+    $('.form-tabs label').click(function () {
+       if($('#carsTab').is(':checked')) {
+           $('#vansMakesModels').hide();
+            $('#carsMakesModels').show();
+       }
+       if($('#vansTab').is(':checked')) {
+           $('#carsMakesModels').hide();
+            $('#vansMakesModels').show();
+       }
        
     });
 

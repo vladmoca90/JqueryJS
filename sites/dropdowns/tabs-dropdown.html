@@ -31,14 +31,14 @@
         <form class="search-form">
             <div class="container">
                 <div class="form-tabs">
-                    <input type="radio" id="carsTab" name="button" value="cars" />
+                    <input type="radio" id="carsTab" name="button" value="cars"/>
                     <label for="carsTab">Cars</label>
 
                     <input type="radio" id="vansTab" name="button" value="vans" />
                     <label for="vansTab">Vans</label>
                 </div>
                 <ul class="search-panel list-unstyled">
-                    <li id="carMakesModels" class="show-select">
+                    <li id="carsMakesModels" data-name="cars">
                         <select class="search-by-make" name="make">
                             <option value="any">Make cars</option>
                             <option value="ABARTH">Abarth</option>
@@ -70,7 +70,7 @@
                     </li>
                 </ul>
                 <ul class="search-panel list-unstyled">
-                    <li id="vanMakesModels">
+                    <li id="vansMakesModels" data-name="vans">
                         <select class="search-by-make" name="make">
                             <option value="any">Make vans</option>
                             <option value="ABARTH">Abarth</option>
