@@ -1,18 +1,19 @@
 $(function () {
 
-    $('#vansMakesModels').hide();
-    $('#carsMakesModels').show();
+    var cars = $('#carsMakesModels');
+    var vans = $('#vansMakesModels');
+
+    vans.hide();
+    cars.show();
 
     $('.form-tabs label').click(function () {
         if ($('#carsTab').is(':checked')) {
-            $('#vansMakesModels').hide();
-            $('#carsMakesModels').show();
+            vans.hide();
+            cars.show();
         }
         if ($('#vansTab').is(':checked')) {
-            $('#carsMakesModels').hide();
-            $('#vansMakesModels').show();
+            cars.hide();
+            vans.show();
         }
-
     });
-
 });
