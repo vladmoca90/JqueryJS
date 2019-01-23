@@ -3,6 +3,7 @@ $(function () {
     $('#vansTab').hide();
 
     $('.form-tabs input').change(function () {
+        console.log('CHANGED');
         var tabId = $(this).attr(id);
         $('.tab').hide();
 
