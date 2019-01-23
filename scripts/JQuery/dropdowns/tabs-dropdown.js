@@ -2,6 +2,7 @@ $(function () {
 
     var allCars = [];
     var carMakes = [];
+    var allCars = { "makes": [] };
 
     function getCarMakes(carMakes) {
         if (!carMakes) {
