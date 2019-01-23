@@ -4,10 +4,10 @@ $(function () {
 
     $('.form-tabs input').change(function () {
         console.log('CHANGED');
-        var tabId = $(this).attr(id);
+        var tabId = $(this).attr('id');
         $('.tab').hide();
 
-        $(tabId + 'Tab').show();
+        $('#' + tabId + 'Tab').show();
     });
 
     $('.search-by-make').change(function () {
