@@ -6,7 +6,7 @@ $(function () {
     vans.hide();
     cars.show();
 
-    $('input').on('change', function () {
+    $('.form-tabs input').on('change', function () {
         var inputField = $(this);
         var id = inputField.attr('id');
         // hide all tabs
