@@ -1,29 +1,21 @@
 $(function () {
 
-    var cars = $('#carsTab');
-    var vans = $('#vansTab');
+    var allCars = [];
+    var carMakes = [];
 
-    vans.hide();
-    cars.show();
-
-    // $('.form-tabs input').on('change', function () {
-    //     var inputField = $(this);
-    //     var id = inputField.attr('id');
-    //     // hide all tabs
-    //     $('.tab').hide();
-    //     // show selected tab
-    //     $('#' + id + 'Tab').show();
-    // });
-
-    $('.form-tabs label').on('click', function () {
-
-        if ($('#cars').is(':checked')) {
-            vans.hide();
-            cars.show();
+    function getCarMakes(carMakes) {
+        if (!carMakes) {
+            throw new Error('Car makes must be provided');
         }
-        if ($('#vans').is(':checked')) {
-            vans.show();
-            cars.hide();
+
+        var getMakes = $('#carsTab').find('.search-by-make option');
+
+        for (var i = 0; i < getMakes.length; i++) {
+            carMakes.push($('.search-by-make').find('option').eq(i).attr('value'));
         }
-    });
+
+        return carMakes;
+    }
+
+    getCarMakes(carMakes);
 });
