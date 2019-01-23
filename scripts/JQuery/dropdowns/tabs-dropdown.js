@@ -6,17 +6,16 @@ $(function () {
     vans.hide();
     cars.show();
 
-    $('input').change(function (e) {
+    $('input').change(function () {
         var inputField = $(this);
         var id = inputField.attr('id');
         // hide all tabs
-        $('tab').hide();
+        $('.tab').hide();
         // show selected tab
-        $(id + 'Tab').show();
+        $('#' + id + 'Tab').show();
     })
 
     $('.form-tabs label').click(function () {
-        console.log('click was executed');
 
         if ($('#carsTab').is(':checked')) {
             vans.hide();
