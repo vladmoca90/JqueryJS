@@ -1,44 +1,25 @@
 .form-validation {
   background-color: #fafafa;
-  max-width: 500px;
+  max-width: 600px;
   margin: 30px auto;
-  padding: 20px; }
+  padding: 25px; }
   .form-validation div[class="form-group"] {
+    display: flex;
+    justify-content: space-around;
     line-height: 34px;
     margin-left: 0px;
     margin-right: 0px; }
-  .form-validation input[name="firstName"],
-  .form-validation input[name="lastName"],
-  .form-validation input[type="password"],
-  .form-validation input[type="email"] {
-    float: right; }
   .form-validation input[type="text"],
   .form-validation input[type="password"],
   .form-validation input[type="email"] {
-    width: 75%; }
+    width: 300px; }
   .form-validation input[type="date"] {
-    width: 37%; }
+    width: 200px; }
   .form-validation input[name="age"] {
-    width: 10%; }
-
-.form-validation label,
-input[name="age"],
-input[name="dateOfBirth"],
-.location-container,
-.buttons-container {
-  float: left; }
-
-.buttons-container {
-  margin-left: 7% !important; }
-
-input[name="dateOfBirth"] {
-  margin-left: 5%; }
-
-input[name="age"] {
-  margin-left: 18%; }
+    width: 100px; }
 
 .location-container {
-  margin-left: 10% !important;
+  margin-left: 20px;
   max-width: 200px; }
 
 .buttons-container {
