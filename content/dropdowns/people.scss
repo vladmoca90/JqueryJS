@@ -4,7 +4,7 @@
 
 .dropdown {
     border-radius: 8px;
-    @include font-prop(16px, $font-color, $arial);
+    @include font(16px, $font-color, $arial);
     margin: 50px auto;
     max-width: 200px;
     text-align: center;

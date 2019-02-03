@@ -3,7 +3,7 @@
 @import '../mixins/mixins.scss';
 
 .departures {
-    @include font-prop(15px, $font-color, $gill-sans);
+    @include font(15px, $font-color, $gill-sans);
     margin: 20px auto;
     max-width: 800px;
     width: 100%;

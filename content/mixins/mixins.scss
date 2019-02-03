@@ -43,7 +43,7 @@
     width: 0;
 }
 
-@mixin font-prop($size, $color, $family) {
+@mixin font($size, $color, $family) {
     font: {
         size: $size;
         family: $family;
