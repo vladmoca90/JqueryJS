@@ -1,14 +1,17 @@
-var x = document.getElementById("demo");
+$(function () {
+    var x = $('#demo');
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.text() == "Geolocation is not supported by this browser.";
+        }
+    }
 
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
+    function showPosition(position) {
+        x.text() == position.coords.latitude + ' ' + position.coords.longitude;
+    }
+
+     getLocation();
+});
