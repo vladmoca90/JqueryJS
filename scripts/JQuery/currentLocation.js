@@ -9,7 +9,7 @@ $(function () {
     }
 
     function showPosition(position) {
-        $('#demo').html(position.coords.latitude.toFixed(2) + ' ' + position.coords.longitude.toFixed(2));
+        $('#demo').html(position.coords.latitude + ' ' + position.coords.longitude);
     }
 
      getLocation();
