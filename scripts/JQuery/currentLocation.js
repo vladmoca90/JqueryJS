@@ -4,12 +4,12 @@ $(function () {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else {
-            $('#demo').html("Geolocation is not supported by this browser.");
+            $('#coordinates').html("Geolocation is not supported by this browser.");
         }
     }
 
     function showPosition(position) {
-        $('#demo').html(position.coords.latitude + ' ' + position.coords.longitude);
+        $('#coordinates').html(position.coords.latitude + ' ' + position.coords.longitude);
     }
 
      getLocation();
