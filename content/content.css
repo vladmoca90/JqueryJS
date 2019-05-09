@@ -1,16 +1,12 @@
 .links {
   display: flex;
-  justify-content: space-between; }
-
-a {
-  padding: 2px 2px;
-  text-decoration: none;
-  font: bold 8px Verdana, Georgia, "Times New Roman", Times, serif;
-  color: #68759c; }
-
-a:hover {
-  color: #8895b8;
-  border: none; }
+  justify-content: space-between;
+  max-width: 500px; }
+  .links a {
+    padding: 2px 2px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #68759c; }
 
 .pbox {
   display: none; }
