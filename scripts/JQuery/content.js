@@ -3,10 +3,9 @@ $(document).ready(function () {
 
     $('a').click(function () {
         console.log('CHANGED');
-        // fade in new selected subcontent
-        var content = $(this).attr('data-id');
-            $('.pbox').hide();
 
+        var content = $(this).attr('data-id');
+        $('.pbox').hide();
         $('#' + content).show();
     });
 });
