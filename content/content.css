@@ -4,8 +4,9 @@
   max-width: 500px;
   margin: 20px auto; }
   .links a {
-    padding: 2px 2px;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none; }
 
 .links-content {
   max-width: 300px;
