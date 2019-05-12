@@ -4,8 +4,11 @@
   max-width: 500px;
   margin: 20px auto; }
   .links a {
+    background-color: #cb2000;
+    border-radius: 4px;
+    color: #fff;
     font-size: 16px;
-    padding: 5px;
+    padding: 8px 5px;
     text-decoration: none; }
 
 .links-content {
