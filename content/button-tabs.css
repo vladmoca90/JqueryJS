@@ -1,14 +1,14 @@
 .links {
   display: flex;
   justify-content: space-between;
-  max-width: 600px;
+  max-width: 640px;
   margin: 20px auto; }
   .links a {
     background-color: #cb2000;
     border-radius: 4px;
     color: #fff;
     font-size: 15px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 8px 6px;
     text-decoration: none;
     text-transform: uppercase; }
