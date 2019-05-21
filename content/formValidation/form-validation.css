@@ -1,20 +1,17 @@
 .form-validation {
   background-color: #fafafa;
-  max-width: 600px;
   margin: 30px auto;
-  padding: 25px; }
+  padding: 25px 0; }
   .form-validation div[class="form-group"] {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     line-height: 34px;
-    margin-left: 0px;
-    margin-right: 0px; }
+    margin-left: 0;
+    margin-right: 0; }
   .form-validation input[type="text"],
   .form-validation input[type="password"],
   .form-validation input[type="email"] {
     width: 300px; }
-  .form-validation input[type="date"] {
-    width: 200px; }
   .form-validation input[name="age"] {
     width: 100px; }
 
