@@ -5,17 +5,18 @@
   padding: 25px 0; }
   .form-validation div[class="form-group"] {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     line-height: 34px;
     margin-left: 0;
     margin-right: 0; }
     .form-validation div[class="form-group"] input[type="text"],
     .form-validation div[class="form-group"] input[type="password"],
     .form-validation div[class="form-group"] input[type="email"] {
-      float: right;
       width: 300px; }
     .form-validation div[class="form-group"] input[name="age"] {
       width: 75px; }
+    .form-validation div[class="form-group"] span {
+      display: none; }
 
 .location-container {
   margin-left: 20px;

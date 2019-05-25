@@ -32,22 +32,22 @@
     <form role="form" class="form-validation form-horizontal u-full-width u-border">
         <div role="group" class="form-group">
             <label for="firstName">First Name:</label>
-            <input role="textbox" class="form-control" type="text" name="firstName" id="firstName" onblur="firstName()" />
+            <input role="textbox" class="form-control" type="text" name="firstName" id="firstName"/>
             <span></span>
         </div>
         <div role="group" class="form-group">
             <label for="lastName">Last Name:</label>
-            <input role="textbox" class="form-control" type="text" name="lastName" id="lastName" onblur="lastName()" />
+            <input role="textbox" class="form-control" type="text" name="lastName" id="lastName"/>
             <span></span>
         </div>
         <div role="group" class="form-group">
             <label for="validEmail">Email:</label>
-            <input role="textbox" class="form-control" type="email" name="mail" id="mail" onblur="mailValidation()" />
+            <input role="textbox" class="form-control" type="email" name="mail" id="mail"/>
             <span></span>
         </div>
         <div role="group" class="form-group">
             <label for="pass">Password:</label>
-            <input role="textbox" class="form-control" type="password" name="pass" id="pass" onblur="passValidation()" />
+            <input role="textbox" class="form-control" type="password" name="pass" id="pass"/>
             <span></span>
         </div>
         <div role="group" class="form-group">
@@ -89,7 +89,7 @@
             <textarea role="textbox" rows="3" cols="60"></textarea>
         </div>
         <div role="group" class="submit-reset u-full-width">
-            <button role="button" type="submit" onclick="sendForm()">Submit</button>
+            <button role="button" type="submit" id="submit">Submit</button>
             <button role="button" type="reset">Reset</button>
         </div>
     </form>
