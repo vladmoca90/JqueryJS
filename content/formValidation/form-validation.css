@@ -1,19 +1,21 @@
 .form-validation {
   background-color: #fafafa;
-  margin: 30px auto;
+  margin: 25px auto;
+  max-width: 650px;
   padding: 25px 0; }
   .form-validation div[class="form-group"] {
     display: flex;
-    justify-content: space-between;
     line-height: 34px;
     margin-left: 0;
     margin-right: 0; }
+    .form-validation div[class="form-group"] input {
+      float: right; }
   .form-validation input[type="text"],
   .form-validation input[type="password"],
   .form-validation input[type="email"] {
     width: 300px; }
   .form-validation input[name="age"] {
-    width: 100px; }
+    width: 75px; }
 
 .location-container {
   margin-left: 20px;
