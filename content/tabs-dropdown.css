@@ -6,10 +6,10 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     cursor: pointer;
-    height: 30px;
+    font-size: 18px;
+    height: 32px;
     line-height: 26px;
     text-align: center;
-    transition: color .75s ease-in;
-    width: 90px; }
+    width: 108px; }
     .form-tabs label:hover {
       background-color: #ddd; }
