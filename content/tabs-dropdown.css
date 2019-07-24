@@ -10,6 +10,9 @@
     height: 32px;
     line-height: 26px;
     text-align: center;
-    width: 108px; }
+    width: 125px; }
     .form-tabs label:hover {
       background-color: #ddd; }
+
+.search-panel select {
+  width: 125px; }

@@ -13,10 +13,16 @@
         height: 32px;
         line-height: 26px;
         text-align: center;
-        width: 108px;
+        width: 125px;
 
         &:hover {
             background-color: #ddd;
         }
+    }
+}
+
+.search-panel {
+    select, option {
+        width: 125px;
     }
 }
