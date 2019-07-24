@@ -14,5 +14,5 @@
     .form-tabs label:hover {
       background-color: #ddd; }
 
-.search-panel select {
+.search-panel select, .search-panel option {
   width: 125px; }
