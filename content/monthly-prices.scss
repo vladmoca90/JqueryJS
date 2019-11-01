@@ -6,4 +6,10 @@ body {
 .prices-container {
     margin: 25px  auto 0;
     max-width: 600px;
+
+    .titles {
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        padding: 10px;
+    }
 }
