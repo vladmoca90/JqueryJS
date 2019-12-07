@@ -12,13 +12,12 @@ body {
     text-decoration: none; }
   .prices-container .vehicle-title {
     font-size: 21px;
-    margin: 0;
-    width: 67%; }
+    margin: 0; }
   .prices-container .titles {
     border: 1px solid #ccc;
     margin-top: 25px;
     padding: 20px 10px; }
   .prices-container .vehicle-price {
-    width: 33%; }
+    text-align: right; }
     .prices-container .vehicle-price .car-price {
       font-size: 16px; }
