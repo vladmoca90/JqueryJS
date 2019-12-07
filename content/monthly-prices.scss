@@ -7,6 +7,17 @@ body {
     margin: 25px  auto 0;
     max-width: 600px;
 
+    .title-link {
+        color: #222;
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+
+    .vehicle-title {
+        font-size: 24px;
+    }
+
     .titles {
         border: 1px solid #ccc;
         margin-top: 20px;
