@@ -11,8 +11,9 @@ body {
     justify-content: space-between;
     text-decoration: none; }
   .prices-container .vehicle-title {
-    font-size: 21px; }
+    font-size: 21px;
+    margin: 0; }
   .prices-container .titles {
     border: 1px solid #ccc;
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 10px; }
