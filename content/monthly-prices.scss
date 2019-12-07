@@ -17,11 +17,23 @@ body {
     .vehicle-title {
         font-size: 21px;
         margin: 0;
+        width: 67%;
     }
 
     .titles {
         border: 1px solid #ccc;
         margin-top: 25px;
-        padding: 10px;
+        padding: 20px 10px;
+    }
+
+    .vehicle-price {
+        width: 33%;
+
+        .car-price {
+            font-size: 16px;
+        }
+        .vehicle-price-extra {
+            font-size: 13px;
+        }
     }
 }
