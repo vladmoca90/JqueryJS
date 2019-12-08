@@ -1,9 +1,9 @@
-$(function() {
-    var price = $('.car-price').text();
+$(function () {
+    let vehicles = $('.vehicle-price');
 
-    function calculateMonthlyPrice(price) {
-        
+    for (let i = 0; i < vehicles.length; i++) {
+        let vehicle = $(vehicles[i]);
+
     }
 
-    calculateMonthlyPrice(price);
 });
