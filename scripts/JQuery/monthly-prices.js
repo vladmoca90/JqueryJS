@@ -1,20 +1,22 @@
 $(function () {
-    let vehicles = $('.vehicle-price');
+    var vehicles = $('.vehicle-price');
 
-    function getVehiclePrice(vehicles) {
+    function getVehiclePrices(vehicles) {
 
         if (vehicles.length == 0) {
             throw new Error('The vehicles list must be given');
         }
 
-        for (let i = 0; i < vehicles.length; i++) {
-            let vehicle = $(vehicles[i]);
+        for (var i = 0; i < vehicles.length; i++) {
+            var vehicle = $(vehicles[i]);
 
-            let vehPrice = vehicle.children('.car-price').html().replace(',', '').trim().substring(1);
+            var vehPrice = parseInt(vehicle.children('.car-price').html().replace(',', '').trim().substring(1));
 
-            return parseInt(vehPrice);
+            var calcMonthlyPrice = (vehPrice) / 12;
+
+            $('.monthly-price').text('£' + calcMonthlyPrice.toFixed(2));
         }
     }
 
-    getVehiclePrice(vehicles);
+    getVehiclePrices(vehicles);
 });
