@@ -11,9 +11,11 @@ $(function () {
 
             let vehPrice = vehicle.children('.car-price').html().replace(',', '').trim().substring(1);
 
-            let calcMonthlyPrice = parseInt(vehPrice);
+            let price = parseInt(vehPrice);
 
-            vehicle.children('.monthly-price').text('£' + ((calcMonthlyPrice)/12).toFixed(2) + '/month');
+            let monthlyPrice = (price/12).toFixed(2);
+
+            vehicle.children('.monthly-price').text('£' + monthlyPrice + '/month');
         }
     }
 
