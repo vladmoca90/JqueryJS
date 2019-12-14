@@ -1,7 +1,7 @@
 .links {
   display: flex;
   justify-content: space-between;
-  max-width: 640px;
+  max-width: 720px;
   margin: 20px auto; }
   .links a {
     background-color: #cb2000;
@@ -9,7 +9,7 @@
     color: #fff;
     font-size: 15px;
     letter-spacing: 1px;
-    padding: 7px 14px;
+    padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase; }
 
