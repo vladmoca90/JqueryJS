@@ -1,6 +1,6 @@
 .links {
     display: flex;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: space-between;
     max-width: 720px;
     margin: 20px auto;
@@ -10,7 +10,7 @@
         border-radius: 4px;
         color: #fff;
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 1px;
         padding: 10px 15px;
         text-decoration: none;
@@ -25,6 +25,7 @@
 
 .pbox {
     display: none;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
