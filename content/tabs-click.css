@@ -8,6 +8,7 @@
     border-radius: 4px;
     color: #fff;
     font-size: 15px;
+    font-weight: 700;
     letter-spacing: 1px;
     padding: 10px 15px;
     text-decoration: none;
@@ -18,7 +19,8 @@
   margin: 20px auto 0; }
 
 .pbox {
-  display: none; }
+  display: none;
+  text-transform: uppercase; }
 
 #div1 {
   display: block; }

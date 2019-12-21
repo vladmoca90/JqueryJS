@@ -1,5 +1,6 @@
 .links {
     display: flex;
+    
     justify-content: space-between;
     max-width: 720px;
     margin: 20px auto;
@@ -9,6 +10,7 @@
         border-radius: 4px;
         color: #fff;
         font-size: 15px;
+        font-weight: 700;
         letter-spacing: 1px;
         padding: 10px 15px;
         text-decoration: none;
@@ -23,6 +25,7 @@
 
 .pbox {
     display: none;
+    text-transform: uppercase;
 }
 
 #div1 {
