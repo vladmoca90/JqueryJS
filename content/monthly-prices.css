@@ -4,7 +4,7 @@ body {
 
 .prices-container {
   margin: 25px  auto 0;
-  max-width: 600px; }
+  max-width: 720px; }
   .prices-container .title-link {
     color: #222;
     display: flex;
@@ -12,15 +12,18 @@ body {
     text-decoration: none;
     width: 100%; }
   .prices-container .vehicle-title {
-    font-size: 21px;
+    font-size: 20px;
     margin: 0; }
   .prices-container .titles {
     border: 1px solid #ccc;
     margin-top: 25px;
     padding: 30px 10px; }
   .prices-container .vehicle-price {
+    line-height: 21px;
     text-align: right; }
     .prices-container .vehicle-price .car-price {
-      font-size: 16px; }
+      font-size: 18px; }
   .prices-container .monthly-price {
-    display: block; }
+    display: block;
+    font-size: 16px;
+    font-weight: bold; }
