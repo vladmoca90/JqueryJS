@@ -5,8 +5,8 @@ $(function () {
     textBlock.on('keyup', function () {
         var count = $(this).val().length;
 
-        if(count > 1000) {
-            throw new Error('you have more words than the limmit');
+        if(count > 100) {
+            throw new Error('you have more words than the 1000 words limit');
         }
 
         words.text(count + '/' + textBlock.attr('maxlength'));
