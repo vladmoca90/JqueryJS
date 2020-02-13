@@ -26,5 +26,15 @@
         },
     ];
 
+    function addPeople(people) {
+        if (people.length == 0) {
+            throw new Error('The data must be given');
+        }
 
+        for (var i = 0; i < people.length; i++) {
+
+        }
+    }
+
+    addPeople(people);
 });
