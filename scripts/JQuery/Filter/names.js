@@ -92,11 +92,13 @@ $(function () {
         $('#namesList li').remove();
 
         if (selectedOption) {
-
             var listItem = $('<li></li>');
             var selectedName = listItem.html(selectedOption);
 
             $('#namesList').append(selectedName);
+        }
+        if(selectedOption == $('#names').eq(0)) {
+
         }
     });
 });
