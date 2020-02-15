@@ -32,10 +32,7 @@
         }
 
         for (var i = 0; i < people.length; i++) {
-            $('.table .first-name').text(people[i].firstName);
-            $('.table .last-name').text(people[i].lastName);
-            $('.table .age').text(people[i].age);
-            $('.table .country').text(people[i].nationality);
+          
         }
     }
 
