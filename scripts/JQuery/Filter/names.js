@@ -1,32 +1,54 @@
 var names = [{
         name: "Vlad Mocanu",
+        id: 20,
     },
     {
         name: "Alexandru Mocanu",
+        id: 20,
+    },
+    {
+        name: "Jamie Burton",
+        id: 11,
     },
     {
         name: "Rebecca Docherty",
+        id: 27,
     },
     {
         name: "Leon Williams",
+        id: 7,
     },
     {
         name: "Klaudia Rudna",
+        id: 16,
     },
     {
         name: "Libo Bian",
+        id: 20,
+    },
+    {
+        name: "Gabriela-Simina Adamescu",
+        id: 11,
     },
     {
         name: "Zubair Hossain",
+        id: 15,
     },
     {
         name: "Phil Gill",
+        id: 9,
     },
     {
         name: "Liam Monticelli",
+        id: 30,
     },
     {
         name: "Dara Djakovic",
+        id: 21,
+    },
+    {
+        name: "Andreea-Corina Nisipeanu",
+        id: 20,
     },
 ];
 
