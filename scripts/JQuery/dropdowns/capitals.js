@@ -57,13 +57,13 @@ var data = {
 }
 
 $(function () {
-    function populateCountriesDrop(data, dropdownId) {
+    function populateCountriesDrop(data) {
 
         if (data.length == 0) {
             throw new Error('The list must be given');
         }
 
-        var dropdown = $(dropdownId);
+        // var dropdown = $(dropdownId);
 
         // $('#countriesDrop').empty();
 
@@ -85,7 +85,6 @@ $(function () {
     populateCountriesDrop(data, '#countriesDrop');
 
     $('#countriesDrop').change(function () {
-
         var selectedOption = $(this).find(':selected');
         var capital = selectedOption.val();
 
