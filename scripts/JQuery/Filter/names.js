@@ -63,6 +63,7 @@ $(function () {
             var option = $('<option></option>');
 
             $('#names').append(option);
+            option.attr('value', names[i].name);
             option.html(names[i].name);
         }
     }
