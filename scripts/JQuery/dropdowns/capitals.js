@@ -15,7 +15,7 @@ var data = {
             name: 'Israel',
             code: 'ISR',
             capital: 'Jerusalem',
-            otherCities: ['Tel Aviv', 'Haifa', 'Eilat'],
+            otherCities: ['Tel Aviv', 'Haifa', 'Eilat', 'Netanya'],
         },
         {
             name: 'France',
@@ -27,7 +27,7 @@ var data = {
             name: 'Moldova',
             code: 'MDV',
             capital: 'Kishinev',
-            otherCities: ['Balti'],
+            otherCities: ['Balti', 'Tighina'],
         },
         {
             name: 'Brazil',
@@ -45,13 +45,13 @@ var data = {
             name: 'Argentina',
             code: 'ARG',
             capital: 'Buenos Aires',
-            otherCities: ['Cordoba', 'Mendoza', 'Bahia Blanca'],
+            otherCities: ['Cordoba', 'Mendoza', 'Bahia Blanca', 'Mar del Plata'],
         },
         {
             name: 'United States',
             code: 'USA',
             capital: 'Washington DC',
-            otherCities: ['New York', 'Los Angeles', 'Miami', 'Chicago', 'San Francisco', 'Dallas', 'Seattle', 'Boston', 'Denver'],
+            otherCities: ['New York City', 'Los Angeles', 'Miami', 'Chicago', 'San Francisco', 'Dallas', 'Seattle', 'Boston', 'Denver'],
         },
     ],
 }
@@ -65,11 +65,13 @@ $(function () {
 
         var dropdown = $(dropdownId);
 
-        dropdown.empty();
+        // $('#countriesDrop').empty();
 
-        var blank = $('<option value=" "></option>');
+        // dropdown.empty();
 
-        $('#countriesDrop').append(blank);
+        // var blank = $('<option value=" "></option>');
+
+        // $('#countriesDrop').append(blank);
 
         for (var i = 0; i < data.countries.length; i++) {
             var option = $('<option></option>');
@@ -83,6 +85,7 @@ $(function () {
     populateCountriesDrop(data, '#countriesDrop');
 
     $('#countriesDrop').change(function () {
+
         var selectedOption = $(this).find(':selected');
         var capital = selectedOption.val();
 

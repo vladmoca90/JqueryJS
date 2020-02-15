@@ -3,9 +3,15 @@
 @import '../mixins/mixins.scss';
 
 .dropdowns {
-    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     justify-content: space-between;
     margin: 25px auto 0;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
+
+    select {
+        padding: 2px;
+        width: 155px;
+    }
 }
