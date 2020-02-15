@@ -1,7 +1,6 @@
 table {
   border: 1px solid #ccc;
-  margin: 20px auto;
-  max-width: 500px; }
+  margin: 20px auto; }
   table tr > td {
     border-right: 1px solid #ddd;
     cursor: pointer; }
