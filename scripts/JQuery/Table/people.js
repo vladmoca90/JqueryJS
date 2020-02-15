@@ -32,10 +32,10 @@
         }
 
         for (var i = 0; i < people.length; i++) {
-            $('.table tr>td').eq(0).text(people[i].firstName);
-            $('.table tr>td').eq(1).text(people[i].lastName);
-            $('.table tr>td').eq(2).text(people[i].age);
-            $('.table tr>td').eq(3).text(people[i].nationality);
+            $('.table .first-name').text(people[i].firstName);
+            $('.table .last-name').text(people[i].lastName);
+            $('.table .age').text(people[i].age);
+            $('.table .country').text(people[i].nationality);
         }
     }
 
