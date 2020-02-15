@@ -1,3 +1,6 @@
+.box {
+  max-width: 650px; }
+
 #namesList {
   list-style-type: none;
   margin: 30px auto 0;
