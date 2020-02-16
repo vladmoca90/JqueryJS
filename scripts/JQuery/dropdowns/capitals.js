@@ -63,16 +63,6 @@ $(function () {
             throw new Error('The list must be given');
         }
 
-        // var dropdown = $(dropdownId);
-
-        // $('#countriesDrop').empty();
-
-        // dropdown.empty();
-
-        // var blank = $('<option value=" "></option>');
-
-        // $('#countriesDrop').append(blank);
-
         for (var i = 0; i < data.countries.length; i++) {
             var option = $('<option></option>');
             option.attr('value', data.countries[i].code);
@@ -97,6 +87,9 @@ $(function () {
 
     $('#countriesDrop').change(function () {
         $('#citiesDrop').empty();
+
+        var chooseCity = $('<option value="All other cities">Choose city:</option>');
+        $('#citiesDrop').append(chooseCity);
 
         var selectedOption = $(this).find(':selected');
         var country = selectedOption.val();
