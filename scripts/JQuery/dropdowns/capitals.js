@@ -100,9 +100,9 @@ $(function () {
 
         var selectedOption = $(this).find(':selected');
         var country = selectedOption.val();
-        var blank = $('<option value=" "></option>');
+        var chooseCity = $('<option value="Other cities">Other cities:</option>');
 
-        $('#citiesDrop').append(blank);
+        $('#citiesDrop').append(chooseCity);
 
         for (var i = 0; i < data.countries.length; i++) {
 
