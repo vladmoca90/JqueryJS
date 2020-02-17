@@ -1,14 +1,8 @@
 var data = {
-    persons: [
-        {
+    persons: [{
             name: 'Ana-Maria Magureanu',
             age: '29',
             occupation: 'Farmacist',
-        },
-        {
-            name: 'Vladimir Krushchev',
-            age: '35',
-            occupation: 'Design Manager',
         },
         {
             name: 'Alexander Swift',
@@ -19,7 +13,17 @@ var data = {
             name: 'Caitlin Morgan',
             age: '30',
             occupation: 'IT Recruiter',
-        }
+        }, 
+        {
+            name: 'Vladimir Krushchev',
+            age: '35',
+            occupation: 'Design Manager',
+        },
+        {
+            name: 'Leon Williams',
+            age: '29',
+            occupation: 'Flex Team Leader',
+        },
     ]
 }
 
