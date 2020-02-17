@@ -3,9 +3,17 @@
 @import '../mixins/mixins.scss';
 
 .dropdowns {
-    font-size: 15px;
+    font-size: 14px;
     justify-content: space-between;
     margin: 25px auto 0;
-    max-width: 450px;
+    max-width: 480px;
     width: 100%;
+
+    select {
+        max-width: 220px;
+
+        option { 
+            padding: 5px 0;
+        }
+    }
 }
