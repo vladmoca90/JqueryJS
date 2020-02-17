@@ -3,11 +3,12 @@
 @import '../mixins/mixins.scss';
 
 .dropdowns {
+    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     justify-content: space-between;
     margin: 25px auto 0;
-    max-width: 500px;
+    max-width: 480px;
     width: 100%;
 
     select {
