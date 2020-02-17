@@ -25,15 +25,15 @@ var data = {
 
 $(function () {
 
-    var dropBtn = $('.dropdown__button');
+    var button = $('.dropdown__button');
 
-    var dropList = $('.dropdown__list');
+    var list = $('.dropdown__list');
 
-    dropBtn.on('click', function () {
-        dropList.slideToggle(250);
+    button.on('click', function () {
+        list.slideToggle(250);
     });
 
-    function addNamesToTable(data) {
+    function addNames(data) {
 
         if (data.persons.length == 0) {
             throw new Error('The persons list must be given');
@@ -49,5 +49,5 @@ $(function () {
         }
     }
 
-    addNamesToTable(data);
+    addNames(data);
 });
