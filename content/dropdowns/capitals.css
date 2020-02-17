@@ -8,6 +8,3 @@
   .dropdowns select {
     padding: 2px;
     width: 155px; }
-    .dropdowns select option[value="All countries"],
-    .dropdowns select option[value="All other cities"] {
-      text-transform: uppercase; }
