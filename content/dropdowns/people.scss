@@ -3,15 +3,15 @@
 @import '../mixins/mixins.scss';
 
 .dropdown {
-    border-radius: 8px;
-    @include font(16px, $font-color, $arial);
+    border-radius: 6px;
+    @include font(15px, $font-color, $arial);
     margin: 50px auto;
     max-width: 200px;
     text-align: center;
 
     &__button {
         cursor: pointer;
-        padding: 10px;
+        padding: 8px 0;
     }
 
     &__list {
