@@ -2,9 +2,8 @@
   font-size: 14px;
   justify-content: space-between;
   margin: 25px auto 0;
-  max-width: 480px;
+  max-width: 530px;
   width: 100%; }
   .dropdowns select {
-    max-width: 220px; }
-    .dropdowns select option {
-      padding: 5px 0; }
+    max-width: 250px;
+    padding: 2px; }
