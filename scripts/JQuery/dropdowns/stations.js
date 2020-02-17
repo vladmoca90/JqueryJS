@@ -128,6 +128,12 @@ $(function () {
 
         stationsDropdown.empty();
 
+        var station = $('<option value="Choose station">Choose station:</option>');
+        $('#fromStation').append(station);
+
+        var destination = $('<option value="Choose destination">Choose destination:</option>');
+        $('#toStation').append(destination);
+
         for (var i = 0; i < destinations.length; i++) {
             var stationOption = $('<option></option>');
 
@@ -138,9 +144,9 @@ $(function () {
         }
     }
 
-    getTrainStations(destinations, '#fromStationsDrop');
+    getTrainStations(destinations, '#fromStation');
 
-    $('#fromStationsDrop').change(function() {
+    $('#fromStation').change(function() {
         var selectedOption = $(this).find(':selected');
         var removeSelected = selectedOption.val();
         var destinations2 = [];
@@ -151,7 +157,6 @@ $(function () {
            }
         }
 
-        getTrainStations(destinations2, '#toStationsDrop');
+        getTrainStations(destinations2, '#toStation');
     });
-
 });
