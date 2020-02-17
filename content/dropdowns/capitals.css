@@ -8,3 +8,5 @@
   .dropdowns select {
     padding: 2px;
     width: 155px; }
+    .dropdowns select option:nth-of-type(1) {
+      text-transform: uppercase; }
