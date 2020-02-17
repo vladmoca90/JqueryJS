@@ -40,12 +40,12 @@ $(function () {
         }
 
         for (i = 0; i < data.persons.length; i++) {
-            var nameOption = $('<li class="dropdown__list-item"></li>');
+            var name = $('<li class="dropdown__list-item"></li>');
 
-            nameOption.val(data.persons[i].name);
-            nameOption.html(data.persons[i].name);
+            name.val(data.persons[i].name);
+            name.html(data.persons[i].name);
 
-            $('.dropdown__list').append(nameOption);
+            $('.dropdown__list').append(name);
         }
     }
 
