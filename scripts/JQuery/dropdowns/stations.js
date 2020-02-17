@@ -1,5 +1,9 @@
 var destinations = [
     {
+        code: 'AYW',
+        name: 'Aberystwyth',
+    },
+    {
         code: 'BSK',
         name: 'Basingstoke',
     },
@@ -106,6 +110,10 @@ var destinations = [
         code: 'WKM',
         name: 'Wokingham',
     },
+    {
+        code: 'YRK',
+        name: 'York',
+    },
 ];
 
 $(function () {
@@ -118,11 +126,7 @@ $(function () {
 
         var stationsDropdown = $(dropdownId);
 
-        var blank = $('<option></option>');
-
         stationsDropdown.empty();
-
-        stationsDropdown.append(blank);
 
         for (var i = 0; i < destinations.length; i++) {
             var stationOption = $('<option></option>');
