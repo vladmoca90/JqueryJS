@@ -3,37 +3,39 @@ var data = {
         {
             code: 'AM',
             name: 'Alexandru Mocanu',
-            mark: ['8.81', '8.81', '8.81'],
+            mark: 8.81,
         },
         {
             code: 'VM',
             name: 'Vlad Mocanu',
-            mark: ['9.06', '9.06', '9.06']
+            mark: 9.06,
         },
         {
             code: 'IAR',
             name: 'Ilinca-Alexandra Rolea',
-            mark: ['9.71', '9.71', '9.71'],
+            mark: 9.90,
         },
         {
             code: 'AD',
             name: 'Alexandru Dunca',
-            mark: ['7.25', '7.25', '7.25'],
+            mark: 7.25,
         }
     ]
 }
 
 $(function () {
 
-    function getStudents(data) {
+    var student = $('#student');
+    var mark = $('#mark');
 
+    function getStudents(data) {
         if (data.students.length == 0) {
             throw new Error('The students list must be given');
         }
 
         var blank = $('<option value=""></option>');
 
-        $('#student').append(blank);
+        student.append(blank);
 
         for (var i = 0; i < data.students.length; i++) {
             var option = $('<option></option>');
@@ -41,12 +43,12 @@ $(function () {
             option.attr('val', data.students[i].code);
             option.html(data.students[i].name);
 
-            $('#student').append(option);
+            student.append(option);
         }
     }
 
-    $('#student').change(function () {
-        $('#mark').empty();
+    student.change(function () {
+        mark.empty();
 
         var selectedOption = $(this).find(':selected');
         var studentCode = selectedOption.val();
@@ -60,7 +62,7 @@ $(function () {
                 option.html(data.students[i].mark);
             }
 
-            $('#mark').append(option);
+            mark.append(option);
         }
     });
 
