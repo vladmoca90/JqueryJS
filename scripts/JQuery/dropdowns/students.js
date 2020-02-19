@@ -51,7 +51,7 @@ $(function () {
         var studentCode = selectedOption.val();
 
         for (var i = 0; i < data.students.length; i++) {
-            if (data.students[i].code == studentCode) {
+            if (data.students[i].name == studentCode) {
                 mark.text(data.students[i].mark);
             }
         }
