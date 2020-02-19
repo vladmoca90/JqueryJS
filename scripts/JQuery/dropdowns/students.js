@@ -55,7 +55,6 @@ $(function () {
             var option = $('<option></option>');
 
             if (data.students[i].code == studentCode) {
-
                 option.attr('val', data.students[i].code);
                 option.html(data.students[i].mark);
             }
