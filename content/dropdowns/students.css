@@ -4,3 +4,7 @@
   justify-content: space-between;
   margin: 25px auto 0;
   max-width: 330px; }
+
+#mark {
+  border: 1px solid #ccc;
+  padding: 5px; }

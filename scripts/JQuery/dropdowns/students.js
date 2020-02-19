@@ -42,27 +42,18 @@ $(function () {
 
             option.attr('val', data.students[i].code);
             option.html(data.students[i].name);
-
             student.append(option);
         }
     }
 
     student.change(function () {
-        mark.empty();
-
         var selectedOption = $(this).find(':selected');
         var studentCode = selectedOption.val();
 
         for (var i = 0; i < data.students.length; i++) {
-            var option = $('<option></option>');
-
             if (data.students[i].code == studentCode) {
-                option.attr('val', data.students[i].code);
-                option.val(data.students[i].mark);
-                option.html(data.students[i].mark);
+                mark.text(data.students[i].mark);
             }
-
-            mark.append(option);
         }
     });
 
