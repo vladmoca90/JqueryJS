@@ -33,7 +33,7 @@ $(function () {
 
         var blank = $('<option value=""></option>');
 
-        $('#studentDropdown').append(blank);
+        $('#student').append(blank);
 
         for (var i = 0; i < data.students.length; i++) {
             var option = $('<option></option>');
@@ -41,12 +41,12 @@ $(function () {
             option.attr('val', data.students[i].code);
             option.html(data.students[i].name);
 
-            $('#studentDropdown').append(option);
+            $('#student').append(option);
         }
     }
 
-    $('#studentDropdown').change(function () {
-        $('#markDropdown').empty();
+    $('#student').change(function () {
+        $('#mark').empty();
 
         var selectedOption = $(this).find(':selected');
         var studentCode = selectedOption.val();
@@ -60,7 +60,7 @@ $(function () {
                 option.html(data.students[i].mark);
             }
 
-            $('#markDropdown').append(option);
+            $('#mark').append(option);
         }
     });
 
