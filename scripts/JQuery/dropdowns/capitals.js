@@ -99,9 +99,7 @@ $(function () {
             if (data.countries[i].code == country) {
 
                 for (var j = 0; j < data.countries[i].otherCities.length; j++) {
-
                     var option = $('<option></option>');
-
                     option.attr('value', data.countries[i].code);
                     option.html(data.countries[i].otherCities[j]);
 
