@@ -1,4 +1,5 @@
 .student-list {
+  display: flex;
   font-size: 15px;
   justify-content: space-between;
   margin: 25px auto 0;

@@ -56,6 +56,7 @@ $(function () {
 
             if (data.students[i].code == studentCode) {
                 option.attr('val', data.students[i].code);
+                option.val(data.students[i].mark);
                 option.html(data.students[i].mark);
             }
 
