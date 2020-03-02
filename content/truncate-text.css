@@ -1,14 +1,14 @@
 .content {
   margin: 30px auto;
   width: 450px; }
-  .content.div {
+  .content > div {
     justify-content: space-between;
     width: 450px; }
-    .content.div input {
+    .content > div input {
       height: 30px; }
-      .content.div input#textContent {
+      .content > div input#textContent {
         width: 200px; }
-      .content.div input#numberValue {
+      .content > div input#numberValue {
         width: 50px; }
-    .content.div p {
+    .content > div p {
       font-size: 15px; }

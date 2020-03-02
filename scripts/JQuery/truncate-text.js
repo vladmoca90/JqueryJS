@@ -1,12 +1,10 @@
 $(function () {
-
     $('button').click(function () {
 
         var text = $('#textContent').val();
         var n = $('#numberValue').val();
 
         function truncateText(text, n) {
-
             if (text.length == 0) {
                 throw new Error('The text cannot be empty');
             }
@@ -15,7 +13,6 @@ $(function () {
             }
 
             var splitText = text.trim().split('');
-
             var truncatedText = splitText.splice(0, n).join('');
 
             $('p').text(truncatedText);
