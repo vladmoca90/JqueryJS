@@ -4,7 +4,8 @@
 
     &>div {
         justify-content: space-between;
-        width: 450px;
+        max-width: 450px;
+        width: 100%;
 
         input {
             height: 30px;
@@ -15,6 +16,13 @@
             &#numberValue {
                 width: 50px;
             }
+        }
+        button {
+            background-color: #1e7e34;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            padding: 7px;
         }
         p {
             font-size: 15px;
