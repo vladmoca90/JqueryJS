@@ -14,7 +14,7 @@
     }
     &__input {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
-        color: #444;
+        color: $font-color;
         display: inline-block;
         font-size: 16px;
         margin: 20px auto 40px;
@@ -33,7 +33,7 @@
     }
     &__heading {
         font-size: 21px;
-        margin: 20px 0;
+        margin: 20px 0 10px;
         text-align: center;
     }
     &__text {
