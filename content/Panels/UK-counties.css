@@ -6,7 +6,8 @@
   padding-top: 15px; }
   .counties__title {
     font-size: 36px;
-    margin: 0; }
+    margin: 0;
+    text-align: center; }
   .counties__input {
     border-top: 1px;
     border-right: 0;
@@ -20,7 +21,7 @@
     padding: 8px 5px; }
     .counties__input:focus {
       outline: 0; }
-  .counties__container {
+  .counties__content {
     background-color: #eee;
     border-radius: 8px;
     font-size: 14px;
@@ -28,6 +29,7 @@
     padding: 20px; }
   .counties__heading {
     font-size: 24px;
-    margin: 20px 0; }
+    margin: 20px 0;
+    text-align: center; }
   .counties__text {
     margin: 0; }

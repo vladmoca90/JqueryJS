@@ -10,6 +10,7 @@
     &__title {
         font-size: 36px;
         margin: 0;
+        text-align: center;
     }
     &__input {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
@@ -17,6 +18,7 @@
         font-size: 16px;
         margin: 20px auto 40px;
         padding: 8px 5px;
+        width: 100%;
         &:focus {
             outline: 0;
         }
