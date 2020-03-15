@@ -22,14 +22,14 @@ function addCounties(data) {
     }
 
     for (var i = 0; i < data.counties.length; i++) {
-        var heading = $('<p class="counties__heading text-center"></p>');
+        var heading = $('<p class="counties__heading"></p>');
         var content = $('<p class="counties__text"></p>');
 
         heading.html(data.counties[i].title);
         content.html(data.counties[i].content);
 
-        $('.counties__container').append(heading);
-        $('.counties__container').append(content);
+        $('.counties__content').append(heading);
+        $('.counties__content').append(content);
     }
 }
 
