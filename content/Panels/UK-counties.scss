@@ -5,15 +5,16 @@
     color: $font-color;
     font-family: $arial;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 550px;
     padding-top: 15px;
     &__title {
         font-size: 36px;
-        margin: 25px 0;
+        margin: 15px 0;
         text-align: center;
     }
     &__input {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
+        color: #444;
         display: inline-block;
         font-size: 16px;
         margin: 20px auto 40px;
@@ -31,7 +32,7 @@
         padding: 20px;
     }
     &__heading {
-        font-size: 24px;
+        font-size: 21px;
         margin: 20px 0;
         text-align: center;
     }

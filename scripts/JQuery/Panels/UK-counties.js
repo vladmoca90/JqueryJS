@@ -25,11 +25,12 @@ const addCounties =  data => {
         var heading = $('<h3 class="counties__heading"></h3>');
         var text = $('<p class="counties__text"></p>');
 
-        heading.html(data.counties[i].title);
-        text.html(data.counties[i].content);
+        heading.text(data.counties[i].title);
+        text.text(data.counties[i].content);
 
-        $('.counties__content').append(heading);
-        $('.counties__content').append(text);
+        $('.counties__content').append(content);
+        content.append(heading);
+        content.append(text);
     }
 }
 
