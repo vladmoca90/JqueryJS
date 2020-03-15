@@ -1,12 +1,11 @@
 @import '../mixins/mixins.scss';
-
 @import '../variables/variables.scss';
 
 .counties {
     color: $font-color;
     font-family: $arial;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 550px;
     padding-top: 15px;
     &__title {
         font-size: 36px;
@@ -15,8 +14,9 @@
     &__input {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
         display: inline-block;
+        font-size: 16px;
         margin: 20px auto 40px;
-        padding: 5px;
+        padding: 8px 5px;
         &:focus {
             outline: 0;
         }
@@ -30,7 +30,7 @@
     }
     &__heading {
         font-size: 24px;
-        margin-bottom: 15px;
+        margin: 20px 0;
     }
     &__text {
         margin: 0;

@@ -2,7 +2,7 @@
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
   padding-top: 15px; }
   .counties__title {
     font-size: 36px;
@@ -15,8 +15,9 @@
     border-style: solid;
     border-color: #ccc;
     display: inline-block;
+    font-size: 16px;
     margin: 20px auto 40px;
-    padding: 5px; }
+    padding: 8px 5px; }
     .counties__input:focus {
       outline: 0; }
   .counties__container {
@@ -27,6 +28,6 @@
     padding: 20px; }
   .counties__heading {
     font-size: 24px;
-    margin-bottom: 15px; }
+    margin: 20px 0; }
   .counties__text {
     margin: 0; }
