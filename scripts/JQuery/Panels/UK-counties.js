@@ -16,13 +16,12 @@ var data = {
 }
 
 function addCounties(data) {
-
     if (data.counties.length == 0) {
         throw new Error('The data is empty');
     }
 
     for (var i = 0; i < data.counties.length; i++) {
-        var heading = $('<p class="counties__heading"></p>');
+        var heading = $('<h3 class="counties__heading"></h3>');
         var content = $('<p class="counties__text"></p>');
 
         heading.html(data.counties[i].title);
