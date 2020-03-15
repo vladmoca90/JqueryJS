@@ -1,56 +1,65 @@
 ﻿@import url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css);
+@import '../mixins/mixins.scss';
+@import '../variables/variables.scss';
 
 h1 {
     text-align: center;
 }
+
 #conversation {
-  width: 100%;
-  max-width: 650px;
-  margin: 3% auto;
-  font-family: Tahoma;
-  .container {
-        border: 1px solid #FF0000;
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    font-family: Tahoma;
+
+    .container {
+        border: 1px solid $red;
         padding: 5px;
-        margin-top: 5px;
+        margin-top: 10px;
         width: 100%;
         float: left;
         clear: both;
-        .alex>.picture,
-        .alexText,
-        .alexTime,
-        .vlad>.picture,
-        .vladText,
-        .vladTime {
-            float: left; 
+
+        .alex>.picture, .alexText,
+        .alexTime, .vlad>.picture,
+        .vladText, .vladTime {
+            float: left;
         }
-        .alexTime,
+
+        .alexTime, 
         .vladTime {
             margin: 4% 0% 0% 2.5%;
             font-weight: bold;
             font-size: 12px;
             color: lightslategrey;
         }
+
         .delete-button {
             font-size: 24px;
-            color: #FF0000;
+            color: $red;
             margin-left: 2%;
         }
     }
+
     .alexText,
     .vladText {
         margin-top: 13px;
         padding: 10px;
         border-radius: 5px;
     }
+
     .alexText {
-        background: #F0F4F8;
+        background: #f0f4f8;
     }
+
     .vladText {
-        background: #C7EDFC;
+        background: #c7edfc;
     }
+
     .text {
         width: 70%;
     }
+
     .picture,
     .time {
         width: 10%;
