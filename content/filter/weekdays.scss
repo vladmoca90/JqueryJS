@@ -16,13 +16,17 @@ body {
         padding-left: 0;
 
         li {
-            background-color: #cb2000;
+            background-color: #a31800;
             color: #fff;
             cursor: pointer;
             list-style-type: none;
             margin-right: 15px;
             padding: 10px 20px;
             text-align: center;
+
+            &.clicked {
+                background-color: #039403;
+            }
         }
     }
 }
