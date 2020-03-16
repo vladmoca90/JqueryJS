@@ -27,6 +27,10 @@ body {
             &.clicked {
                 background-color: #039403;
             }
+            &.disable-day {
+                background-color: #eee;
+                color: #444;
+            }
         }
     }
 }

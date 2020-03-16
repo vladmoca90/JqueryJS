@@ -21,3 +21,6 @@ body {
       text-align: center; }
       body #selectable li.clicked {
         background-color: #039403; }
+      body #selectable li.disable-day {
+        background-color: #eee;
+        color: #444; }
