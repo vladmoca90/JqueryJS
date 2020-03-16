@@ -35,3 +35,7 @@ const addCounties =  data => {
 }
 
 addCounties(data);
+
+// const filterText = (data) => {
+//     return data.filter((data) => return );
+// }
