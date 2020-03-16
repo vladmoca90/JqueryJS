@@ -11,7 +11,7 @@ $(function () {
     function validateWeekends(exclude) {
         if(exclude.is(':checked')) {
             if(day.text() === 'Saturday' || day.text() === 'Sunday') {
-                $(this).addClass('.disable-day');
+                day.addClass('disable-day');
             }
         }
     }
