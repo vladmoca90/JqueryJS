@@ -3,7 +3,7 @@ $(function() {
     var showDay = $('#showDay');
 
     day.on('click', function() {
-        $(this).addClass('clicked');
+        $(this).addClass('clicked').siblings().removeClass('clicked');
         showDay.text($(this).text());
     });
 });
