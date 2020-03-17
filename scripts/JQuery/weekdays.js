@@ -8,11 +8,13 @@ $(function () {
         showDay.text($(this).text());
     });
 
-    exclude.on('change', function () {
-        if (exclude.is(':checked')) {
-            if (day.text() === 'Saturday' || day.text() === 'Sunday') {
+    function validateWeekends() {
+        if(exclude.is(':checked') == true) {
+            if(day.text() === 'Saturday' || day.text() === 'Sunday') {
                 day.addClass('disable-day');
             }
         }
-    });
+    }
+
+    validateWeekends();
 });
