@@ -28,9 +28,7 @@ var data = {
 }
 
 $(function () {
-
     var button = $('.dropdown__button');
-
     var list = $('.dropdown__list');
 
     button.on('click', function () {
@@ -38,7 +36,6 @@ $(function () {
     });
 
     function addNames(data) {
-
         if (data.persons.length == 0) {
             throw new Error('The persons list must be given');
         }
@@ -48,8 +45,7 @@ $(function () {
 
             name.val(data.persons[i].name);
             name.html(data.persons[i].name);
-
-            $('.dropdown__list').append(name);
+            list.append(name);
         }
     }
 

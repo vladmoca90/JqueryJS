@@ -24,7 +24,6 @@ var data = {
 }
 
 $(function () {
-
     var student = $('#student');
     var mark = $('#mark');
 

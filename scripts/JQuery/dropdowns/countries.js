@@ -1,25 +1,21 @@
 $(function () {
 
     function setCountries(xml) {
-
         var countriesDropdown = $('#makeDropdown');
-
         var countries = xml.find('country');
 
         for (var i = 0; i < countries.length; i++) {
             var country = $(countries[i]);
             var countryOption = $('<option></option>');
+
             countryOption.attr('value', country.attr('code'));
             countryOption.html(country.html());
-
             countriesDropdown.append(countryOption);
         }
-
         setTotalCount(countries.length);
     }
 
     function setTotalCount(count) {
-
         $('#total-value').html(count);
     }
 

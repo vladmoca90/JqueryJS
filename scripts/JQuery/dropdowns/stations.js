@@ -119,7 +119,6 @@ var destinations = [
 $(function () {
 
     function getTrainStations(destinations, dropdownId) {
-
         if (destinations.length == 0) {
             throw new Error('Destinations must be provided');
         }
@@ -130,7 +129,6 @@ $(function () {
 
         var station = $('<option value="Choose station">Choose station:</option>');
         $('#fromStation').append(station);
-
         var destination = $('<option value="Choose destination">Choose destination:</option>');
         $('#toStation').append(destination);
 
@@ -139,7 +137,6 @@ $(function () {
 
             stationOption.attr('value', destinations[i].code);
             stationOption.html(destinations[i].name);
-
             stationsDropdown.append(stationOption);
         }
     }
