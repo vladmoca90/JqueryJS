@@ -9,12 +9,17 @@ $(function () {
     });
 
     exclude.on('change', function () {
-        var content = day.text();
         exclude.attr('checked', 'checked');
 
         if (exclude.prop('checked')) {
-            if (content === 'Saturday' || content === 'Sunday') {
-                day.addClass('disable-day');
+            for (var i = 0; i < day.length; i++) {
+                var content = day.eq(i).text();
+
+                if (content === 'Saturday' || content === 'Sunday') {
+                    day.addClass('disable-day');
+                } else {
+                    day.removeClass('disable-day');
+                }
             }
         }
     });
