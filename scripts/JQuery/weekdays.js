@@ -10,9 +10,7 @@ $(function () {
 
     exclude.on('change', function () {
         exclude.attr('checked', 'checked');
-        if (exclude.is(':checked')) {
-            day.addClass('disable-day');
-        }
+        exclude.is(':checked') ? day.addClass('disable-day') : day.removeClass('disable-day');
     });
 });
 
