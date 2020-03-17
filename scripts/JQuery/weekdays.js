@@ -1,7 +1,7 @@
 $(function () {
-    const day = $('#selectable').find('li');
-    const showDay = $('#showDay');
-    const exclude = $('#exclude');
+    var day = $('#selectable').find('li');
+    var showDay = $('#showDay');
+    var exclude = $('#exclude');
 
     day.on('click', function () {
         $(this).addClass('clicked').siblings().removeClass('clicked');
@@ -9,8 +9,14 @@ $(function () {
     });
 
     exclude.on('change', function () {
+        var content = day.text();
         exclude.attr('checked', 'checked');
-        exclude.is(':checked') ? day.addClass('disable-day') : day.removeClass('disable-day');
+
+        if (exclude.prop('checked')) {
+            if (content === 'Saturday' || content === 'Sunday') {
+                day.addClass('disable-day');
+            }
+        }
     });
 });
 
