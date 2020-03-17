@@ -17,8 +17,6 @@ $(function () {
 
                 if (content === 'Saturday' || content === 'Sunday') {
                     day.addClass('disable-day');
-                } else {
-                    day.removeClass('disable-day');
                 }
             }
         }
