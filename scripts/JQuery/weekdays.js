@@ -9,6 +9,12 @@ $(function () {
     });
 
     exclude.on('change', function () {
-        day.text() === 'Saturday' || day.text() === 'Sunday' ? day.addClass('disable-day') : day.removeClass('disable-day');
+        var content = day.text();
+
+        if (this.checked) {
+            if (content === 'Saturday' || content === 'Sunday') {
+                day.addClass('disable-day');
+            }
+        }
     });
 });
