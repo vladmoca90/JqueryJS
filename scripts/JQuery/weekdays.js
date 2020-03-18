@@ -10,8 +10,14 @@ $(function () {
 
     exclude.on('change', function () {
         if (this.checked) {
-            day.eq(5, 6).addClass('disable-day');
-            // showDay.hide();
+            for (var i = 0; i < day.length; i++) {
+                let weekend = day.eq(i).text();
+                if (weekend === 'Saturday') {
+                    day.addClass('disable-day');
+                } else {
+                    day.removeClass('disable-day');
+                }
+            }
         }
     });
 });
