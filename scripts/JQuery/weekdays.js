@@ -13,8 +13,13 @@ $(function () {
             day.addClass('disable-day');
             showDay.hide();
         } else {
-            day.removeClass('disable-day');
             day.removeClass('clicked');
+            day.removeClass('disable-day');
+
+            // if(day.hasClass('disable-day') == true) {
+            //     return showDay.html(' ');
+            // }
+
             showDay.show();
         }
     });
