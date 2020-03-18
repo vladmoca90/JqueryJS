@@ -18,7 +18,7 @@ body {
       cursor: pointer;
       list-style-type: none;
       margin-right: 15px;
-      padding: 11px 22px;
+      padding: 10px 25px;
       text-align: center; }
       body #selectable li.clicked {
         background-color: #039403; }
