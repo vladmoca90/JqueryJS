@@ -12,16 +12,17 @@ body {
         display: flex;
         justify-content: space-between; 
         margin-top: 20px;
-        max-width: 800px;
+        max-width: 70%;
         padding-left: 0;
 
         li {
             background-color: #a31800;
+            border-radius: 4px;
             color: #fff;
             cursor: pointer;
             list-style-type: none;
             margin-right: 15px;
-            padding: 10px 20px;
+            padding: 10px 25px;
             text-align: center;
 
             &.clicked {
