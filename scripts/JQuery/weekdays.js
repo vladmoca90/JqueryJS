@@ -16,12 +16,13 @@ $(function () {
         if (this.checked) {
             for (var i = 0; i < day.length; i++) {
                 let weekend = day.eq(i);
+
                 if (weekend.text() === 'Saturday' || weekend.text() === 'Sunday') {
                     weekend.addClass('disable-day');
                     weekend.removeClass('clicked');
-                    showDay.hide();
+                    // showDay.text(day.hide());
                 } else {
-                    showDay.hide();
+                    // showDay.text(day.text());
                 }
             }
         } else {
