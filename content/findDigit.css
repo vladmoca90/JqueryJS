@@ -1,9 +1,9 @@
 .content {
   margin: 30px auto;
-  max-width: 450px; }
+  max-width: 500px; }
   .content > div {
     justify-content: space-between;
-    max-width: 450px; }
+    max-width: 500px; }
     .content > div input {
       font-size: 14px;
       height: 30px; }

@@ -1,6 +1,6 @@
 $(function () {
-    $('button').click(function () {
-
+    var btn = $('button');
+    btn.click(function () {
         var n = $('#number').val();
         var m = $('#digit').val();
 
