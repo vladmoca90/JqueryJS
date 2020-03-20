@@ -1,12 +1,13 @@
 .content {
     margin: 30px auto;
-    width: 450px;
+    max-width: 450px;
 
     >div {
         justify-content: space-between;
-        width: 450px;
+        max-width: 450px;
 
         input {
+            font-size: 14px;
             height: 30px;
 
             &#number {
@@ -16,8 +17,11 @@
                 width: 50px;
             }
         }
-        p {
-            font-size: 15px;
+        .digit-btn, p {
+            font-size: 14px;
+        }
+        .digit-btn {
+            padding: .25rem 0.75rem;
         }
     }
 }

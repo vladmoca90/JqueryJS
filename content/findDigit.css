@@ -1,14 +1,17 @@
 .content {
   margin: 30px auto;
-  width: 450px; }
+  max-width: 450px; }
   .content > div {
     justify-content: space-between;
-    width: 450px; }
+    max-width: 450px; }
     .content > div input {
+      font-size: 14px;
       height: 30px; }
       .content > div input#number {
         width: 200px; }
       .content > div input#digit {
         width: 50px; }
-    .content > div p {
-      font-size: 15px; }
+    .content > div .digit-btn, .content > div p {
+      font-size: 14px; }
+    .content > div .digit-btn {
+      padding: .25rem 0.75rem; }
