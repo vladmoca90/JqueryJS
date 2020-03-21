@@ -1,4 +1,4 @@
-var cars = [
+const cars = [
     {
       make: 'Abarth',
       model: ['Abarth 1', 'Abarth 2', 'Abarth 3'],
@@ -25,7 +25,7 @@ var cars = [
     },
 ];
 
-var vans = [
+const vans = [
     {
       make: 'Abarth',
       model: ['Abarth 11', 'Abarth 21', 'Abarth 31'],
@@ -64,22 +64,25 @@ $(function () {
         $('#' + tabId + 'Tab').show();
     });
 
-    $('.search-by-make').change(function () {
-        var value = $(this).find(':selected').attr('value');
+    let searchModel = $('.search-by-model');
+    let searchMake = $('.search-by-make');
+
+    searchMake.change(function () {
+        let value = $(this).find(':selected').attr('value');
 
         if (value == 'any') {
-            $('.search-by-model [data-parent=any]').prop('selected', true); // select "any" from second dropdown
-            $('.search-by-model option').show();
-            $('.search-by-model').attr('disabled', true);
+            searchModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
+            searchModel.find('option').show();
+            searchModel.attr('disabled', true);
 
             return;
         }
 
-        $('.search-by-model option').hide();
-        $('.search-by-model').attr('disabled', false);
+        searchModel.find('option').hide();
+        searchModel.attr('disabled', false);
 
-        $('.search-by-model [data-parent=any]').prop('selected', true);
-        $('.search-by-model [data-parent=any]').show();
-        $('.search-by-model option[data-parent=' + value + ']').show();
+        searchModel.find('option[data-parent=any]').prop('selected', true);
+        searchModel.find('[data-parent=any]').show();
+        searchModel.find('option[data-parent=' + value + ']').show();
     });
 });
