@@ -52,7 +52,6 @@ const vans = [
     },
 ];
 
-
 $(function () {
     $('#vansTab').hide();
 
@@ -66,6 +65,21 @@ $(function () {
 
     let searchModel = $('.search-by-model');
     let searchMake = $('.search-by-make');
+
+    function addCarMakes(cars) {
+      if(cars.length == 0) {
+        throw new Error('The cars list must be given.');
+      }
+    }
+
+    addCarMakes(cars);
+    function addVanMakes(vans) {
+      if(vans.length == 0) {
+        throw new Error('The vans list must be given.');
+      }
+    }
+
+    addVanMakes(vans);
 
     searchMake.change(function () {
         let value = $(this).find(':selected').attr('value');
