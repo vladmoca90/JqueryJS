@@ -1,11 +1,12 @@
 $(document).ready(function () {
-    $('.pbox').hide();
+    let box = $('.pbox')
+    box.hide();
 
     $('a').click(function () {
         console.log('CHANGED');
 
-        var content = $(this).attr('data-id');
-        $('.pbox').hide();
+        let content = $(this).attr('data-id');
+        box.hide();
         $('#' + content).show();
     });
 });

@@ -1,8 +1,8 @@
 $(function () {
-    var btn = $('button');
+    const btn = $('button');
     btn.click(function () {
-        var n = $('#number').val();
-        var m = $('#digit').val();
+        let n = $('#number').val();
+        let m = $('#digit').val();
 
         function findDigit(n, m) {
             if (n.toString().length == 0) {
