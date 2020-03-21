@@ -52,10 +52,12 @@ var vans = [
     },
 ];
 
-
 $(function () {
+    let vans =$('#vansTab');
+    let searchMake = $('.search-by-make');
+    let searchModel =  $('.search-by-model');
 
-    $('#vansTab').hide();
+    vans.hide();
 
     $('.form-tabs input').change(function () {
         console.log('CHANGED');
@@ -65,22 +67,22 @@ $(function () {
         $('#' + tabId + 'Tab').show();
     });
 
-    $('.search-by-make').change(function () {
+    searchMake.change(function () {
         var value = $(this).find(':selected').attr('value');
 
         if (value == 'any') {
-            $('.search-by-model [data-parent=any]').prop('selected', true); // select "any" from second dropdown
-            $('.search-by-model option').show();
-            $('.search-by-model').attr('disabled', true);
+            searchModel.find('[data-parent=any]').prop('selected', true); // select "any" from second dropdown
+            searchModel.find('option').show();
+            searchModel.attr('disabled', true);
 
             return;
         }
 
-        $('.search-by-model option').hide();
-        $('.search-by-model').attr('disabled', false);
+        searchModel.find('option').hide();
+        searchModel.attr('disabled', false);
 
-        $('.search-by-model [data-parent=any]').prop('selected', true);
-        $('.search-by-model [data-parent=any]').show();
-        $('.search-by-model option[data-parent=' + value + ']').show();
+        searchModel.find('[data-parent=any]').prop('selected', true);
+        searchModel.find('[data-parent=any]').show();
+        searchModel.find('option[data-parent=' + value + ']').show();
     });
 });
