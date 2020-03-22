@@ -11,18 +11,6 @@
         margin: 15px 0;
         text-align: center;
     }
-    &__input {
-        @include borders(1px, 0, 1px, 0, solid, #ccc);
-        color: $font-color;
-        display: inline-block;
-        font-size: 15px;
-        margin: 20px auto 40px;
-        padding: 5px;
-        width: 100%;
-        &:focus {
-            outline: 0;
-        }
-    }
     &__container {
         background-color: #eee;
         border-radius: 6px;
@@ -38,5 +26,17 @@
     }
     &__text {
         margin: 0;
+    }
+    .search-bar {
+        @include borders(1px, 0, 1px, 0, solid, #ccc);
+        color: $font-color;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px auto 40px;
+        padding: 5px;
+        width: 100%;
+        &:focus {
+            outline: 0;
+        }
     }
 }

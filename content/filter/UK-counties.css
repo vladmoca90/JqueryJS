@@ -7,21 +7,6 @@
     font-size: 30px;
     margin: 15px 0;
     text-align: center; }
-  .counties__input {
-    border-top: 1px;
-    border-right: 0;
-    border-bottom: 1px;
-    border-left: 0;
-    border-style: solid;
-    border-color: #ccc;
-    color: #444;
-    display: inline-block;
-    font-size: 15px;
-    margin: 20px auto 40px;
-    padding: 5px;
-    width: 100%; }
-    .counties__input:focus {
-      outline: 0; }
   .counties__container {
     background-color: #eee;
     border-radius: 6px;
@@ -35,3 +20,18 @@
     text-align: center; }
   .counties__text {
     margin: 0; }
+  .counties .search-bar {
+    border-top: 1px;
+    border-right: 0;
+    border-bottom: 1px;
+    border-left: 0;
+    border-style: solid;
+    border-color: #ccc;
+    color: #444;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto 40px;
+    padding: 5px;
+    width: 100%; }
+    .counties .search-bar:focus {
+      outline: 0; }
