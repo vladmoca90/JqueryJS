@@ -1,3 +1,5 @@
+//A function that returns a certain digit from a number. The position m of a digit in a number.
+
 $(function () {
     const btn = $('button');
     btn.click(function () {
