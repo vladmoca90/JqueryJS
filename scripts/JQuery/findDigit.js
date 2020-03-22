@@ -5,8 +5,9 @@ $(function () {
     btn.click(function () {
         let n = $('#number').val();
         let m = $('#digit').val();
+        let digit = n.toString()[m];
 
-        function findDigit(n, m) {
+        const findDigit = (n, m) => {
             if (n.toString().length == 0) {
                 throw new Error('The number must be given');
             }
@@ -19,8 +20,6 @@ $(function () {
             if (m >= n.toString().length) {
                 throw new Error('The digit does not exist');
             }
-
-            var digit = n.toString()[m];
 
             $('p').text(parseInt(digit));
         }

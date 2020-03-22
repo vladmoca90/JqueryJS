@@ -15,7 +15,7 @@ var data = {
     ],
 }
 
-const addCounties =  data => {
+const addCounties = data => {
     if (data.counties.length == 0) {
         throw new Error('The data is empty');
     }
