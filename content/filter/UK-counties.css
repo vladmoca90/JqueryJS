@@ -22,15 +22,15 @@
     width: 100%; }
     .counties__input:focus {
       outline: 0; }
-  .counties__content {
+  .counties__container {
     background-color: #eee;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 13px;
     margin-bottom: 25px;
-    padding: 20px; }
+    padding: 0 20px 20px; }
   .counties__heading {
-    font-size: 21px;
-    margin: 20px 0 10px;
+    font-size: 20px;
+    margin: 20px 0 15px;
     text-align: center; }
   .counties__text {
     margin: 0; }

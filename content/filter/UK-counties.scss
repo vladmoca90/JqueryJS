@@ -23,16 +23,16 @@
             outline: 0;
         }
     }
-    &__content {
+    &__container {
         background-color: #eee;
-        border-radius: 8px;
+        border-radius: 6px;
         font-size: 13px;
         margin-bottom: 25px;
-        padding: 20px;
+        padding: 0 20px 20px;
     }
     &__heading {
-        font-size: 21px;
-        margin: 20px 0 10px;
+        font-size: 20px;
+        margin: 20px 0 15px;
         text-align: center;
     }
     &__text {

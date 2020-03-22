@@ -21,16 +21,17 @@ const addCounties = data => {
     }
 
     for (var i = 0; i < data.counties.length; i++) {
-        var content = $('<div></div>');
-        var heading = $('<h3 class="counties__heading"></h3>');
-        var text = $('<p class="counties__text"></p>');
+        let wrapper = $('<div class="wrapper"></div>');
+        let container = $('.counties__container');
+        let heading = $('<h3 class="counties__heading"></h3>');
+        let text = $('<p class="counties__text"></p>');
 
         heading.text(data.counties[i].title);
         text.text(data.counties[i].content);
 
-        $('.counties__content').append(content);
-        content.append(heading);
-        content.append(text);
+        container.append(wrapper);
+        wrapper.append(heading);
+        wrapper.append(text);
     }
 }
 
