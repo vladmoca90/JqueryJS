@@ -39,7 +39,7 @@ $(function () {
     addCounties(data);
 
     $('.search-bar').on('keyup', function () {
-        var value = $(this).val().toLowerCase();
+        var value = $(this).val(); //you don't always need .toLowerCase()
         $('.wrapper').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
