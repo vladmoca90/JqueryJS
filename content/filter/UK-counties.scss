@@ -3,7 +3,7 @@
 
 .counties {
     color: $font-color;
-    font-family: $arial;
+    font-family: $gill-sans;
     margin: 0 auto;
     max-width: 550px;
     &__title {
@@ -26,7 +26,8 @@
     &__container {
         background-color: #eee;
         border-radius: 6px;
-        font-size: 13px;
+        display: inline-block;
+        font-size: 15px;
         margin-bottom: 25px;
         padding: 0 20px 20px;
     }
