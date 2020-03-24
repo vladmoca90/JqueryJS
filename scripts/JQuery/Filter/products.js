@@ -14,7 +14,6 @@ $(function () {
 
             productsObj.name = $('.product').eq(i).attr('data-product-name'),
             productsObj.id = $('.product').eq(i).attr('data-product-id'),
-
             products.push(productsObj);
         }
     }
