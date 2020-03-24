@@ -1,5 +1,4 @@
 $(function () {
-
     var products = [];
 
     function createProductsList(products) {
