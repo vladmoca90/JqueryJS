@@ -2,14 +2,23 @@ body {
   background-color: #00a8cc;
   margin: 0;
   padding: 0; }
+  body h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 0;
+    text-align: center; }
 
 .main-container {
   margin: 20px auto 0;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%; }
+  .main-container input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; }
   .main-container ul {
     color: #fff;
     list-style-type: none; }
     .main-container ul li {
+      border: 1px solid #000839;
       padding: 10px;
       width: 100%; }
