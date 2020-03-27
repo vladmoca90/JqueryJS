@@ -11,10 +11,21 @@ body {
   margin: 20px auto 0;
   max-width: 500px;
   width: 100%; }
-  .main-container input {
-    border: 1px solid #a29e9e;
-    border-radius: 4px;
-    width: 100%; }
+  .main-container .type-field {
+    display: flex; }
+    .main-container .type-field button {
+      border-color: transparent;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 4px !important;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 4px !important; }
+    .main-container .type-field input {
+      border: 1px solid #a29e9e;
+      border-top-left-radius: 4px !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-left-radius: 4px !important;
+      border-bottom-right-radius: 0 !important;
+      width: 100%; }
   .main-container ul {
     color: #fff;
     list-style-type: none; }
