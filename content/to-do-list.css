@@ -45,5 +45,11 @@ body {
       position: relative;
       width: 100%; }
       .main-container ul li:after {
-        content: 'X';
-        position: absolute; }
+        content: '\f00d';
+        color: #2a6173;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-size: 19px;
+        position: absolute;
+        right: 6px;
+        top: 3px; }
