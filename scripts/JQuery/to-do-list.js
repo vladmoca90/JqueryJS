@@ -5,14 +5,13 @@ $(function(){
     button.on('click', function() {
         let text = $('#textField');
         let listItem= $('<li></li>');
-        let content = text.val();
-        let listText = listItem.text(content);
-
-        if(content == '') {
-            listItem.remove();
-        }
+        let listContent = text.val();
+        let listText = listItem.text(listContent);
     
         list.find('ul').append(listText);
-        $('ul').sortable();
+        
+        if(listContent == '') {
+            listItem.remove();
+        }
     });
 });
