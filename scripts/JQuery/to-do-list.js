@@ -8,5 +8,6 @@ $(function(){
         let listText = listItem.text(content);
     
         $('.list-container').find('ul').append(listText);
+        text.val(null);
     });
 });
