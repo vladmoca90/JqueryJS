@@ -1,12 +1,13 @@
 $(function(){
     let text = $('#textField');
-    let content = $('#textField').val();
+    let content = text.val();
     let button = $('button');
 
     button.on('click', function() {
         var listItem= $('<li></li>');
 
+        // var listText = listItem.text(content);
+        $('.list-container').find('ul').append(listItem);
         listItem.text(content);
-        $('.list-container').find('ul').append(listItem.text(content));
     });
 });
