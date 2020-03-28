@@ -7,11 +7,12 @@ $(function(){
         let listItem= $('<li></li>');
         let content = text.val();
         let listText = listItem.text(content);
-    
-        list.find('ul').append(listText);
-        
+
         if(content == '') {
             listItem.remove();
         }
+    
+        list.find('ul').append(listText);
+        $('ul').sortable();
     });
 });
