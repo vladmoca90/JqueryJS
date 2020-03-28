@@ -21,6 +21,6 @@ $(function () {
     });
 
     $('.fa-close').on('click', function () {
-        $(this).parents('li').remove();
+        $(this).parents('li').fadeOut();
     });
 });
