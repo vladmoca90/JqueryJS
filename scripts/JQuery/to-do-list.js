@@ -9,12 +9,17 @@ $(function () {
         let listText = listItem.text(listContent);
 
         list.find('ul').append(listText);
+        listItem.append('<i class="fa fa-close"></i>');
 
-        if (listContent == '') {
+        if (listContent.length == 0 || listContent === '') {
             listItem.remove();
         }
         if(listContent.length > 0) {
             return text.val(null);
         }
+
+        $('.fa-close').on('click', function() {
+            $(this).parent().remove();
+        });
     });
 });
