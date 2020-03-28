@@ -1,5 +1,6 @@
 $(function(){
     const button = $('button');
+    let list= $('.list-container');
 
     button.on('click', function() {
         let text = $('#textField');
@@ -7,7 +8,10 @@ $(function(){
         let content = text.val();
         let listText = listItem.text(content);
     
-        $('.list-container').find('ul').append(listText);
-        text.val(null);
+        list.find('ul').append(listText);
+        
+        if(content == '') {
+            listItem.remove();
+        }
     });
 });
