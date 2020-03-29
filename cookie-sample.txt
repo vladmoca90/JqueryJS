@@ -1,0 +1,12 @@
+ var popupCookie = Cookies.get('openedPopup');
+
+$('#popup').hide();
+
+if(!popupCookie) {
+    $('#popup').show();
+}
+
+$('.close-popup').on('click', function() {
+    Cookies.set('openedPopup', true);
+    $('#popup').hide();
+});
