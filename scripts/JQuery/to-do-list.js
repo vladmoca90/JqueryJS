@@ -19,8 +19,8 @@ $(function () {
             return text.val(null);
         }
 
-        $(close).on('click', function () {
-            $(this).parent().fadeOut();
-        });
+        // $('i').on('click', function () {
+        //     $(this).parents('li').remove();
+        // });
     });
 });
