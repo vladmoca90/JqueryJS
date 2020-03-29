@@ -18,9 +18,9 @@ $(function () {
         if (listContent.length > 0) {
             return text.val(null);
         }
-    });
 
-    $('.fa-close').on('click', function () {
-        $(this).parents('li').fadeOut();
+        $(close).on('click', function () {
+            $(this).parent().fadeOut();
+        });
     });
 });
