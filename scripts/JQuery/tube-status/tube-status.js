@@ -1,4 +1,4 @@
-var data = {
+const data = {
     lines: [{
             name: 'Bakerloo',
             status: 'Good service',
@@ -80,23 +80,19 @@ var data = {
 $(function () {
 
     function getTubeLines(data) {
-
         if (data.lines.length == 0) {
             throw new Error('The line names and statuses must be given');
         }
 
-        var body = $('.tube__body');
+        let body = $('.tube__body');
 
         for (i = 0; i < data.lines.length; i++) {
-            var row = $('<tr></tr>');
-            var tubeLines = $('<td class="tube__lines"></td>');
-            var linesStatus = $('<td class="tube__status"></td>');
+            let row = $('<tr></tr>');
+            let tubeLines = $('<td class="tube__lines"></td>');
+            let linesStatus = $('<td class="tube__status"></td>');
 
-
-            tubeLines.val(data.lines[i].name);
-            tubeLines.html(data.lines[i].name);
-            linesStatus.val(data.lines[i].status);
-            linesStatus.html(data.lines[i].status);
+            tubeLines.text(data.lines[i].name);
+            linesStatus.text(data.lines[i].status);
 
             body.append(row);
             row.append(tubeLines);
