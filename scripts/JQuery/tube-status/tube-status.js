@@ -86,7 +86,7 @@ $(function () {
 
         let body = $('.tube-body');
 
-        for (i = 0; i < data.lines.length; i++) {
+        for (let i = 0; i < data.lines.length; i++) {
             let row = $('<tr></tr>');
             let tubeLines = $('<td class="tube-lines"></td>');
             let linesStatus = $('<td class="tube-status"></td>');
@@ -97,6 +97,16 @@ $(function () {
             body.append(row);
             row.append(tubeLines);
             row.append(linesStatus);
+
+            if (data.lines[i].status === 'Closed') {
+                $('.tube-status').css('color', 'red');
+            }
+            if (data.lines[i].status === 'Partially closed') {
+                $('.tube-status').css('color', 'gold');
+            }
+            if (data.lines[i].status === 'Good service') {
+                $('.tube-status').css('color', 'forest');
+            }
         }
     }
 
