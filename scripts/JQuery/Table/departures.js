@@ -1,6 +1,5 @@
-var data = {
-    departures: [
-        {
+const data = {
+    departures: [{
             airline: 'Lufthansa',
             number: 'DE1502',
             destination: 'Frankfurt',
@@ -9,6 +8,16 @@ var data = {
             terminal: '4',
             checkIn: '25-30',
             gate: '29B',
+        },
+        {
+            airline: 'Lufthansa',
+            number: 'DE1542',
+            destination: 'Munich',
+            scheduled: '10:25',
+            expected: '11:00',
+            terminal: '4',
+            checkIn: '25-30',
+            gate: '22C',
         },
         {
             airline: 'Air France',
@@ -89,57 +98,49 @@ $(function () {
             throw new Error('The departures list must be given');
         }
 
-        var body = $('#airlinesBody');
+        let body = $('#airlinesBody');
 
-        for (i = 0; i < data.departures.length; i++) {
-            var row = $('<tr></tr>');
+        for (let i = 0; i < data.departures.length; i++) {
+            let row = $('<tr></tr>');
             body.append(row);
 
-            var airline = $('<td class="airline"></td>');
-            airline.html(data.departures[i].airline);
-            airline.val(data.departures[i].airline);
+            let airline = $('<td class="airline"></td>');
+            airline.text(data.departures[i].airline);
 
             row.append(airline);
 
-            var airlNumber = $('<td class="number"></td>');
-            airlNumber.html(data.departures[i].number);
-            airlNumber.val(data.departures[i].number);
+            let airlNumber = $('<td class="number"></td>');
+            airlNumber.text(data.departures[i].number);
 
             row.append(airlNumber);
 
-            var dest = $('<td class="destination"></td>');
-            dest.html(data.departures[i].destination);
-            dest.val(data.departures[i].destination);
+            let dest = $('<td class="destination"></td>');
+            dest.text(data.departures[i].destination);
 
             row.append(dest);
 
-            var scheduled = $('<td class="scheduled"></td>');
-            scheduled.html(data.departures[i].scheduled);
-            scheduled.val(data.departures[i].scheduled);
+            let scheduled = $('<td class="scheduled"></td>');
+            scheduled.text(data.departures[i].scheduled);
 
             row.append(scheduled);
 
-            var expected = $('<td class="expected"></td>');
-            expected.html(data.departures[i].expected);
-            expected.val(data.departures[i].expected);
+            let expected = $('<td class="expected"></td>');
+            expected.text(data.departures[i].expected);
 
             row.append(expected);
 
-            var terminal = $('<td class="terminal"></td>');
-            terminal.html(data.departures[i].terminal);
-            terminal.val(data.departures[i].terminal);
+            let terminal = $('<td class="terminal"></td>');
+            terminal.text(data.departures[i].terminal);
 
             row.append(terminal);
 
-            var check = $('<td class="check-in"></td>');
-            check.html(data.departures[i].checkIn);
-            check.val(data.departures[i].checkIn);
+            let check = $('<td class="check-in"></td>');
+            check.text(data.departures[i].checkIn);
 
             row.append(check);
 
-            var gate = $('<td class="gate"></td>');
-            gate.html(data.departures[i].gate);
-            gate.val(data.departures[i].gate);
+            let gate = $('<td class="gate"></td>');
+            gate.text(data.departures[i].gate);
 
             row.append(gate);
         }
