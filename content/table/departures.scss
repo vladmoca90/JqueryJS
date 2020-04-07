@@ -1,16 +1,16 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .departures {
     @include font(15px, $font-color, $gill-sans);
-    margin: 20px auto;
-    max-width: 800px;
+    margin: 40px auto;
+    max-width: 850px;
     width: 100%;
 
     table {
         text-align: center;
     }
+
     th, td {
         padding: 10px;
     }
