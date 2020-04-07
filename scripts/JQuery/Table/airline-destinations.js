@@ -68,3 +68,27 @@ const flights = [
         destinations: ["Atlanta", "Boston", "Delhi", "Havana", "Hong Kong", "Johannesburg", "Lagos", "Las Vegas", "Los Angeles", "Miami", "Mumbai", "New York–JFK", "Newark", "San Francisco", "São Paulo–Guarulhos", "Seattle/Tacoma", "Shanghai–Pudong", "Tel Aviv-Ben Gurion", "Washington–Dulles"],
     }
 ];
+
+$(function() {
+    let content = $('.table-content');
+
+    for(var i = 0; flights.length; i++) {
+        let row = $('<tr></tr>');
+        content.append(row);
+
+        let key = $('<td data-id="key"></td>');
+
+        row.append(key);
+        key.html(flights[i].airline);
+
+        let airline = $('<td data-id="airline"></td>');
+        
+        row.append(airline);
+        airline.html(flights[i].airline);
+
+        let destinations = $('<td data-id="destinations"></td>');
+
+        row.append(destinations);
+        destinations.html(flights[i].destinations);
+    }
+});
