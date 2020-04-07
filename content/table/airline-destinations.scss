@@ -7,35 +7,28 @@
     max-width: 960px;
     width: 100%;
 
-    .table-header>th {
-        background-color: #eee;
-        border-bottom: 1px solid #ccc;
-        font-weight: 500;
-        offset: 0;
-        padding: 7px 20px 7px 0;
-        text-transform: uppercase;
-    }
-
-    th,
-    td[data-id="order"] {
-        text-align: center;
-    }
-
-    .table-header>th:nth-of-type(1),
-    .table-content>tr>td:nth-of-type(1),
-    .table-content>tr>th {
-        border-right: 1px solid #ccc;
+    .table-header {
+        th {
+            background-color: #eee;
+            border-bottom: 1px solid #ccc;
+            border-color: #ccc;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 500;
+            offset: 0;
+            padding: 7px 20px 7px 0;
+            text-transform: uppercase;
+        }
     }
 
     .table-content {
-        tr>th {
-            border-color: #ccc;
-            vertical-align: middle;
+        td[data-id="order"] {
             text-align: center;
         }
 
         tr>td {
             border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
             vertical-align: middle;
             padding: 10px;
         }

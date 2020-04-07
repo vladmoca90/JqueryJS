@@ -6,23 +6,18 @@
   margin: 0 auto;
   max-width: 960px;
   width: 100%; }
-  .table .table-header > th {
+  .table .table-header th {
     background-color: #eee;
     border-bottom: 1px solid #ccc;
+    border-color: #ccc;
+    border-right: 1px solid #ccc;
+    vertical-align: middle;
+    text-align: center;
     font-weight: 500;
     offset: 0;
     padding: 7px 20px 7px 0;
     text-transform: uppercase; }
-  .table th,
-  .table td[data-id="order"] {
-    text-align: center; }
-  .table .table-header > th:nth-of-type(1),
-  .table .table-content > tr > td:nth-of-type(1),
-  .table .table-content > tr > th {
-    border-right: 1px solid #ccc; }
-  .table .table-content tr > th {
-    border-color: #ccc;
-    vertical-align: middle;
+  .table .table-content td[data-id="order"] {
     text-align: center; }
   .table .table-content tr > td {
     border-bottom: 1px solid #ccc;
