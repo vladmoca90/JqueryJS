@@ -4,17 +4,18 @@ body {
   padding: 0; }
   body #main {
     padding: 30px; }
-    body #main .tube__container {
+    body #main .tube-container {
       margin: 0 auto;
-      max-width: 450px; }
-      body #main .tube__container .tube__table {
+      width: 400px; }
+      body #main .tube-container .tube-table {
         border: 1px solid #ccc;
         font-size: 16px;
         width: 100%; }
-        body #main .tube__container .tube__table th {
+        body #main .tube-container .tube-table th {
           text-align: left; }
-        body #main .tube__container .tube__table th,
-        body #main .tube__container .tube__table td {
+        body #main .tube-container .tube-table th, body #main .tube-container .tube-table td {
           border: 1px solid #ccc;
           padding: 10px 0px;
           text-indent: 8px; }
+        body #main .tube-container .tube-table .tube-status {
+          font-weight: bold; }
