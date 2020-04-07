@@ -79,9 +79,9 @@ const data = {
 
 $(function () {
 
-    function getTubeLines(data) {
+    const getTubeLines = data => {
         if (data.lines.length == 0) {
-            throw new Error('The line names and statuses must be given');
+            throw new Error('The line names and statuses must be given.');
         }
 
         let body = $('.tube-body');
@@ -97,18 +97,14 @@ $(function () {
             body.append(row);
             row.append(tubeLines);
             row.append(linesStatus);
-
-            if (data.lines[i].status === 'Closed') {
-                $('.tube-status').css('color', 'red');
-            }
-            if (data.lines[i].status === 'Partially closed') {
-                $('.tube-status').css('color', 'gold');
-            }
-            if (data.lines[i].status === 'Good service') {
-                $('.tube-status').css('color', 'forest');
-            }
         }
     }
 
     getTubeLines(data);
+
+    const addColors = () => {
+
+    }
+
+    addColors();
 });
