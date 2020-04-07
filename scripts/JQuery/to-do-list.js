@@ -1,5 +1,5 @@
 $(function () {
-    const button = $('button');
+    let button = $('button');
     let list = $('.list-container');
     let text = $('#textField');
 

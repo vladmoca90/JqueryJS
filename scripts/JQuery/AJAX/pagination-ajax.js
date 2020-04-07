@@ -1,16 +1,13 @@
 $(function () {
-
     $('#prev').css('visibility', 'hidden');
 
     var pageSize = 10;
-
     var sizes = [10, 25, 50];
 
     var nextUrl = '';
     var prevUrl = '';
 
     function populateListWithCities(cities) {
-
         if (cities.length == 0) {
             throw new Error('The cities must be given');
         }
@@ -26,10 +23,6 @@ $(function () {
     }
 
     function populateDropWithPageSizes(pagesSizes) {
-
-        // var blank = $('<option></option>');
-
-        // $('#pagesDrop').append(blank);
 
         for (var i = 0; i < sizes.length; i++) {
             var option = $('<option></option>');
@@ -85,7 +78,6 @@ $(function () {
     });
 
     $('#next').on('click', function () {
-
         $.ajax(nextUrl, {
             method: 'GET',
             dataType: 'json',
@@ -116,7 +108,6 @@ $(function () {
     });
 
     $('#prev').on('click', function () {
-
         $.ajax(prevUrl, {
             method: 'GET',
             dataType: 'json',
