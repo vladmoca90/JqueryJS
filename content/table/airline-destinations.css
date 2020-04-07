@@ -12,21 +12,24 @@
     font-weight: 500;
     offset: 0;
     padding: 7px 20px 7px 0;
-    text-align: center;
     text-transform: uppercase; }
+  .table th,
+  .table td[data-id="order"] {
+    text-align: center; }
   .table .table-header > th:nth-of-type(1),
   .table .table-content > tr > td:nth-of-type(1),
   .table .table-content > tr > th {
     border-right: 1px solid #ccc; }
-  .table .table-content > tr > th {
+  .table .table-content tr > th {
     border-color: #ccc;
     vertical-align: middle;
     text-align: center; }
-  .table .table-content > tr > td {
+  .table .table-content tr > td {
     border-bottom: 1px solid #ccc;
     vertical-align: middle;
-    padding: 5px 10px; }
-  .table .table-content > tr > td:nth-of-type(1) {
-    width: 17%; }
-  .table .table-content > tr:last-of-type > td {
+    padding: 10px; }
+  .table .table-content td[data-id="airline"] {
+    border-right: 1px solid #ccc;
+    width: 200px; }
+  .table .table-content tr:last-of-type > td {
     border-bottom: 0; }

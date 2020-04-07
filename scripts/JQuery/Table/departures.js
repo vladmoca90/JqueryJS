@@ -85,7 +85,6 @@ var data = {
 
 $(function () {
     function addDepartures(data) {
-
         if (data.departures.length == 0) {
             throw new Error('The departures list must be given');
         }
