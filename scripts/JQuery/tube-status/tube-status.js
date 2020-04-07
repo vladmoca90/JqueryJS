@@ -84,12 +84,12 @@ $(function () {
             throw new Error('The line names and statuses must be given');
         }
 
-        let body = $('.tube__body');
+        let body = $('.tube-body');
 
         for (i = 0; i < data.lines.length; i++) {
             let row = $('<tr></tr>');
-            let tubeLines = $('<td class="tube__lines"></td>');
-            let linesStatus = $('<td class="tube__status"></td>');
+            let tubeLines = $('<td class="tube-lines"></td>');
+            let linesStatus = $('<td class="tube-status"></td>');
 
             tubeLines.text(data.lines[i].name);
             linesStatus.text(data.lines[i].status);
