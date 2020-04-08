@@ -70,7 +70,7 @@ const data = {
             id: 1,
         },
         {
-            name: 'Tram',
+            name: 'Croydon Tram',
             status: 'Good service',
             id: 1,
         },
@@ -101,4 +101,16 @@ $(function () {
     }
 
     getTubeLines(data);
+
+    function addColors() {
+        let status = $('.tube-status');
+
+        for (let i = 0; i < status.length; i++) {
+            if(status[i].text() === 'Closed') {
+                $(this).css('color', 'red');
+            }
+        }
+    }
+
+    addColors();
 });
