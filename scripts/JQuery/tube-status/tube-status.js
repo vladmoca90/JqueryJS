@@ -101,10 +101,4 @@ $(function () {
     }
 
     getTubeLines(data);
-
-    const addColors = () => {
-
-    }
-
-    addColors();
 });
