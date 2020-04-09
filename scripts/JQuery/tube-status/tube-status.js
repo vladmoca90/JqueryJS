@@ -92,8 +92,15 @@ $(function () {
 
         for (let i = 0; i < status.length; i++) {
             let tubeStatus = status.eq(i).text();
+
             if(tubeStatus === 'Closed') {
-                status.parents('tr').eq(i).css('color', 'red');
+                status.eq(i).css('color', 'red');
+            }
+            if(tubeStatus === 'Partially closed') {
+                status.eq(i).css('color', 'orange');
+            }
+            if(tubeStatus === 'Good service') {
+                status.eq(i).css('color', 'green');
             }
         }
     }
