@@ -1,5 +1,6 @@
 const data = {
-    lines: [{
+    lines: [
+        {
             name: 'Bakerloo',
             status: 'Good service',
         },
@@ -16,7 +17,7 @@ const data = {
             status: 'Partially closed',
         },
         {
-            name: 'Hammersmith & city',
+            name: 'Hammersmith & City',
             status: 'Partially closed',
         },
         {
@@ -40,7 +41,7 @@ const data = {
             status: 'Good service',
         },
         {
-            name: 'Waterloo & city',
+            name: 'Waterloo & City',
             status: 'Closed',
         },
         {
