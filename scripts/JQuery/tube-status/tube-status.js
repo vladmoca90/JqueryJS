@@ -2,77 +2,62 @@ const data = {
     lines: [{
             name: 'Bakerloo',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Central',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Circle',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'District',
             status: 'Partially closed',
-            id: 2,
         },
         {
             name: 'Hammersmith & city',
             status: 'Partially closed',
-            id: 2,
         },
         {
             name: 'Jubilee',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Metropolitan',
             status: 'Partially closed',
-            id: 2,
         },
         {
             name: 'Northern',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Picadilly',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Victoria',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Waterloo & city',
             status: 'Closed',
-            id: 3,
         },
         {
             name: 'London Overground',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Tfl Rail',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'DLR',
             status: 'Good service',
-            id: 1,
         },
         {
             name: 'Croydon Tram',
             status: 'Good service',
-            id: 1,
         },
     ]
 }
@@ -106,8 +91,9 @@ $(function () {
         let status = $('.tube-status');
 
         for (let i = 0; i < status.length; i++) {
-            if(status[i].text() === 'Closed') {
-                $(this).css('color', 'red');
+            let tubeStatus = status.eq(i).text();
+            if(tubeStatus === 'Closed') {
+                status.parents('tr').eq(i).css('color', 'red');
             }
         }
     }
