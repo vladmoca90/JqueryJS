@@ -1,5 +1,8 @@
 .dropdown-container {
-  margin: 30px auto 0; }
+  margin: 30px auto 0;
+  max-width: 200px; }
+  .dropdown-container p {
+    font-size: 14px; }
 
 #textField {
   font-size: 16px; }
