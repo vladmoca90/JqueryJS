@@ -1,10 +1,11 @@
 .main {
     margin: 30px auto 0;
-    max-width: 300px;
+    max-width: 200px;
     #textField {
         font-size: .8em;
-        margin-bottom: 1rem;
+        margin: 0 auto 1rem;
         padding: .25rem;
+        width: 100%;
     }
     p {
         font-size: .8em;
@@ -15,6 +16,9 @@
         }
         &.alert-text {
             color: #ff0000;
+            display: none;
+            font-weight: bold;
+            text-align: center;
         }
     }
 }
