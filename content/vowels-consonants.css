@@ -1,13 +1,15 @@
 .main {
   margin: 30px auto 0;
-  max-width: 200px; }
+  max-width: 300px; }
   .main #textField {
     font-size: .8em;
     margin-bottom: 1rem;
-    padding: .2rem; }
+    padding: .25rem; }
   .main p {
     font-size: .8em;
     margin: .5rem 0 0; }
     .main p span {
       font-weight: bold;
       margin-left: .2rem; }
+    .main p.alert-text {
+      color: #ff0000; }
