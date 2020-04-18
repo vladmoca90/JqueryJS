@@ -5,7 +5,7 @@
     margin: 0 auto 1rem;
     padding: .25rem;
     width: 100%; }
-  .main #texxtField, .main .check-btn, .main p {
+  .main #textField, .main .check-btn, .main p {
     font-size: .9em; }
   .main .check-btn {
     letter-spacing: 1px;
