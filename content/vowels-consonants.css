@@ -8,9 +8,8 @@
   .main #textField, .main .check-btn, .main p {
     font-size: .9em; }
   .main .check-btn {
-    letter-spacing: 1px;
     margin-bottom: .3rem;
-    padding: .1rem;
+    padding: .15rem .1rem;
     width: 85px; }
   .main p {
     margin: .5rem 0 0; }
