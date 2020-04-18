@@ -3,10 +3,12 @@ $(function () {
     let total = text.val();
     let check = $('.check-btn');
 
+    $('.alert-text').hide();
+
     check.on('click', function () {
         const returnLetters = total => {
             if (total.length == 0) {
-                throw new Error('The field cannot be empty');
+                $('.alert-text').show();
             }
 
             let count = 0;
