@@ -9,13 +9,19 @@ $(function () {
         let count = 0;
 
         for (let i = 0; i < text.length; i++) {
-            if() {
+            if (isVowel(c)) {
                 count++;
             } else {
-                
+
             }
         }
     }
 
     returnLetters(text);
+
+    function isVowel(c) {
+        var v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+
+        return v;
+    }
 });
