@@ -1,7 +1,7 @@
 $(function () {
     let text = $('#textField');
 
-    function returnLetters(text) {
+    const returnLetters = text => {
         if (text.length == 0) {
             throw new Error('The field cannot be empty');
         }
@@ -19,8 +19,8 @@ $(function () {
 
     returnLetters(text);
 
-    function isVowel(c) {
-        var v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    const isVowel = c => {
+        let v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
         return v;
     }
