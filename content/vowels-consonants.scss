@@ -24,8 +24,9 @@
         }
         &.alert-text {
             color: #ff0000;
-            display: none;
+            margin: .6rem 0;
             text-align: center;
+            text-transform: uppercase;
         }
     }
 }

@@ -19,5 +19,5 @@
       margin-left: .2rem; }
     .main p.alert-text {
       color: #ff0000;
-      display: none;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
