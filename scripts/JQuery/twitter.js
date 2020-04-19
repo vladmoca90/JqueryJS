@@ -1,5 +1,5 @@
 $(function () {
-    let maxCount = 140;
+    let maxCount = 150;
     let btn = $('button');
     let comment = $('#commentSection');
     let display: $('#commentDisplay');
@@ -24,12 +24,12 @@ $(function () {
             $('#counter').addClass('medium');
             $('#counter').html(maxCount - value);
         }
-        if (value >= 101 && value <= 140) {
+        if (value >= 101 && value <= 150) {
             clearClasses('#counter');
             $('#counter').addClass('low');
             $('#counter').html(maxCount - value);
         }
-        if (value > 140) {
+        if (value > 150) {
             clearClasses('#counter');
             $('#counter').addClass('negative');
             $('#counter').html(maxCount - value);
@@ -40,7 +40,7 @@ $(function () {
         let content = comment.val();
         let tweet = $('<li class="text"></li>');
 
-        if (content.length == 0 || content.length > 140) {
+        if (content.length == 0 || content.length > 150) {
             return;
         }
 
