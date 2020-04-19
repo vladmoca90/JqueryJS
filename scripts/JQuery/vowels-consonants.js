@@ -10,6 +10,9 @@ $(function () {
             if (text.length == 0) {
                 $('.alert-text').show();
             }
+            if (text.length > 0) {
+                $('.alert-text').hide();
+            }
 
             let count = 0;
 
