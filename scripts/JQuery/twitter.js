@@ -2,7 +2,9 @@ $(function () {
     let maxCount = 150;
     let btn = $('button');
     let comment = $('#commentSection');
-    let display: $('#commentDisplay');
+    let display = $('#commentDisplay');
+
+    $('#counter').text(maxCount);
 
     const clearClasses = id => {
         $(id).removeClass('low');
