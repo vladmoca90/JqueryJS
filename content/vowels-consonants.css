@@ -1,17 +1,18 @@
 .main {
   margin: 30px auto 0;
-  max-width: 215px; }
+  max-width: 225px; }
   .main #textField {
     margin: 0 auto 1rem;
     padding: .25rem;
     width: 100%; }
   .main #textField, .main .check-btn, .main p {
-    font-size: .9em; }
+    font-size: .8em; }
   .main .check-btn {
     margin-bottom: .3rem;
     padding: .15rem .1rem;
     width: 85px; }
   .main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: .5rem 0 0; }
     .main p span, .main p .alert-text {
       font-weight: bold; }
