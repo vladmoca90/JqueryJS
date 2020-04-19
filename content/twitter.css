@@ -15,7 +15,7 @@
     margin: 20px 0 10px;
     outline: none;
     text-transform: uppercase;
-    width: 100%; }
+    width: 80px; }
     .content button:hover {
       background-color: #0288D1;
       border-color: #0288D1; }
@@ -25,7 +25,7 @@
   .content #commentDisplay .text {
     background-color: #B3E5FC;
     border-radius: 6px;
-    color: #757575;
+    color: #111;
     font-size: 15px;
     list-style-type: none;
     margin-bottom: 13px;
