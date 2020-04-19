@@ -1,26 +1,27 @@
 $(function () {
-    let field = $('#textField');
-    let text = field.val();
     let check = $('.check-btn');
-
     $('.alert-text').hide();
 
     check.on('click', function () {
+        let field = $('#textField');
+        let text = field.val();
+
         const returnLetters = text => {
             if (text.length == 0) {
                 $('.alert-text').show();
-            }
-            if (text.length > 0) {
+            } else {
                 $('.alert-text').hide();
             }
 
             let count = 0;
 
             for (let i = 0; i < text.length; i++) {
+                let c = text.charAt(i);
                 if (isVowel(c)) {
                     count++;
-                    $('.vowels-number').text(count);
                 }
+
+                $('.vowels-number').text(count);
             }
         }
 
