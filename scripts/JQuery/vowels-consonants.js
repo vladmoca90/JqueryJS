@@ -1,19 +1,19 @@
 $(function () {
-    let text = $('#textField');
-    let total = text.val();
+    let field = $('#textField');
+    let text = field.val();
     let check = $('.check-btn');
 
     $('.alert-text').hide();
 
     check.on('click', function () {
-        const returnLetters = total => {
-            if (total.length == 0) {
+        const returnLetters = text => {
+            if (text.length == 0) {
                 $('.alert-text').show();
             }
 
             let count = 0;
 
-            for (let i = 0; i < total.length; i++) {
+            for (let i = 0; i < text.length; i++) {
                 if (isVowel(c)) {
                     count++;
                     $('.vowels-number').text(count);
@@ -27,6 +27,6 @@ $(function () {
             return v;
         }
 
-        returnLetters(total);
+        returnLetters(text);
     });
 });
