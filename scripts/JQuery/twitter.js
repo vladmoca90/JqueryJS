@@ -1,14 +1,17 @@
 $(function () {
     let maxCount = 140;
+    let btn = $('button');
+    let comment = $('#commentSection');
+    let display: $('#commentDisplay');
 
-    function clearClasses(id) {
+    const clearClasses = id => {
         $(id).removeClass('low');
         $(id).removeClass('medium');
         $(id).removeClass('high');
         $(id).removeClass('negative');
     }
 
-    $('#commentSection').on('input', function () {
+    comment.on('input', function () {
         let value = $(this).val().length;
 
         if (value >= 0 && value <= 40) {
@@ -33,8 +36,8 @@ $(function () {
         }
     });
 
-    $('button').click(function () {
-        let content = $('#commentSection').val();
+    btn.on('click', function () {
+        let content = comment.val();
         let tweet = $('<li class="text"></li>');
 
         if (content.length == 0 || content.length > 140) {
@@ -42,8 +45,8 @@ $(function () {
         }
 
         tweet.html(content);
-        $('#commentSection').val(' ')
+        comment.val(' ')
         $('#counter').html(maxCount);
-        $('#commentDisplay').prepend(tweet);
+        display.prepend(tweet);
     });
 });
