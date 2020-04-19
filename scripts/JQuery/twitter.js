@@ -1,6 +1,5 @@
 $(function () {
-    var maxCount = 140;
-    // var maxCharacters = $('<span id="maxCharacters"></span>');
+    let maxCount = 140;
 
     function clearClasses(id) {
         $(id).removeClass('low');
@@ -10,7 +9,7 @@ $(function () {
     }
 
     $('#commentSection').on('input', function () {
-        var value = $(this).val().length;
+        let value = $(this).val().length;
 
         if (value >= 0 && value <= 40) {
             clearClasses('#counter');
@@ -35,8 +34,8 @@ $(function () {
     });
 
     $('button').click(function () {
-        var content = $('#commentSection').val();
-        var tweet = $('<li class="text"></li>');
+        let content = $('#commentSection').val();
+        let tweet = $('<li class="text"></li>');
 
         if (content.length == 0 || content.length > 140) {
             return;
