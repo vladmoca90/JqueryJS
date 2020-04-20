@@ -42,7 +42,10 @@ $(function () {
         let content = comment.val();
         let tweet = $('<li class="text"></li>');
 
-        if (content.length == 0 || content.length > 150) {
+        if (content.length == 0) {
+            tweet.remove();
+        }
+        if (content.length > 150) {
             return;
         }
 
