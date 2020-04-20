@@ -18,9 +18,5 @@ $(function () {
         if (listContent.length > 0) {
             return text.val(null);
         }
-
-        // $('i').on('click', function () {
-        //     $(this).parents('li').remove();
-        // });
     });
 });
