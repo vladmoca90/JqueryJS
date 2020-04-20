@@ -42,16 +42,16 @@ $(function () {
         let content = comment.val();
         let tweet = $('<li class="text"></li>');
 
+        tweet.html(content);
+        comment.val(' ')
+        $('#counter').html(maxCount);
+        display.append(tweet);
+
         if (content.length == 0) {
             tweet.remove();
         }
         if (content.length > 150) {
             return;
         }
-
-        tweet.html(content);
-        comment.val(' ')
-        $('#counter').html(maxCount);
-        display.prepend(tweet);
     });
 });
