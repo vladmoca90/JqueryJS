@@ -35,6 +35,8 @@ $(function () {
             clearClasses('#counter');
             $('#counter').addClass('negative');
             $('#counter').html(maxCount - value.length);
+
+            btn.prop('disabled', true);
         }
     });
 
