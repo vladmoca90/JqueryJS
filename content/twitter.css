@@ -22,8 +22,7 @@
     padding-top: 10px;
     width: 400px; }
   .content #commentDisplay {
-    overflow: hidden;
-    white-space: pre-wrap; }
+    overflow: hidden; }
     .content #commentDisplay .text {
       background-color: #B3E5FC;
       border-radius: 6px;
