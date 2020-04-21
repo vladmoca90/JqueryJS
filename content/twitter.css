@@ -21,18 +21,22 @@
   .content .content-comments {
     padding-top: 10px;
     width: 400px; }
-  .content #commentDisplay .text {
-    background-color: #B3E5FC;
-    border-radius: 6px;
-    color: #111;
-    font-size: 15px;
-    list-style-type: none;
-    margin-bottom: 13px;
-    padding: 12px;
-    position: relative;
-    width: 100%; }
-    .content #commentDisplay .text:after {
-      position: absolute; }
+  .content #commentDisplay {
+    overflow: hidden;
+    white-space: pre-wrap; }
+    .content #commentDisplay .text {
+      background-color: #B3E5FC;
+      border-radius: 6px;
+      color: #111;
+      font-size: 15px;
+      list-style-type: none;
+      margin-bottom: 13px;
+      padding: 12px;
+      position: relative;
+      word-break: break-all;
+      width: 100%; }
+      .content #commentDisplay .text:after {
+        position: absolute; }
   .content #counter {
     font-weight: bold;
     margin-top: 10px; }
