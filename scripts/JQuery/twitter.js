@@ -14,27 +14,27 @@ $(function () {
     }
 
     comment.on('input', function () {
-        let value = $(this).val().length;
+        let value = $(this).val().trim().replace(' ', '');
 
-        if (value >= 0 && value <= 40) {
+        if (value.length >= 0 && value.length <= 40) {
             clearClasses('#counter');
             $('#counter').addClass('high');
-            $('#counter').html(maxCount - value);
+            $('#counter').html(maxCount - value.length);
         }
-        if (value >= 41 && value <= 100) {
+        if (value.length >= 41 && value.length <= 100) {
             clearClasses('#counter');
             $('#counter').addClass('medium');
-            $('#counter').html(maxCount - value);
+            $('#counter').html(maxCount - value.length);
         }
-        if (value >= 101 && value <= 150) {
+        if (value.length >= 101 && value.length <= 150) {
             clearClasses('#counter');
             $('#counter').addClass('low');
-            $('#counter').html(maxCount - value);
+            $('#counter').html(maxCount - value.length);
         }
-        if (value > 150) {
+        if (value.length > 150) {
             clearClasses('#counter');
             $('#counter').addClass('negative');
-            $('#counter').html(maxCount - value);
+            $('#counter').html(maxCount - value.length);
         }
     });
 
