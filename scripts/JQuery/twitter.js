@@ -47,10 +47,10 @@ $(function () {
         $('#counter').html(maxCount);
         display.append(tweet);
 
-        if (content.length == 0) {
+        if (content.trim().length == 0) {
             tweet.remove();
         }
-        if (content.length > 150) {
+        if (content.trim().length > 150) {
             return;
         }
     });
