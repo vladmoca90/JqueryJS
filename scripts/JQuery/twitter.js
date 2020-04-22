@@ -37,6 +37,8 @@ $(function () {
             $('#counter').html(maxCount - value.length);
 
             btn.prop('disabled', true);
+        } else {
+            btn.prop('disabled', false);
         }
     });
 
