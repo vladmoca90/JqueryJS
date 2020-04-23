@@ -20,9 +20,6 @@ $(function () {
                 if (weekend.text() === 'Saturday' || weekend.text() === 'Sunday') {
                     weekend.addClass('disable-day');
                     weekend.removeClass('clicked');
-                    // showDay.text(day.hide());
-                } else {
-                    // showDay.text(day.text());
                 }
             }
         } else {
