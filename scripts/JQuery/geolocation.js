@@ -9,7 +9,7 @@ $(function () {
         }
     }
 
-    function showPosition(position) {
+    const showPosition = (position) => {
         coordinates.html(position.coords.latitude + ' ' + position.coords.longitude);
     }
 
