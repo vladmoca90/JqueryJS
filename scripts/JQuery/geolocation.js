@@ -1,7 +1,7 @@
 $(function () {
     let coordinates = $('#coordinates');
 
-    function getLocation() {
+    const getLocation = () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else {
