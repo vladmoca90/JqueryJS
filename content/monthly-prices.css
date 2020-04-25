@@ -3,7 +3,7 @@ body {
   padding: 0; }
   body .prices-container {
     margin: 20px auto 0;
-    max-width: 720px; }
+    max-width: 660px; }
     body .prices-container .title-link {
       color: #222;
       display: flex;
