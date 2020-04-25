@@ -7,4 +7,5 @@ body {
     max-width: 300px; }
     body .main .btn {
       font-size: 14px;
-      margin-right: 15px; }
+      margin-right: 15px;
+      width: 70px; }
