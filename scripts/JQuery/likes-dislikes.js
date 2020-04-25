@@ -1,5 +1,5 @@
 $(function () {
-    $('.like-button').click(function () {
+    $('.btn').on('click', function () {
         let parent = $(this).parent();
         let count = parseInt(parent.attr('data-count'));
         let liked = parent.attr('data-liked') == 'true';
