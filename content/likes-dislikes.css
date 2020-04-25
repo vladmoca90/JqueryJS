@@ -8,7 +8,7 @@ body {
       border-radius: 6px;
       color: #fff !important;
       margin-right: 15px;
-      padding: 5px; }
+      padding: 5px 10px; }
       body .main .btn.like-btn {
         background-color: #3c8b3c; }
       body .main .btn.unlike-btn {
