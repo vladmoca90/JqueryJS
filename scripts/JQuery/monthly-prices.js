@@ -1,7 +1,7 @@
 $(function () {
     let vehicles = $('.vehicle-price');
 
-    function getVehiclesPrices(vehicles) {
+    const getVehiclesPrices = vehicles => {
         if (vehicles.length == 0) {
             return;
         }
