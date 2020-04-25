@@ -4,5 +4,9 @@ body {
   body .main {
     margin: 30px auto 0;
     max-width: 300px; }
-    body .main .like-button {
+    body .main .btn {
       margin-right: 15px; }
+      body .main .btn.like-btn {
+        background-color: #3c8b3c; }
+      body .main .btn.unlike-btn {
+        background-color: #af4141; }
