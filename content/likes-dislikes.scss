@@ -1,22 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-
     .main {
+        font-size: 14px;
         margin: 30px auto 0;
         max-width: 300px;
-
         .btn {
-            border-radius: 6px;
-            color:#fff !important;
+            font-size: 14px;
             margin-right: 15px;
-            padding: 6px 10px;
-            &.like-btn {
-                background-color: rgb(60, 139, 60);
-            }
-            &.unlike-btn {
-                background-color: rgb(175, 65, 65);
-            }
+            width: 70px;
         }
     }
 }
