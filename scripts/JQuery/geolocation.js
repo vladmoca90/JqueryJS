@@ -2,9 +2,11 @@ $(function () {
     let coordinates = $('#coordinates');
 
     const getCurrentLocation = () => {
-        navigator.geolocation ? navigator.geolocation.getCurrentPosition(showPosition) 
-                              : coordinates.html('Geolocation is not supported by this browser.');
+        navigator.geolocation ? navigator.geolocation.getCurrentPosition(showPosition) :
+            coordinates.html('Geolocation is not supported by this browser.');
     }
+
+    getCurrentLocation();
 
     const showPosition = position => {
         let currentLat = position.coords.latitude;
@@ -13,5 +15,5 @@ $(function () {
         coordinates.html(currentLat.toFixed(4) + ' ' + currentLong.toFixed(4));
     }
 
-    getCurrentLocation();
+    showPosition(position);
 });
