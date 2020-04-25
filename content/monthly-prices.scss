@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     .prices-container {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 20px auto 0;
-        max-width: 660px;
+        max-width: 600px;
         .title-link {
             color: #222;
             display: flex;
@@ -12,7 +13,7 @@ body {
             width: 100%;
         }
         .vehicle-title {
-            font-size: 20px;
+            font-size: 16px;
             margin: 0;
         }
         .titles {
@@ -25,12 +26,12 @@ body {
             text-align: right;
 
             .car-price {
-                font-size: 18px;
+                font-size: 15px;
             }
         }
         .monthly-price {
             display: block;
-            font-size: 16px;
+            font-size: 13px;
             font-weight: bold;
         }
     }
