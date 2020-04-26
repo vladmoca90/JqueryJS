@@ -97,8 +97,5 @@ $(function () {
 
             $('#namesList').append(selectedName);
         }
-        if(selectedOption == $('#names').eq(0)) {
-
-        }
     });
 });
