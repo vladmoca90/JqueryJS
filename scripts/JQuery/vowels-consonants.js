@@ -8,8 +8,11 @@ $(function () {
 
         const returnLetters = text => {
             if (text.length == 0) {
-                throw new Error('The field cannot be empty');
-            }
+                $('.alert-text').hide();
+            } 
+            if (text.length > 0) {
+                $('.alert-text').show();
+            } 
         }
 
         const isVowel = c => {
