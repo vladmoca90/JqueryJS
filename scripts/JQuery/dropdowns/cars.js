@@ -1,4 +1,4 @@
-var cars = [
+const cars = [
     {
         model: 'Mercedes-Benz',
         make: 'E50',
@@ -17,43 +17,42 @@ var cars = [
     },
 ];
 
-var stocks = [3, 1, 4, 1];
+const stocks = [3, 1, 4, 1];
 
 $(function () {
-    function addModelsToDrop(cars, dropId) {
+    const addModels = (cars, dropId) => {
         if (cars.length == 0) {
             throw new Error('Cars list list be given');
         }
 
         $(dropId).empty();
 
-        var blank = $('<option></option>');
+        let blank = $('<option></option>');
 
         $(dropId).append(blank);
 
-        for (var i = 0; i < cars.length; i++) {
-            var option = $('<option></option>');
+        for (let i = 0; i < cars.length; i++) {
+            let option = $('<option></option>');
 
             option.val(cars[i].model);
             option.html(cars[i].model);
-
             $(dropId).append(option);
         }
     }
 
-    addModelsToDrop(cars, '#modelDrop');
+    addModels(cars, '#modelDrop');
 
-    $('#modelDrop').change(function () {
+    $('#modelDrop').on('change', function () {
         $('#makeDrop').empty();
 
-        var selectedOption = $(this).find(':selected');
-        var carCode = selectedOption.val();
-        var blank = $('<option></option>');
+        let selectedOption = $(this).find(':selected');
+        let carCode = selectedOption.val();
+        let blank = $('<option></option>');
 
         $('#makeDrop').append(blank);
 
-        for (var i = 0; i < cars.length; i++) {
-            var option = $('<option></option>');
+        for (let i = 0; i < cars.length; i++) {
+            let option = $('<option></option>');
 
             if (cars[i].model == carCode) {
                 option.val(cars[i].make);
@@ -64,7 +63,7 @@ $(function () {
         }
     });
 
-    function includeStocksInCars(stocks) {
+    const includeStocksInCars = stocks => {
         if (stocks.lenght == 0) {
             throw new Error('Stocks list must be given');
         }
@@ -74,10 +73,10 @@ $(function () {
 
     includeStocksInCars(stocks);
 
-    $('#makeDrop').change(function () {
-        var stockNumber = $('<span></span>');
+    $('#makeDrop').on('change', function () {
+        let stockNumber = $('<span></span>');
 
-        for (var i = 0; i < cars.length; i++) {
+        for (let i = 0; i < cars.length; i++) {
             Object.assign(cars[i], {
                 stock: stocks[i]
             });
