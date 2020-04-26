@@ -1,3 +1,5 @@
+@import 'variables/variables.scss';
+
 .main {
     margin: 30px auto 0;
     max-width: 225px;
@@ -15,7 +17,7 @@
         width: 85px;
     }
     p {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: $verdana;
         margin: .5em 0 0;
         span, .alert-text {
             font-weight: bold;
@@ -24,7 +26,7 @@
             margin-left: .2em;
         }
         &.alert-text {
-            color: rgb(196, 21, 21);
+            color: $red;
             margin: .8em 0;
             text-align: center;
             text-transform: uppercase;

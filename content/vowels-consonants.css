@@ -12,14 +12,14 @@
     padding: .15em .1em;
     width: 85px; }
   .main p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Verdana, Geneva, Tahoma, sans-serif";
     margin: .5em 0 0; }
     .main p span, .main p .alert-text {
       font-weight: bold; }
     .main p span {
       margin-left: .2em; }
     .main p.alert-text {
-      color: #c41515;
+      color: #c0002b;
       margin: .8em 0;
       text-align: center;
       text-transform: uppercase; }
