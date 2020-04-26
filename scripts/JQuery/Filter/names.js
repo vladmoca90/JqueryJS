@@ -1,4 +1,5 @@
-var names = [{
+const names = [
+    {
         name: "Vlad Mocanu",
         id: 20,
     },
@@ -53,14 +54,13 @@ var names = [{
 ];
 
 $(function () {
-
-    function addNamesToDropdown(names) {
+    const addNamesToDropdown = names => {
         if (names.length == 0) {
             throw new Error('The list with names must be provided');
         }
 
-        for (var i = 0; i < names.length; i++) {
-            var option = $('<option></option>');
+        for (let i = 0; i < names.length; i++) {
+            let option = $('<option></option>');
 
             $('#names').append(option);
             option.attr('value', names[i].name);
@@ -75,8 +75,8 @@ $(function () {
             throw new Error('The list with names must be provided');
         }
 
-        for (var i = 0; i < names.length; i++) {
-            var nameItem = $('<li></li>');
+        for (let i = 0; i < names.length; i++) {
+            let nameItem = $('<li></li>');
 
             $('#namesList').append(nameItem);
             nameItem.html(names[i].name);
@@ -85,15 +85,15 @@ $(function () {
 
     addNamesToList(names);
 
-    $('#names').change(function () {
-        var selected = $(this).find(':selected');
-        var selectedOption = selected.val();
+    $('#names').on('change', function () {
+        let selected = $(this).find(':selected');
+        let selectedOption = selected.val();
 
         $('#namesList li').remove();
 
         if (selectedOption) {
-            var listItem = $('<li></li>');
-            var selectedName = listItem.html(selectedOption);
+            let listItem = $('<li></li>');
+            let selectedName = listItem.html(selectedOption);
 
             $('#namesList').append(selectedName);
         }
