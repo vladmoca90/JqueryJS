@@ -1,4 +1,4 @@
-var data = {
+const data = {
     students: [
         {
             code: 'AM',
@@ -24,20 +24,20 @@ var data = {
 }
 
 $(function () {
-    var student = $('#student');
-    var mark = $('#mark');
+    let student = $('#student');
+    let mark = $('#mark');
 
-    function getStudents(data) {
+    const getStudents = data => {
         if (data.students.length == 0) {
             throw new Error('The students list must be given');
         }
 
-        var blank = $('<option value=""></option>');
+        let blank = $('<option value=""></option>');
 
         student.append(blank);
 
-        for (var i = 0; i < data.students.length; i++) {
-            var option = $('<option></option>');
+        for (let i = 0; i < data.students.length; i++) {
+            let option = $('<option></option>');
 
             option.attr('val', data.students[i].code);
             option.html(data.students[i].name);
@@ -45,11 +45,11 @@ $(function () {
         }
     }
 
-    student.change(function () {
-        var selectedOption = $(this).find(':selected');
-        var studentCode = selectedOption.val();
+    student.on('change' ,function () {
+        let selectedOption = $(this).find(':selected');
+        let studentCode = selectedOption.val();
 
-        for (var i = 0; i < data.students.length; i++) {
+        for (let i = 0; i < data.students.length; i++) {
             if (data.students[i].name == studentCode) {
                 mark.text(data.students[i].mark);
             }
