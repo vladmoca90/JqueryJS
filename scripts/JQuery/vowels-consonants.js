@@ -8,20 +8,7 @@ $(function () {
 
         const returnLetters = text => {
             if (text.length == 0) {
-                $('.alert-text').show();
-            } else {
-                $('.alert-text').hide();
-            }
-
-            let count = 0;
-
-            for (let i = 0; i < text.length; i++) {
-                let c = text.charAt(i);
-                if (isVowel(c)) {
-                    count++;
-                }
-
-                $('.vowels-number').text(count);
+                throw new Error('The field cannot be empty');
             }
         }
 
