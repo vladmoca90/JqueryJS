@@ -1,10 +1,10 @@
 $(function () {
     let check = $('.check-btn');
+    let field = $('#textField');
+    let text = field.val();
     $('.alert-text').hide();
 
     check.on('click', function () {
-        let field = $('#textField');
-        let text = field.val();
 
         const returnLetters = text => {
             if (text.length == 0) {
