@@ -2,30 +2,30 @@
     margin: 30px auto 0;
     max-width: 225px;
     #textField {
-        margin: 0 auto 1rem;
-        padding: .25rem;
+        margin: 0 auto 1em;
+        padding: .25em;
         width: 100%;
     }
     #textField, .check-btn, p {
         font-size: .8em;
     }
     .check-btn {
-        margin-bottom: .3rem;
-        padding: .15rem .1rem;
+        margin-bottom: .3em;
+        padding: .15em .1em;
         width: 85px;
     }
     p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: .5rem 0 0;
+        margin: .5em 0 0;
         span, .alert-text {
             font-weight: bold;
         }
         span {
-            margin-left: .2rem;
+            margin-left: .2em;
         }
         &.alert-text {
             color: #f00;
-            margin: .8rem 0;
+            margin: .8em 0;
             text-align: center;
             text-transform: uppercase;
         }
