@@ -1,17 +1,18 @@
 $(function () {
+    let btn = $('button');
 
-    $('button').click(function () {
-        var text = $('#text').val();
+    btn.click(function () {
+        let text = $('#text').val();
 
-        function countVowels(text) {
+        const countVowels = text => {
             if (text.length == 0) {
                 throw new Error('The text cannot be empty');
             }
 
-            var count = 0;
+            let count = 0;
 
-            for (i = 0; i < text.length; i++) {
-                var c = text.charAt(i);
+            for (let i = 0; i < text.length; i++) {
+                let c = text.charAt(i);
                 if (isVowel(c)) {
                     count++;
                 }
@@ -20,8 +21,8 @@ $(function () {
             $('p').text(count);
         }
 
-        function isVowel(c) {
-            var v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+        const isVowel = c => {
+            let v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
             return v;
         }
