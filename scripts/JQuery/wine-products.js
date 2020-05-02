@@ -2,14 +2,14 @@ $(function () {
     let products = [];
     let list = $('#productsList');
 
-    function createProductsList(products) {
+    const createProductsList = products => {
         if (!products) {
             throw new Error('The products parameter must be populated');
         }
 
         let productsList = $('.products-container').find('.product');
 
-        for (var i = 0; i < productsList.length; i++) {
+        for (let i = 0; i < productsList.length; i++) {
             let productsObj = new Object();
 
             productsObj.name = $('.product').eq(i).attr('data-product-name'),
@@ -20,14 +20,14 @@ $(function () {
 
     createProductsList(products);
 
-    function addProductsToList(products) {
+    const addProductsToList = products => {
         if (products.length == 0) {
             throw new Error('The products list must be given');
         }
 
         list.find('option').eq(0).val(0);
 
-        for (var i = 0; i < products.length; i++) {
+        for (let i = 0; i < products.length; i++) {
             let option = $('<option></option>');
 
             list.append(option);
