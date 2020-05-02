@@ -5,11 +5,21 @@ $(function () {
     $('.alert-text').hide();
 
     check.on('click', function () {
-        if (text.length == 0) {
-            $('.alert-text').show();
+        const countVowels = text => {
+            if (text.length == 0) {
+                $('.alert-text').show();
+            }
+            if (text.length > 0) {
+                $('.alert-text').hide();
+            }
         }
-        if (text.length > 0) {
-            $('.alert-text').hide();
+
+        const isVowel = c => {
+            let v = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+
+            return v;
         }
+
+        countVowels(text);
     });
 });
