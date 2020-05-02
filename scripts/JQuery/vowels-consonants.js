@@ -1,7 +1,6 @@
 $(function () {
     let check = $('.check-btn');
-    let field = $('#textField');
-    let text = field.val();
+    let text =  $('#textField').val();
     $('.alert-text').hide();
 
     check.on('click', function () {
