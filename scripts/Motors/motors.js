@@ -134,7 +134,6 @@ function populateModelsDropdown(make) {
     }
 
     var models = getModelsForMake(make);
-
     var modelDropdown = $('#modelDropdown');
 
     for (var i = 0; i < models.length; i++) {
@@ -168,12 +167,10 @@ function updateStocksForMake(make) {
     }
 
     var models = getModelsForMake(make);
-
     var stockTotal = $('.stock-value');
-
     var totalStock = 0;
 
-    for (i = 0; i < models.length; i++) {
+    for (var i = 0; i < models.length; i++) {
         totalStock += models[i].stock;
     }
 
