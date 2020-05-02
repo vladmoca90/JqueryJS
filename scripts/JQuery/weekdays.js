@@ -12,7 +12,7 @@ $(function () {
         showDay.text($(this).text());
     });
 
-    exclude.on('change', function () {
+    exclude.change(function() {
         if (this.checked) {
             for (let i = 0; i < day.length; i++) {
                 let weekend = day.eq(i);

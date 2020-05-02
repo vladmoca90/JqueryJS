@@ -42,7 +42,7 @@ $(function () {
 
     addModels(cars, '#modelDrop');
 
-    $('#modelDrop').on('change', function () {
+    $('#modelDrop').change(function() {
         $('#makeDrop').empty();
 
         let selectedOption = $(this).find(':selected');
@@ -73,7 +73,7 @@ $(function () {
 
     includeStocksInCars(stocks);
 
-    $('#makeDrop').on('change', function () {
+    $('#makeDrop').change(function() {
         let stockNumber = $('<span></span>');
 
         for (let i = 0; i < cars.length; i++) {

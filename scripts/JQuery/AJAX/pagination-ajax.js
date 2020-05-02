@@ -36,7 +36,7 @@ $(function () {
 
     populateDropWithPageSizes(sizes);
 
-    $('#pagesDrop').on('change', function () {
+    $('#pagesDrop').change(function() {
         var selectedOption = $(this).find(':selected').val();
 
         Cookies.set('pageSizeValue', selectedOption);

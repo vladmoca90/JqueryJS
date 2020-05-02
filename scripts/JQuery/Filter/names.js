@@ -85,7 +85,7 @@ $(function () {
 
     addNamesToList(names);
 
-    $('#names').on('change', function () {
+    $('#names').change(function() {
         let selected = $(this).find(':selected');
         let selectedOption = selected.val();
 

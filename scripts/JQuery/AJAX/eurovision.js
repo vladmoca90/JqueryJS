@@ -27,7 +27,7 @@ $(function () {
 
     }
 
-    $('#countriesDropdown').on('change', function () {
+    $('#countriesDropdown').change(function() {
         var option = $(this).find(':selected');
         var countryCode = option.val();
         var countries2 = [];
