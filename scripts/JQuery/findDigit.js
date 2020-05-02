@@ -2,7 +2,7 @@
 
 $(function () {
     const btn = $('button');
-    btn.click(function () {
+    btn.on('click', function () {
         let n = $('#number').val();
         let m = $('#digit').val();
         let digit = n.toString()[m];

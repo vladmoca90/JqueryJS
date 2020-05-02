@@ -11,7 +11,7 @@ $(function () {
 
     // the function in click() is also a callback: it says when you click the button (or whatever), please execute this function
     // callbacks are used very frequently in jQuery and in JS in general
-    $('#searchBtn').click(function () {
+    $('#searchBtn').on('click', function () {
         var searchQuery = $('#searchBar').val();
 
         console.log(searchQuery);

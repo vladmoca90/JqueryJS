@@ -11,7 +11,7 @@ $(function () {
 
     var submit = $('#accountSubmit');
 
-    submit.click(function () {
+    submit.on('click', function () {
 
         var json = {
             firstName: $('#firstName').val(),

@@ -87,7 +87,7 @@ $(function () {
 
     buildSimpleDropdown(points, '#pointsDropdown');
 
-    $('#voteCountry').click(function () {
+    $('#voteCountry').on('click', function () {
 
         var rootUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/Eurovision/2018/countries/{fromCountry}/votes/{toCountry}';
 
@@ -118,7 +118,7 @@ $(function () {
         clone.find('.voteTo').html(toCountry);
         clone.find('.points').html(pointsGiven);
 
-        clone.find('.delete-row').click(function () {
+        clone.find('.delete-row').on('click', function () {
             $(this).parent('.template').remove();
         });
 

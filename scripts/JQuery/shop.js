@@ -78,7 +78,7 @@ function getProduct(productId) {
 }
 
 $(function () {
-    $('.product__btn--add').click(function () {
+    $('.product__btn--add').on('click', function () {
         console.log("Add clicked.");
 
         var productId = $(this).attr('product-id');
@@ -91,7 +91,7 @@ $(function () {
         addToBasket(product);
     });
 
-    $('.product__btn--remove').click(function () {
+    $('.product__btn--remove').on('click', function () {
         console.log("Remove clicked");
         // try this
 

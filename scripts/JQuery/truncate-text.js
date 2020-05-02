@@ -1,5 +1,5 @@
 $(function () {
-    $('button').click(function () {
+    $('button').on('click', function () {
 
         var text = $('#textContent').val();
         var n = $('#numberValue').val();

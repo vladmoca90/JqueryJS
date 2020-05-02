@@ -7,7 +7,7 @@
         <span class="number">2</span><span class="operator">+</span><span>5</span><span>*</span><span>2</span>
     */
 $(function () {
-    $('.digit').click(function () {
+    $('.digit').on('click', function () {
         // call function that:
         // creates span with the given value
         // adds span to #display
@@ -19,7 +19,7 @@ $(function () {
         $('#display').append(number);
     });
 
-    $('.operators button').click(function () {
+    $('.operators button').on('click', function () {
         var operator = $('<span class="operator"></span>');
 
         operator.html($(this).html());

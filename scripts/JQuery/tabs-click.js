@@ -2,7 +2,7 @@ $(document).ready(function () {
     let box = $('.pbox')
     box.hide();
 
-    $('a').click(function () {
+    $('a').on('click', function () {
         console.log('CHANGED');
 
         let content = $(this).attr('data-id');
