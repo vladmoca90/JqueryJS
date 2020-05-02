@@ -57,7 +57,7 @@ $(function () {
 
     $('.form-tabs input').change(function () {
         console.log('CHANGED');
-        var tabId = $(this).attr('id');
+        let tabId = $(this).attr('id');
         $('.tab').hide();
 
         $('#' + tabId + 'Tab').show();
@@ -66,14 +66,14 @@ $(function () {
     let searchModel = $('.search-by-model');
     let searchMake = $('.search-by-make');
 
-    function addCarMakes(cars) {
+    const addCarMakes = cars => {
       if(cars.length == 0) {
         throw new Error('The cars list must be given.');
       }
     }
 
     addCarMakes(cars);
-    function addVanMakes(vans) {
+    const addVanMakes = vans => {
       if(vans.length == 0) {
         throw new Error('The vans list must be given.');
       }
