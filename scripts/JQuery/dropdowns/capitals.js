@@ -1,9 +1,9 @@
-var data = {
+const data = {
     countries: [{
             name: 'India',
             code: 'IND',
             capital: 'Delhi',
-            otherCities: ['Madras', 'Mumbai', 'Calcutta', 'Varanasi', 'Hyderabad'],
+            otherCities: ['Madras', 'Mumbai', 'Calcutta', 'letanasi', 'Hyderabad'],
         },
         {
             name: 'Romania',
@@ -57,14 +57,13 @@ var data = {
 }
 
 $(function () {
-    function populateCountriesDrop(data) {
-
+    const populateCountriesDrop = data => {
         if (data.length == 0) {
             throw new Error('The list must be given');
         }
 
-        for (var i = 0; i < data.countries.length; i++) {
-            var option = $('<option></option>');
+        for (let i = 0; i < data.countries.length; i++) {
+            let option = $('<option></option>');
             option.attr('value', data.countries[i].code);
             option.html(data.countries[i].name);
 
@@ -75,10 +74,10 @@ $(function () {
     populateCountriesDrop(data, '#countriesDrop');
 
     $('#countriesDrop').change(function () {
-        var selectedOption = $(this).find(':selected');
-        var capital = selectedOption.val();
+        let selectedOption = $(this).find(':selected');
+        let capital = selectedOption.val();
 
-        for (var i = 0; i < data.countries.length; i++) {
+        for (let i = 0; i < data.countries.length; i++) {
             if (data.countries[i].code == capital) {
                 $('#capital').html(data.countries[i].capital);
             }
@@ -88,18 +87,16 @@ $(function () {
     $('#countriesDrop').change(function () {
         $('#citiesDrop').empty();
 
-        var chooseCity = $('<option value="All other cities">Choose city:</option>');
+        let chooseCity = $('<option value="All other cities">Choose city:</option>');
         $('#citiesDrop').append(chooseCity);
 
-        var selectedOption = $(this).find(':selected');
-        var country = selectedOption.val();
+        let selectedOption = $(this).find(':selected');
+        let country = selectedOption.val();
 
-        for (var i = 0; i < data.countries.length; i++) {
-
+        for (let i = 0; i < data.countries.length; i++) {
             if (data.countries[i].code == country) {
-
-                for (var j = 0; j < data.countries[i].otherCities.length; j++) {
-                    var option = $('<option></option>');
+                for (let j = 0; j < data.countries[i].otherCities.length; j++) {
+                    let option = $('<option></option>');
                     option.attr('value', data.countries[i].code);
                     option.html(data.countries[i].otherCities[j]);
 
