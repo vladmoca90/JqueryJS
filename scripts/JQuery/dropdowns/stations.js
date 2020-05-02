@@ -1,4 +1,4 @@
-var destinations = [
+const destinations = [
     {
         code: 'AYW',
         name: 'Aberystwyth',
@@ -117,23 +117,22 @@ var destinations = [
 ];
 
 $(function () {
-
-    function getTrainStations(destinations, dropdownId) {
+    const getTrainStations = (destinations, dropdownId) => {
         if (destinations.length == 0) {
             throw new Error('Destinations must be provided');
         }
 
-        var stationsDropdown = $(dropdownId);
+        let stationsDropdown = $(dropdownId);
 
         stationsDropdown.empty();
 
-        var station = $('<option value="Choose station">Choose station:</option>');
+        let station = $('<option value="Choose station">Choose station:</option>');
         $('#fromStation').append(station);
-        var destination = $('<option value="Choose destination">Choose destination:</option>');
+        let destination = $('<option value="Choose destination">Choose destination:</option>');
         $('#toStation').append(destination);
 
-        for (var i = 0; i < destinations.length; i++) {
-            var stationOption = $('<option></option>');
+        for (let i = 0; i < destinations.length; i++) {
+            let stationOption = $('<option></option>');
 
             stationOption.attr('value', destinations[i].code);
             stationOption.html(destinations[i].name);
@@ -144,11 +143,11 @@ $(function () {
     getTrainStations(destinations, '#fromStation');
 
     $('#fromStation').change(function() {
-        var selectedOption = $(this).find(':selected');
-        var removeSelected = selectedOption.val();
-        var destinations2 = [];
+        let selectedOption = $(this).find(':selected');
+        let removeSelected = selectedOption.val();
+        let destinations2 = [];
 
-        for (var i = 0; i < destinations.length; i++) {
+        for (let i = 0; i < destinations.length; i++) {
            if(removeSelected != destinations[i].code) {
                destinations2.push(destinations[i]);
            }
