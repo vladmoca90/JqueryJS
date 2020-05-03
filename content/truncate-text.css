@@ -6,17 +6,20 @@
     max-width: 450px;
     width: 100%; }
     .content > div input {
-      height: 30px; }
+      height: 30px;
+      padding-left: 3px; }
       .content > div input#textContent {
         width: 200px; }
       .content > div input#numberValue {
-        width: 50px; }
+        width: 100px; }
     .content > div button {
       background-color: #1e7e34;
-      border-radius: 8px;
+      border-radius: 6px;
       border: 0 solid transparent;
       color: #fff;
       font-size: 14px;
       padding: 7px 12px; }
     .content > div p {
-      font-size: 15px; }
+      display: block;
+      font-size: 15px;
+      margin-top: 15px; }
