@@ -12,11 +12,12 @@
     cursor: pointer;
     font-size: 16px;
     height: 32px;
-    line-height: 26px;
+    line-height: 28px;
     text-align: center;
     width: 125px; }
     .form-tabs label:hover {
       background-color: #ddd; }
 
 .search-panel select, .search-panel option {
+  font-size: 16px;
   width: 125px; }
