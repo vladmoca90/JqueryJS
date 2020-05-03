@@ -1,9 +1,10 @@
 $(function () {
     let check = $('.check-btn');
-    let text =  $('#textField').val();
     $('.alert-text').hide();
 
     check.on('click', function () {
+        let text =  $('#textField').val();
+
         const countEachLetter = text => {
             if (text.length == 0) {
                 $('.alert-text').show();
