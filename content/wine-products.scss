@@ -26,6 +26,9 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: bold;
         width: 330px;
+        &-description__left {
+            text-align: center;
+        }
         h3 {
             font-size: 18px;
         }
