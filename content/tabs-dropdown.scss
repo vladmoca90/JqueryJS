@@ -18,7 +18,7 @@
         height: 32px;
         line-height: 28px;
         text-align: center;
-        width: 125px;
+        width: 130px;
 
         &:hover {
             background-color: #ddd;
@@ -28,7 +28,8 @@
 
 .search-panel {
     select, option {
-        font-size: 16px;
-        width: 125px;
+        font-size: 15px;
+        padding: 2px;
+        width: 130px;
     }
 }
