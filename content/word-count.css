@@ -9,6 +9,6 @@ body {
     padding: 5px;
     width: 100%; }
   body #maxWords {
-    display: inline-block;
+    display: block;
     font-size: 14px;
-    margin-top: 10px; }
+    margin-top: 15px; }
