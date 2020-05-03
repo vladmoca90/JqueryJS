@@ -74,12 +74,20 @@ $(function () {
     if (cars.length == 0) {
       throw new Error('The cars list must be given.');
     }
+
+    for(let i = 0; i < cars.length; i++) {
+
+    }
   }
 
   addCarMakes(cars);
   const addVanMakes = vans => {
     if (vans.length == 0) {
       throw new Error('The vans list must be given.');
+    }
+
+    for(let i = 0; i < vans.length; i++) {
+
     }
   }
 
