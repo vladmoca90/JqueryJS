@@ -1,3 +1,7 @@
+.search-form {
+  margin: 0 auto;
+  max-width: 300px; }
+
 .form-tabs {
   margin: 20px 0; }
   .form-tabs input {
@@ -6,7 +10,7 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     height: 32px;
     line-height: 26px;
     text-align: center;

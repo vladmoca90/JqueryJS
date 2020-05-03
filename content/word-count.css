@@ -7,6 +7,7 @@ body {
     margin: 50px auto 0;
     padding: 5px; }
     body #textSection textarea {
+      margin: 0 auto;
       height: 100px;
       width: 300px; }
   body #maxWords {
