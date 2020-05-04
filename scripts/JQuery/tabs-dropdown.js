@@ -1,5 +1,4 @@
-const cars = [
-  {
+const cars = [{
     make: 'Abarth',
     model: ['Abarth 1', 'Abarth 2', 'Abarth 3'],
   },
@@ -25,8 +24,7 @@ const cars = [
   },
 ];
 
-const vans = [
-  {
+const vans = [{
     make: 'Abarth',
     model: ['Abarth 11', 'Abarth 21', 'Abarth 31'],
   },
@@ -67,20 +65,19 @@ $(function () {
 
   changeTab();
 
-  let searchCarModel = $('.search-car-by-model');
-  let searchCarMake = $('.search-car-by-make');
-  let searchVanModel = $('.search-van-by-model');
-  let searchVanMake = $('.search-van-by-make');
+  let searchModel = $('.search-by-model');
+  let searchMake = $('.search-by-make');
 
   const addCarMakes = cars => {
     if (cars.length == 0) {
       throw new Error('The cars list must be given.');
     }
 
-    for(let i = 0; i < cars.length; i++) {
-          let option = $('<option></option>');
+    for (let i = 0; i < cars.length; i++) {
+      let option = $('<option></option>');
 
-          searchCarMake.append(option);
+      option.html(cars[i].make);
+      searchMake.append(option);
     }
   }
 
@@ -90,7 +87,7 @@ $(function () {
       throw new Error('The vans list must be given.');
     }
 
-    for(let i = 0; i < vans.length; i++) {
+    for (let i = 0; i < vans.length; i++) {
 
     }
   }
