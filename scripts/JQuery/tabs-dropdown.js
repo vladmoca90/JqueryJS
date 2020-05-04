@@ -1,4 +1,5 @@
-const cars = [{
+const cars = [
+  {
     make: 'Abarth',
     model: ['Abarth 1', 'Abarth 2', 'Abarth 3'],
   },
@@ -24,28 +25,29 @@ const cars = [{
   },
 ];
 
-const vans = [{
-    make: 'Abarth',
+const vans = [
+  {
+    make: 'Abarth Van',
     model: ['Abarth 11', 'Abarth 21', 'Abarth 31'],
   },
   {
-    make: 'Alfa Romeo',
+    make: 'Alfa Romeo Van',
     model: ['Alfa Romeo 11', 'Alfa Romeo 21', 'Alfa Romeo 31'],
   },
   {
-    make: 'Toyota',
+    make: 'Toyota Van',
     model: ['Toyota 11', 'Toyota 21', 'Toyota 31'],
   },
   {
-    make: 'Vauxhall',
+    make: 'Vauxhall Van',
     model: ['Vauxhall 11', 'Vauxhall 21', 'Vauxhall 31'],
   },
   {
-    make: 'Volkswagen',
+    make: 'Volkswagen Van',
     model: ['Volkswagen 11', 'Volkswagen 21', 'Volkswagen 31'],
   },
   {
-    make: 'Volvo',
+    make: 'Volvo Van',
     model: ['Volvo 11', 'Volvo 21', 'Volvo 31'],
   },
 ];
@@ -65,13 +67,15 @@ $(function () {
 
   changeTab();
 
-  let searchCarModel = $('.search-car-by-model');
   let searchCarMake = $('.search-car-by-make');
+  let searchCarModel = $('.search-car-by-model');
 
   const addCarMakes = cars => {
     if (cars.length == 0) {
       throw new Error('The cars list must be given.');
     }
+
+    searchCarMake.empty();
 
     for (let i = 0; i < cars.length; i++) {
       let option = $('<option></option>');
@@ -83,7 +87,7 @@ $(function () {
 
   addCarMakes(cars);
 
-  searchMake.change(function () {
+  searchCarMake.change(function () {
     let value = $(this).find(':selected').attr('value');
 
     if (value == 'any') {
