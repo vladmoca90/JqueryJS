@@ -1,6 +1,6 @@
 .search-form {
   margin: 0 auto;
-  max-width: 300px; }
+  max-width: 350px; }
 
 .form-tabs {
   margin: 20px 0; }
@@ -14,11 +14,11 @@
     height: 32px;
     line-height: 28px;
     text-align: center;
-    width: 130px; }
+    width: 150px; }
     .form-tabs label:hover {
       background-color: #ddd; }
 
 .search-panel select, .search-panel option {
   font-size: 15px;
   padding: 2px;
-  width: 130px; }
+  width: 150px; }

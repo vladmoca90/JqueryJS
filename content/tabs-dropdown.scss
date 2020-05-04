@@ -1,6 +1,6 @@
 .search-form {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .form-tabs {
@@ -18,7 +18,7 @@
         height: 32px;
         line-height: 28px;
         text-align: center;
-        width: 130px;
+        width: 150px;
 
         &:hover {
             background-color: #ddd;
@@ -30,6 +30,6 @@
     select, option {
         font-size: 15px;
         padding: 2px;
-        width: 130px;
+        width: 150px;
     }
 }
