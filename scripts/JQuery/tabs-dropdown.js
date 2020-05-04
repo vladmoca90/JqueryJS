@@ -67,8 +67,10 @@ $(function () {
 
   changeTab();
 
-  let searchModel = $('.search-by-model');
-  let searchMake = $('.search-by-make');
+  let searchCarModel = $('.search-car-by-model');
+  let searchCarMake = $('.search-car-by-make');
+  let searchVanModel = $('.search-van-by-model');
+  let searchVanMake = $('.search-van-by-make');
 
   const addCarMakes = cars => {
     if (cars.length == 0) {
@@ -76,7 +78,9 @@ $(function () {
     }
 
     for(let i = 0; i < cars.length; i++) {
+          let option = $('<option></option>');
 
+          searchCarMake.append(option);
     }
   }
 
