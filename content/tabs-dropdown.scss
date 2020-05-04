@@ -2,14 +2,12 @@
     margin: 0 auto;
     max-width: 350px;
 }
-
 .form-tabs {
     margin: 20px 0;
 
     input {
         display: none;
     }
-
     label {
         border: 1px solid #ccc;
         border-radius: 6px;
@@ -25,11 +23,15 @@
         }
     }
 }
-
 .search-panel {
     select, option {
         font-size: 15px;
         padding: 2px;
         width: 150px;
     }
+}
+.number-of-cars,
+.number-of-vans {
+    display: block;
+    margin-top: 15px;
 }

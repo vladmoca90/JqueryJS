@@ -22,3 +22,7 @@
   font-size: 15px;
   padding: 2px;
   width: 150px; }
+
+.number-of-cars,
+.number-of-vans {
+  margin-top: 15px; }
