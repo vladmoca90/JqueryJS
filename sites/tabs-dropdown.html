@@ -9,17 +9,20 @@
 
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../content/tabs-dropdown.css" />
 
@@ -29,38 +32,39 @@
 
     <div class="dropdown-container">
         <form class="search-form">
-            <div class="container">
-                <div class="form-tabs">
-                    <input type="radio" id="cars" name="button" value="cars" checked="checked" />
-                    <label for="cars">Cars</label>
-                    <input type="radio" id="vans" name="button" value="vans" />
-                    <label for="vans">Vans</label>
-                </div>
-                <ul class="search-panel list-unstyled">
-                    <li id="carsTab" class="tab">
-                        <select class="search-car-by-make" name="make">
-                            <option value="any">Make cars</option>
-                        </select>
-                        <select class="search-car-by-model" name="model" disabled>
-                            <option data-parent="any" selected="">Model (Any)</option>
-                        </select>
-                    </li>
-                </ul>
-                <ul class="search-panel list-unstyled">
-                    <li id="vansTab" class="tab">
-                        <select class="search-van-by-make" name="make">
-                            <option value="any">Make vans</option>
-                        </select>
-                        <select class="search-van-by-model" name="model" disabled>
-                            <option data-parent="any" selected="">Model (Any)</option>
-                        </select>
-                    </li>
-                </ul>
+            <div class="form-tabs">
+                <input type="radio" id="cars" name="button" value="cars" checked="checked" />
+                <label for="cars">Cars</label>
+                <input type="radio" id="vans" name="button" value="vans" />
+                <label for="vans">Vans</label>
             </div>
+            <ul class="search-panel list-unstyled">
+                <li id="carsTab" class="tab">
+                    <select class="search-car-by-make" name="make">
+                        <option value="any">Make cars</option>
+                    </select>
+                    <select class="search-car-by-model" name="model" disabled>
+                        <option data-parent="any" selected="">Model (Any)</option>
+                    </select>
+                </li>
+                 <span class="number-of-cars"></span>
+            </ul>
+            <ul class="search-panel list-unstyled">
+                <li id="vansTab" class="tab">
+                    <select class="search-van-by-make" name="make">
+                        <option value="any">Make vans</option>
+                    </select>
+                    <select class="search-van-by-model" name="model" disabled>
+                        <option data-parent="any" selected="">Model (Any)</option>
+                    </select>
+                    <span class="number-of-vans"></span>
+                </li>
+            </ul>
         </form>
     </div>
 
 </body>
 <script src="../scripts/jquery.min.js"></script>
 <script src="../scripts/JQuery/tabs-dropdown.js"></script>
+
 </html>

@@ -70,6 +70,9 @@ $(function () {
   let searchCarMake = $('.search-car-by-make');
   let searchCarModel = $('.search-car-by-model');
 
+  $('.number-of-cars').text(cars.length);
+  $('.number-of-vans').text(vans.length);
+
   const addCarMakes = cars => {
     if (cars.length == 0) {
       throw new Error('The cars list must be given.');
