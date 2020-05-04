@@ -82,17 +82,6 @@ $(function () {
   }
 
   addCarMakes(cars);
-  const addVanMakes = vans => {
-    if (vans.length == 0) {
-      throw new Error('The vans list must be given.');
-    }
-
-    for (let i = 0; i < vans.length; i++) {
-
-    }
-  }
-
-  addVanMakes(vans);
 
   searchMake.change(function () {
     let value = $(this).find(':selected').attr('value');
