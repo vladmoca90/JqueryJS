@@ -65,8 +65,8 @@ $(function () {
 
   changeTab();
 
-  let searchModel = $('.search-by-model');
-  let searchMake = $('.search-by-make');
+  let searchCarModel = $('.search-car-by-model');
+  let searchCarMake = $('.search-car-by-make');
 
   const addCarMakes = cars => {
     if (cars.length == 0) {
@@ -77,7 +77,7 @@ $(function () {
       let option = $('<option></option>');
 
       option.html(cars[i].make);
-      searchMake.append(option);
+      searchCarMake.append(option);
     }
   }
 
@@ -98,18 +98,18 @@ $(function () {
     let value = $(this).find(':selected').attr('value');
 
     if (value == 'any') {
-      searchModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
-      searchModel.find('option').show();
-      searchModel.attr('disabled', true);
+      searchCarModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
+      searchCarModel.find('option').show();
+      searchCarModel.attr('disabled', true);
 
       return;
     }
 
-    searchModel.find('option').hide();
-    searchModel.attr('disabled', false);
+    searchCarModel.find('option').hide();
+    searchCarModel.attr('disabled', false);
 
-    searchModel.find('option[data-parent=any]').prop('selected', true);
-    searchModel.find('[data-parent=any]').show();
-    searchModel.find('option[data-parent=' + value + ']').show();
+    searchCarModel.find('option[data-parent=any]').prop('selected', true);
+    searchCarModel.find('[data-parent=any]').show();
+    searchCarModel.find('option[data-parent=' + value + ']').show();
   });
 });
