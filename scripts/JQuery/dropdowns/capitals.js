@@ -64,9 +64,9 @@ $(function () {
 
         for (let i = 0; i < data.countries.length; i++) {
             let option = $('<option></option>');
+
             option.attr('value', data.countries[i].code);
             option.html(data.countries[i].name);
-
             $('#countriesDrop').append(option);
         }
     }
