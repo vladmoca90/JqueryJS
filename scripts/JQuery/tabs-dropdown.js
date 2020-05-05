@@ -63,21 +63,7 @@ $(function () {
   addCarMakes(vehicles);
 
   searchVehMake.change(function () {
-    let value = $(this).find(':selected').attr('value');
-
-    if (value == 'any') {
-      searchVehModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
-      searchVehModel.find('option').show();
-      searchVehModel.attr('disabled', true);
-
-      return;
-    }
-
-    searchVehModel.find('option').hide();
-    searchVehModel.attr('disabled', false);
-
-    searchVehModel.find('option[data-parent=any]').prop('selected', true);
-    searchVehModel.find('[data-parent=any]').show();
-    searchVehModel.find('option[data-parent=' + value + ']').show();
+    let selectedOption = $(this).find(':selected').attr('value');
+    let vehCode = selectedOption.val();
   });
 });
