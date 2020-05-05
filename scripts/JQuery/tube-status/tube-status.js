@@ -1,4 +1,4 @@
-const data = {
+const tube = {
     lines: [
         {
             name: 'Bakerloo',
@@ -65,20 +65,20 @@ const data = {
 
 $(function () {
 
-    const getTubeLines = data => {
-        if (data.lines.length == 0) {
+    const getTubeLines = tube => {
+        if (tube.lines.length == 0) {
             throw new Error('The line names and statuses must be given.');
         }
 
         let body = $('.tube-body');
 
-        for (let i = 0; i < data.lines.length; i++) {
+        for (let i = 0; i < tube.lines.length; i++) {
             let row = $('<tr></tr>');
             let tubeLines = $('<td class="tube-lines"></td>');
             let linesStatus = $('<td class="tube-status"></td>');
 
-            tubeLines.text(data.lines[i].name);
-            linesStatus.text(data.lines[i].status);
+            tubeLines.text(tube.lines[i].name);
+            linesStatus.text(tube.lines[i].status);
 
             body.append(row);
             row.append(tubeLines);
@@ -86,7 +86,7 @@ $(function () {
         }
     }
 
-    getTubeLines(data);
+    getTubeLines(tube);
 
     function addColors() {
         let status = $('.tube-status');
