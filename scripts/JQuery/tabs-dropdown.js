@@ -1,4 +1,4 @@
-const cars = [
+const vehicles = [
   {
     make: 'Abarth',
     model: ['Abarth 1', 'Abarth 2', 'Abarth 3'],
@@ -25,33 +25,6 @@ const cars = [
   },
 ];
 
-const vans = [
-  {
-    make: 'Abarth Van',
-    model: ['Abarth 11', 'Abarth 21', 'Abarth 31'],
-  },
-  {
-    make: 'Alfa Romeo Van',
-    model: ['Alfa Romeo 11', 'Alfa Romeo 21', 'Alfa Romeo 31'],
-  },
-  {
-    make: 'Toyota Van',
-    model: ['Toyota 11', 'Toyota 21', 'Toyota 31'],
-  },
-  {
-    make: 'Vauxhall Van',
-    model: ['Vauxhall 11', 'Vauxhall 21', 'Vauxhall 31'],
-  },
-  {
-    make: 'Volkswagen Van',
-    model: ['Volkswagen 11', 'Volkswagen 21', 'Volkswagen 31'],
-  },
-  {
-    make: 'Volvo Van',
-    model: ['Volvo 11', 'Volvo 21', 'Volvo 31'],
-  },
-];
-
 $(function () {
   $('#vansTab').hide();
 
@@ -67,45 +40,44 @@ $(function () {
 
   changeTab();
 
-  let searchCarMake = $('.search-car-by-make');
-  let searchCarModel = $('.search-car-by-model');
+  let searchVehMake = $('.search-car-by-make');
+  let searchVehModel = $('.search-car-by-model');
 
-  $('.number-of-cars').text(cars.length);
-  $('.number-of-vans').text(vans.length);
+  $('.number-of-cars').text(vehicles.length);
 
-  const addCarMakes = cars => {
-    if (cars.length == 0) {
-      throw new Error('The cars list must be given.');
+  const addCarMakes = vehicles => {
+    if (vehicles.length == 0) {
+      throw new Error('The vehicles list must be given.');
     }
 
-    searchCarMake.empty();
+    searchVehMake.empty();
 
-    for (let i = 0; i < cars.length; i++) {
+    for (let i = 0; i < vehicles.length; i++) {
       let option = $('<option></option>');
 
-      option.html(cars[i].make);
-      searchCarMake.append(option);
+      option.html(vehicles[i].make);
+      searchVehMake.append(option);
     }
   }
 
-  addCarMakes(cars);
+  addCarMakes(vehicles);
 
-  searchCarMake.change(function () {
+  searchVehMake.change(function () {
     let value = $(this).find(':selected').attr('value');
 
     if (value == 'any') {
-      searchCarModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
-      searchCarModel.find('option').show();
-      searchCarModel.attr('disabled', true);
+      searchVehModel.find('option[data-parent=any]').prop('selected', true); // select "any" from second dropdown
+      searchVehModel.find('option').show();
+      searchVehModel.attr('disabled', true);
 
       return;
     }
 
-    searchCarModel.find('option').hide();
-    searchCarModel.attr('disabled', false);
+    searchVehModel.find('option').hide();
+    searchVehModel.attr('disabled', false);
 
-    searchCarModel.find('option[data-parent=any]').prop('selected', true);
-    searchCarModel.find('[data-parent=any]').show();
-    searchCarModel.find('option[data-parent=' + value + ']').show();
+    searchVehModel.find('option[data-parent=any]').prop('selected', true);
+    searchVehModel.find('[data-parent=any]').show();
+    searchVehModel.find('option[data-parent=' + value + ']').show();
   });
 });
