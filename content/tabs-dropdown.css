@@ -25,4 +25,5 @@
 
 .number-of-cars,
 .number-of-vans {
-  margin-top: 15px; }
+  display: block;
+  margin-top: 20px; }
