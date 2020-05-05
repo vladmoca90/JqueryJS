@@ -6,6 +6,11 @@ const data = {
             mark: 8.81,
         },
         {
+            code: 'ACN',
+            name: 'Andreea-Corina Nisipeanu',
+            mark: 6.95,
+        },
+        {
             code: 'VM',
             name: 'Vlad Mocanu',
             mark: 9.06,
@@ -19,7 +24,12 @@ const data = {
             code: 'AD',
             name: 'Alexandru Dunca',
             mark: 7.25,
-        }
+        },
+        {
+            code: 'SOA',
+            name: 'Stroia Otilia-Andreea',
+            mark: 9.45,
+        },
     ]
 }
 
