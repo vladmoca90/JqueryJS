@@ -65,5 +65,7 @@ $(function () {
   searchVehMake.change(function () {
     let selectedOption = $(this).find(':selected').attr('value');
     let vehCode = selectedOption.val();
+
+    
   });
 });

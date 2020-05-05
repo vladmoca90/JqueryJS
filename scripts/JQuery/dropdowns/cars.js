@@ -28,7 +28,6 @@ $(function () {
         $(dropId).empty();
 
         let blank = $('<option></option>');
-
         $(dropId).append(blank);
 
         for (let i = 0; i < cars.length; i++) {
