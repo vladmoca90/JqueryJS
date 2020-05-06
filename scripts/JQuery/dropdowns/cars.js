@@ -25,8 +25,6 @@ $(function () {
             throw new Error('Cars list list be given');
         }
 
-        // $(dropId).empty();
-
         for (let i = 0; i < cars.length; i++) {
             let option = $('<option></option>');
 
@@ -39,10 +37,10 @@ $(function () {
     addModels(cars, '#modelDrop');
 
     $('#modelDrop').change(function() {
-        $('#makeDrop').empty();
-
         let selectedOption = $(this).find(':selected');
         let carCode = selectedOption.val();
+
+        $('#makeDrop').empty();
 
         for (let i = 0; i < cars.length; i++) {
             let option = $('<option></option>');
