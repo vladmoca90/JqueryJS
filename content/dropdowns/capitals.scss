@@ -1,10 +1,9 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .dropdowns {
     display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $verdana;
     font-size: 14px;
     justify-content: space-between;
     margin: 25px auto 0;
