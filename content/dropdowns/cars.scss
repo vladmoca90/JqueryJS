@@ -20,16 +20,19 @@
 
     .number-box {
         font-size: 14px;
+        font-weight: 600;
         letter-spacing: 1px;
-        margin-top: 20px;
+        margin-top: 25px;
 
         p {
+            display: inline-block;
             margin-bottom: 5px;
         }
     }
 
     #stock {
         display: inline;
+        margin-left: 4px;
         text-align: center;
         width: 45px;
     }
