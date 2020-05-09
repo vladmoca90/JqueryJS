@@ -20,6 +20,9 @@ const cars = [
 const stocks = [3, 1, 4, 1];
 
 $(function () {
+    let models = $('#ModelDrop');
+    let makes =$('#makeDrop');
+
     const addModels = (cars, dropId) => {
         if (cars.length == 0) {
             throw new Error('Cars list list be given');
@@ -37,10 +40,13 @@ $(function () {
     addModels(cars, '#modelDrop');
 
     $('#modelDrop').change(function() {
+        $('#makeDrop').empty();
+
+        let chooseMake = $('<option value="Choose make">Choose make (any):</option>');
+        $('#makeDrop').append(chooseMake);
+
         let selectedOption = $(this).find(':selected');
         let carCode = selectedOption.val();
-
-        $('#makeDrop').empty();
 
         for (let i = 0; i < cars.length; i++) {
             let option = $('<option></option>');
