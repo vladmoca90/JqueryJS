@@ -1,11 +1,10 @@
-@import '../variables/variables.scss';
-
-@import '../mixins/mixins.scss';
+@import 'variables/variables.scss';
+@import 'mixins/mixins.scss';
 
 .dropdown {
-    border-radius: 6px;
+    border-radius: 4px;
     @include font(15px, $font-color, $arial);
-    margin: 50px auto;
+    margin: 35px auto;
     max-width: 200px;
     text-align: center;
 
@@ -16,6 +15,8 @@
 
     &__list {
         display: none;
+        font-size: 14px;
+        font-weight: 600;
         list-style-type: none;
         margin: 0;
         padding: 0;
