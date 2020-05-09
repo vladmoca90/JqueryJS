@@ -11,14 +11,20 @@
         border-radius: 4px;
         font-size: 14px;
         padding: 4px;
-        width: 45%;
+        width: 43%;
 
         option {
             font-size: 14px;
         }
     }
 
+    .number-box {
+        display: block;
+        margin-top: 15px;
+    }
+
     #stock {
-        width: 18px;
+        text-align: center;
+        width: 45px;
     }
 }

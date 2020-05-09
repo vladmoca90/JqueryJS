@@ -1,14 +1,15 @@
 .dropdowns {
   justify-content: space-between;
   margin: 35px auto 0;
-  max-width: 375px;
+  max-width: 400px;
   width: 100%; }
   .dropdowns select {
     border-radius: 4px;
     font-size: 14px;
     padding: 4px;
-    width: 45%; }
+    width: 43%; }
     .dropdowns select option {
       font-size: 14px; }
   .dropdowns #stock {
-    width: 18px; }
+    text-align: center;
+    width: 45px; }
