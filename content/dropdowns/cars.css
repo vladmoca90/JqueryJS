@@ -1,8 +1,8 @@
 .dropdowns {
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 35px auto 0;
-  max-width: 400px;
-  width: 100%; }
+  width: 400px; }
   .dropdowns select {
     border-radius: 4px;
     font-size: 14px;
@@ -10,6 +10,12 @@
     width: 43%; }
     .dropdowns select option {
       font-size: 14px; }
+  .dropdowns .number-box {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px; }
+    .dropdowns .number-box p {
+      margin-bottom: 5px; }
   .dropdowns #stock {
     text-align: center;
     width: 45px; }

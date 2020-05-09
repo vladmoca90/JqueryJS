@@ -3,9 +3,9 @@
 
 .dropdowns {
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 35px auto 0;
-    max-width: 400px;
-    width: 100%;
+    width: 400px;
 
     select {
         border-radius: 4px;
@@ -19,11 +19,17 @@
     }
 
     .number-box {
-        display: block;
-        margin-top: 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+
+        p {
+            margin-bottom: 5px;
+        }
     }
 
     #stock {
+        display: inline;
         text-align: center;
         width: 45px;
     }
