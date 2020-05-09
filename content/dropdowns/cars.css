@@ -10,3 +10,5 @@
     width: 45%; }
     .dropdowns select option {
       font-size: 14px; }
+  .dropdowns #number {
+    width: 15px; }
