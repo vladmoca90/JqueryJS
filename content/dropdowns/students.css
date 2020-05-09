@@ -3,8 +3,10 @@
   font-size: 15px;
   justify-content: space-between;
   margin: 25px auto 0;
-  max-width: 330px; }
+  max-width: 265px; }
+  .student-list select, .student-list option {
+    padding: 5px 3px; }
 
 #mark {
   border: 1px solid #ccc;
-  padding: 5px; }
+  padding: 5px 3px; }
