@@ -79,7 +79,7 @@ $(function () {
             });
 
             stockNumber.html(cars[i].stock);
-            $('#stock').val(stockNumber);
+            $('#stock').append(stockNumber);
         }
     });
 });
