@@ -20,8 +20,8 @@ const cars = [
 const stocks = [3, 1, 4, 1];
 
 $(function () {
-    let models = $('#ModelDrop');
-    let makes =$('#makeDrop');
+    let models = $('#modelDrop');
+    let makes = $('#makeDrop');
 
     const addModels = (cars, dropId) => {
         if (cars.length == 0) {
@@ -39,11 +39,11 @@ $(function () {
 
     addModels(cars, '#modelDrop');
 
-    $('#modelDrop').change(function() {
-        $('#makeDrop').empty();
+    models.change(function() {
+        makes.empty();
 
         let chooseMake = $('<option value="Choose make">Choose make (any):</option>');
-        $('#makeDrop').append(chooseMake);
+        makes.append(chooseMake);
 
         let selectedOption = $(this).find(':selected');
         let carCode = selectedOption.val();
@@ -55,7 +55,7 @@ $(function () {
                 option.val(cars[i].make);
                 option.html(cars[i].make);
 
-                $('#makeDrop').append(option);
+                makes.append(option);
             }
         }
     });
@@ -70,7 +70,7 @@ $(function () {
 
     includeStocksInCars(stocks);
 
-    $('#makeDrop').change(function() {
+    makes.change(function() {
         let stockNumber = $('<span></span>');
 
         for (let i = 0; i < cars.length; i++) {
