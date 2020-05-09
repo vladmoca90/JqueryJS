@@ -1,5 +1,4 @@
 @import '../variables/variables.scss';
-
 @import '../mixins/mixins.scss';
 
 .student-list {
@@ -8,6 +7,7 @@
     justify-content: space-between;
     margin: 25px auto 0;
     max-width: 330px;
+    padding: 5px 3px;
 }
 
 #mark {

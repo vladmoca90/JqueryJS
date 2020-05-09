@@ -42,10 +42,6 @@ $(function () {
             throw new Error('The students list must be given');
         }
 
-        let blank = $('<option value=""></option>');
-
-        student.append(blank);
-
         for (let i = 0; i < data.students.length; i++) {
             let option = $('<option></option>');
 
