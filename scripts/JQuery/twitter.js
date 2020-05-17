@@ -1,10 +1,10 @@
 $(function () {
     let maxCount = 150;
-    let btn = $('button');
+    let counter = $('#counter');
     let comment = $('#commentSection');
     let display = $('#commentDisplay');
 
-    $('#counter').text(maxCount);
+    counter.text(maxCount);
 
     const clearClasses = id => {
         $(id).removeClass('low');
@@ -18,23 +18,23 @@ $(function () {
 
         if (value.length >= 0 && value.length <= 40) {
             clearClasses('#counter');
-            $('#counter').addClass('high');
-            $('#counter').html(maxCount - value.length);
+            counter.addClass('high');
+            counter.html(maxCount - value.length);
         }
         if (value.length >= 41 && value.length <= 100) {
             clearClasses('#counter');
-            $('#counter').addClass('medium');
-            $('#counter').html(maxCount - value.length);
+            counter.addClass('medium');
+            counter.html(maxCount - value.length);
         }
         if (value.length >= 101 && value.length <= 150) {
             clearClasses('#counter');
-            $('#counter').addClass('low');
-            $('#counter').html(maxCount - value.length);
+            counter.addClass('low');
+            counter.html(maxCount - value.length);
         }
         if (value.length > 150) {
             clearClasses('#counter');
-            $('#counter').addClass('negative');
-            $('#counter').html(maxCount - value.length);
+            counter.addClass('negative');
+            counter.html(maxCount - value.length);
 
             btn.prop('disabled', true);
         } else {
@@ -42,13 +42,13 @@ $(function () {
         }
     });
 
-    btn.on('click', function () {
+    $('button').on('click', function () {
         let content = comment.val();
         let tweet = $('<li class="text"></li>');
 
         tweet.html(content);
         comment.val(' ')
-        $('#counter').html(maxCount);
+        counter.html(maxCount);
         display.append(tweet);
 
         if (content.trim().length == 0) {
