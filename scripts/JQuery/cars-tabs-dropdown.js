@@ -1,4 +1,4 @@
-const vehicles = [
+const cars = [
   {
     make: 'Abarth',
     model: ['Abarth 1', 'Abarth 2', 'Abarth 3'],
@@ -25,6 +25,21 @@ const vehicles = [
   },
 ];
 
+const vans = [
+  {
+    make: 'Abarth 2',
+    model: ['Abarth 11', 'Abarth 21', 'Abarth 31'],
+  },
+  {
+    make: 'Volkswagen 2',
+    model: ['Volkswagen 11', 'Volkswagen 21', 'Volkswagen 31'],
+  },
+  {
+    make: 'Volvo 2',
+    model: ['Volvo 11', 'Volvo 21', 'Volvo 31'],
+  },
+];
+
 $(function () {
   $('#vansTab').hide();
 
@@ -44,28 +59,4 @@ $(function () {
   let searchVehModel = $('.search-car-by-model');
 
   $('.number-of-cars').text(vehicles.length);
-
-  const addCarMakes = vehicles => {
-    if (vehicles.length == 0) {
-      throw new Error('The vehicles list must be given.');
-    }
-
-    searchVehMake.empty();
-
-    for (let i = 0; i < vehicles.length; i++) {
-      let option = $('<option></option>');
-
-      option.html(vehicles[i].make);
-      searchVehMake.append(option);
-    }
-  }
-
-  addCarMakes(vehicles);
-
-  searchVehMake.change(function () {
-    let selectedOption = $(this).find(':selected').attr('value');
-    let vehCode = selectedOption.val();
-
-    
-  });
 });
