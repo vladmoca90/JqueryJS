@@ -38,7 +38,6 @@ $(function () {
     }
 
     addModels(cars, '#modelDrop');
-
     models.change(function() {
         makes.empty();
 
@@ -59,7 +58,6 @@ $(function () {
             }
         }
     });
-
     const includeStocksInCars = stocks => {
         if (stocks.lenght == 0) {
             throw new Error('Stocks list must be given');
