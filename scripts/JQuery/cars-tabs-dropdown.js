@@ -55,8 +55,6 @@ $(function () {
 
   changeTab();
 
-  let searchVehMake = $('.search-car-by-make');
-  let searchVehModel = $('.search-car-by-model');
-
-  $('.number-of-cars').text(vehicles.length);
+  $('.number-of-cars').text(cars.length);
+  $('.number-of-vans').text(vans.length);
 });
