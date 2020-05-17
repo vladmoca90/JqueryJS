@@ -1,22 +1,22 @@
 $(function () {
     $('button').on('click', function () {
         let text = $('#textContent').val();
-        let n = $('#numberValue').val();
+        let num = $('#numberValue').val();
 
-        function truncateText(text, n) {
+        const truncateText = (text, num) => {
             if (text.length == 0) {
                 throw new Error('The text cannot be empty');
             }
-            if (n <= 0) {
+            if (num <= 0) {
                 throw new Error('n must be greater or equal to 1');
             }
 
             let splitText = text.trim().split('');
-            let truncatedText = splitText.splice(0, n).join('');
+            let truncatedText = splitText.splice(0, Number).join('');
 
             $('p').text(truncatedText);
         }
 
-        truncateText(text, n);
+        truncateText(text, num);
     });
 });
