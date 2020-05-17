@@ -10,7 +10,7 @@ body {
     body #textSection textarea {
       margin: 0 auto;
       height: 100px;
-      width: 95%; }
+      width: 100%; }
   body #maxWords {
     display: block;
     font-size: 15px;
