@@ -8,13 +8,23 @@ body {
     max-width: 400px;
     padding: 10px;
     width: 100%;
-
     form {
         label, input {
             font-size: 14px;
         }
         input {
-            height: 30px;
+            height: 32px;
+        }
+        .form-check {
+            margin: 10px 0;
+            .form-check-input {
+                height: auto;
+                margin: 10px -10px 0 0;
+            }
+        }
+        button {
+            font-size: 14px;
+            width: 85px;
         }
     }
 }

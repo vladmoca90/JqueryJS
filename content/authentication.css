@@ -11,4 +11,12 @@ body {
   .content form label, .content form input {
     font-size: 14px; }
   .content form input {
-    height: 30px; }
+    height: 32px; }
+  .content form .form-check {
+    margin: 10px 0; }
+    .content form .form-check .form-check-input {
+      height: auto;
+      margin: 0; }
+  .content form button {
+    font-size: 14px;
+    width: 85px; }
