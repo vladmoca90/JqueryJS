@@ -8,5 +8,7 @@ body {
   max-width: 400px;
   padding: 10px;
   width: 100%; }
-  .content form label {
+  .content form label, .content form input {
     font-size: 14px; }
+  .content form input {
+    height: 26px; }

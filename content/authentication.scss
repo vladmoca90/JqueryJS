@@ -10,8 +10,11 @@ body {
     width: 100%;
 
     form {
-        label {
+        label, input {
             font-size: 14px;
+        }
+        input {
+            height: 30px;
         }
     }
 }
