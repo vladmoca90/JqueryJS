@@ -16,7 +16,7 @@ body {
     margin: 10px 0; }
     .content form .form-check .form-check-input {
       height: auto;
-      margin: 0; }
+      margin: 10px -10px 0 0; }
   .content form button {
     font-size: 14px;
     width: 85px; }
