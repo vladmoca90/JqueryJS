@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0; }
   body .content {
+    background-color: rgba(139, 211, 233, 0.5);
     border: 1px solid #ccc;
     margin: 25px auto 0;
     max-width: 400px;
@@ -9,6 +10,8 @@ body {
     width: 100%; }
     body .content form label, body .content form input {
       font-size: 14px; }
+    body .content form label[for="Male"] {
+      margin-right: 25px; }
     body .content form input {
       height: 32px;
       padding: 0 .35rem !important; }
