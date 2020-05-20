@@ -10,7 +10,8 @@ body {
     body .content form label, body .content form input {
       font-size: 14px; }
     body .content form input {
-      height: 32px; }
+      height: 32px;
+      padding: 0 .35rem !important; }
     body .content form .form-check {
       margin: 10px 0; }
       body .content form .form-check .form-check-input {
