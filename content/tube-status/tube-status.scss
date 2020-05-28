@@ -9,20 +9,20 @@ body {
 
         .tube-container {
             margin: 0 auto;
-            width: 450px;
+            max-width: 450px;
 
             .tube-table {
                 border: 1px solid #ccc;
-                font-size: 16px;
+                font-size: 14px;
                 width: 100%;
                 th {
                     text-align: left;
                 }
                 th, td {
                     border: 1px solid #ccc;
-                    padding: 10px 0px 10px 10px;
-                    text-indent: 8px;
+                    padding: 10px 20px;
                 }
+
                 .tube-status {
                     font-weight: bold;
                 }
