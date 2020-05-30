@@ -34,6 +34,7 @@ body {
 
             button {
                 border-color: transparent;
+                border-radius: 0 !important;
 
                 &:focus {
                     box-shadow: 0 0 0 0 transparent;
@@ -43,7 +44,8 @@ body {
 
             input {
                 border: 1px solid $gray;
-                border-radius: 0 !important;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
                 @include listBorder;
                 width: 100%;
             }
@@ -58,7 +60,7 @@ body {
             li {
                 background-color: $blue;
                 border: 2px solid $dark-blue;
-                border-radius: 6px;
+                border-radius: 5px;
                 box-shadow: 1px -1px 12px $dark-blue;
                 color: $white;
                 font-weight: 500;

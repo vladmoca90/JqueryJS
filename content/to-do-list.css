@@ -14,11 +14,15 @@ body {
     body .main-container .type-field {
       display: flex; }
       body .main-container .type-field button {
-        border-color: transparent; }
+        border-color: transparent;
+        border-radius: 0 !important; }
         body .main-container .type-field button:focus {
+          box-shadow: 0 0 0 0 transparent;
           outline: 0 !important; }
       body .main-container .type-field input {
         border: 1px solid #a29e9e;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
         border-top-left-radius: 0 !important;
         border-top-right-radius: 4px !important;
         border-bottom-left-radius: 0 !important;
@@ -32,7 +36,7 @@ body {
       body .main-container ul li {
         background-color: #6AB7CA;
         border: 2px solid #2a6173;
-        border-radius: 6px;
+        border-radius: 5px;
         box-shadow: 1px -1px 12px #2a6173;
         color: #fff;
         font-weight: 500;
