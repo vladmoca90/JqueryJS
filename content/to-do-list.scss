@@ -46,6 +46,12 @@ body {
                 }
             }
 
+            .btn-success:not(:disabled):not(.disabled).active:focus, 
+            .btn-success:not(:disabled):not(.disabled):active:focus, 
+            .show>.btn-success.dropdown-toggle:focus {
+                box-shadow: 0 0 0 0 transparent;
+            }
+
             #textField {
                 border: 1px solid $gray;
                 border-top-right-radius: 0 !important;
