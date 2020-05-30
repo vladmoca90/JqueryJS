@@ -1,9 +1,9 @@
 $(function () {
-    let button = $('button');
+    let btn = $('button');
     let list = $('.list-container');
     let text = $('#textField');
 
-    button.on('click', function () {
+    btn.on('click', function () {
         let listItem = $('<li></li>');
         let listContent = text.val();
         let listText = listItem.text(listContent);
