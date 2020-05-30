@@ -19,7 +19,7 @@ body {
         body .main-container .type-field button:focus {
           box-shadow: 0 0 0 0 transparent;
           outline: 0 !important; }
-      body .main-container .type-field input {
+      body .main-container .type-field #textField {
         border: 1px solid #a29e9e;
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
