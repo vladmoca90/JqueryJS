@@ -1,11 +1,15 @@
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$white: #fff;
+$bg-color: #00a8cc;
+
 body {
-    background-color: #00a8cc;
+    background-color: $bg-color;
     margin: 0;
     padding: 0;
 
     h3 {
-        color: #fff;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $white;
+        font-family: $font;
         margin: 40px 0;
         text-align: center;
     }
@@ -37,7 +41,7 @@ body {
         }
 
         ul {
-            color: #fff;
+            color: $white;
             list-style-position: outside;
             list-style-type: none;
             padding-left: 25px;
@@ -47,7 +51,7 @@ body {
                 border: 2px solid #2a6173;
                 border-radius: 6px;
                 box-shadow: 1px -1px 12px #2a6173;
-                color: #fff;
+                color: $white;
                 font-weight: 500;
                 letter-spacing: 1px;
                 margin: 18px 0;

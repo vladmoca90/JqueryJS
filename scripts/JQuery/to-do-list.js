@@ -12,10 +12,10 @@ $(function () {
         list.find('ul').append(listText);
         listItem.append(close);
 
-        if (listContent.trim().length == 0) {
+        if(listContent.trim().length == 0) {
             listItem.remove();
         }
-        if (listContent.length > 0) {
+        if(listContent.length > 0) {
             return text.val(null);
         }
     });
