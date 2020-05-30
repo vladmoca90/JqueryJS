@@ -34,10 +34,16 @@ body {
 
             button {
                 border-color: transparent;
+
+                &:focus {
+                    box-shadow: 0 0 0 0.2rem transparent;
+                    outline: 0 !important;
+                }
             }
 
             input {
                 border: 1px solid $gray;
+                border-radius: 0 !important;
                 @include listBorder;
                 width: 100%;
             }
