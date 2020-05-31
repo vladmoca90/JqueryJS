@@ -1,8 +1,4 @@
-$font: 'Segoe UI',
-Tahoma,
-Geneva,
-Verdana,
-sans-serif;
+$font: Tahoma;
 $white: #fff;
 $bg-color: #00a8cc;
 $blue: #6AB7CA;
@@ -46,8 +42,8 @@ body {
                 }
             }
 
-            .btn-success:not(:disabled):not(.disabled).active:focus, 
-            .btn-success:not(:disabled):not(.disabled):active:focus, 
+            .btn-success:not(:disabled):not(.disabled).active:focus,
+            .btn-success:not(:disabled):not(.disabled):active:focus,
             .show>.btn-success.dropdown-toggle:focus {
                 box-shadow: 0 0 0 0 transparent;
             }
