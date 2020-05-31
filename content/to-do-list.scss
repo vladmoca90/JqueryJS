@@ -50,11 +50,11 @@ body {
 
             #textField {
                 border: 1px solid $gray;
-                border-top-right-radius: 0 !important;
-                border-bottom-right-radius: 0 !important;
                 @include listBorder;
                 margin-right: 4px;
                 width: 100%;
+                border-top-right-radius: 0 !important;
+                border-bottom-right-radius: 0 !important;
             }
         }
 
