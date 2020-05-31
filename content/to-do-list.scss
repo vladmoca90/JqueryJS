@@ -53,6 +53,7 @@ body {
                 border-top-right-radius: 0 !important;
                 border-bottom-right-radius: 0 !important;
                 @include listBorder;
+                margin-right: 4px;
                 width: 100%;
             }
         }

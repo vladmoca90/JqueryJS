@@ -31,6 +31,7 @@ body {
         border-top-right-radius: 4px !important;
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 4px !important;
+        margin-right: 4px;
         width: 100%; }
     body .main-container .list-container ul {
       color: #fff;
