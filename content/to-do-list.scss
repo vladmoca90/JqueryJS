@@ -51,8 +51,8 @@ body {
 
             #textField {
                 border: 1px solid $gray;
-                @include listBorder;
                 width: 100%;
+                @include listBorder;
             }
         }
 
