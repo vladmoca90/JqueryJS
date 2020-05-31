@@ -9,7 +9,7 @@ body {
     text-align: center; }
   body .main-container {
     margin: 20px auto 0;
-    max-width: 625px;
+    max-width: 615px;
     width: 100%; }
     body .main-container .type-field {
       display: flex; }
@@ -26,11 +26,9 @@ body {
         box-shadow: 0 0 0 0 transparent; }
       body .main-container .type-field #textField {
         border: 1px solid #a29e9e;
-        border-top-left-radius: 0 !important;
-        border-top-right-radius: 4px !important;
-        border-bottom-left-radius: 0 !important;
-        border-bottom-right-radius: 4px !important;
         width: 100%;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important; }
     body .main-container .list-container ul {
