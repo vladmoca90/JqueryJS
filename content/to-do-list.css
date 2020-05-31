@@ -9,7 +9,7 @@ body {
     text-align: center; }
   body .main-container {
     margin: 20px auto 0;
-    max-width: 600px;
+    max-width: 625px;
     width: 100%; }
     body .main-container .type-field {
       display: flex; }
@@ -30,7 +30,6 @@ body {
         border-top-right-radius: 4px !important;
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 4px !important;
-        margin-right: 1px;
         width: 100%;
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important; }
