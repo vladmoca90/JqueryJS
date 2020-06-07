@@ -1,6 +1,6 @@
 $(function() {
 
-    function getCity(results) {
+    const getCity = results => {
 
     }
 
