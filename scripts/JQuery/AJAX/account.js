@@ -8,12 +8,11 @@
 //the data are boolean, number or string only
 
 $(function () {
-
-    var submit = $('#accountSubmit');
+    let submit = $('#accountSubmit');
 
     submit.on('click', function () {
 
-        var json = {
+        const json = {
             firstName: $('#firstName').val(),
             lastName: $('#lastName').val(),
             title: $('#title option:selected').val(),
@@ -24,7 +23,7 @@ $(function () {
             agreeTerms: $('#agreeTerms').is(':checked'),
         }
 
-        var accountUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/accounts';
+        let accountUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/accounts';
 
         $.ajax(accountUrl, {
             method: 'POST',
