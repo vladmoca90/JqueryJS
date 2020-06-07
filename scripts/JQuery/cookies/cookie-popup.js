@@ -1,5 +1,4 @@
 $(function() {
-
     if(Cookies.get('adDismissed')) {
         $('.pop-up').css('display', 'none');
     }
