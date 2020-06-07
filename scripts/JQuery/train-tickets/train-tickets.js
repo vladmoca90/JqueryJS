@@ -1,4 +1,4 @@
-var data = {
+const data = {
     stations: [
         {
             code: 'APF',
@@ -113,17 +113,15 @@ var data = {
 }
 
 $(function () {
-
-    function addStations(data) {
-
-        if (data.stations.length == 0) {
+    const addStations = data => {
+        if(data.stations.length == 0) {
             throw new Error('The stations list must be provided');
         }
 
-        var stationContainer = $('.content-stations');
+        let stationContainer = $('.content-stations');
 
-        for (i = 0; i < data.stations.length; i++) {
-            var stationOption = $('<div class="content-stations__col"></div>');
+        for(let i = 0; i < data.stations.length; i++) {
+            let stationOption = $('<div class="content-stations__col"></div>');
 
             stationOption.val(data.stations[i].name);
             stationOption.html(data.stations[i].name);
