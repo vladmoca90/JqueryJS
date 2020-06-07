@@ -1,10 +1,9 @@
 $(function() {
+    // const populateDropWithStations = stations => {
 
-    function populateDropWithStations(stations) {
+    // }
 
-    }
-
-    var stationsUrl = 'http://trainticketmachine456.azurewebsites.net/api/stations/rdg';
+    let stationsUrl = 'http://trainticketmachine456.azurewebsites.net/api/stations/rdg';
 
     $.ajax(stationsUrl, {
         methid:'GET',
