@@ -4,18 +4,16 @@
 //you use the endpoint that return s a single group, only the selected one
 
 $(function () {
-
-    function getGroups(groups) {
-
-        if (groups.length == 0) {
+    const getGroups = groups => {
+        if(groups.length == 0) {
             throw new Error('The groups list must be given');
         }
 
-        for (var i = 0; i < groups.length; i++) {
-            var groupLink = $('<a class="table-links"></a>');
-            var table = $('<table class="world-cup-table table table-bordered"></table>');
-            var tableHead = $('<thead class="table-head"></thead>');
-            var heading = $('<th colspan="6"></th>');
+        for (let i = 0; i < groups.length; i++) {
+            let groupLink = $('<a class="table-links"></a>');
+            let table = $('<table class="world-cup-table table table-bordered"></table>');
+            let tableHead = $('<thead class="table-head"></thead>');
+            let heading = $('<th colspan="6"></th>');
 
             groupLink.attr('href', 'world-cup-group.html?group=' + groups[i].groupLabel);
 
@@ -26,15 +24,15 @@ $(function () {
             table.append(tableHead);
             tableHead.append(heading);
 
-            for (var j = 0; j < groups[i].countries.length; j++) {
-                var tableBody = $('<tbody class="table-body"></tbody>');
-                var row = $('<tr></tr>');
-                var name = $('<td></td>');
-                var matches = $('<td></td>');
-                var wins = $('<td></td>');
-                var draws = $('<td></td>');
-                var loses = $('<td></td>');
-                var points = $('<td></td>');
+            for (let j = 0; j < groups[i].countries.length; j++) {
+                let tableBody = $('<tbody class="table-body"></tbody>');
+                let row = $('<tr></tr>');
+                let name = $('<td></td>');
+                let matches = $('<td></td>');
+                let wins = $('<td></td>');
+                let draws = $('<td></td>');
+                let loses = $('<td></td>');
+                let points = $('<td></td>');
 
                 name.html(groups[i].countries[j].name);
                 matches.html(0);
@@ -55,7 +53,7 @@ $(function () {
         }
     }
 
-    var groupsUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/WorldCup/2018/groups';
+    let groupsUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/WorldCup/2018/groups';
 
     $.ajax(groupsUrl, {
         method: 'GET',
