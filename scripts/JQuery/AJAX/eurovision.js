@@ -1,24 +1,17 @@
 $(function () {
+    let countries = [];
+    let points = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12];
+    let pointsDict = {};
 
-    var countries = [];
-
-    var points = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12];
-
-    var pointsDict = {};
-
-    function buildDropdown(countries, dropdownId) {
-
-        var countriesDrop = $(dropdownId);
-
+    const buildDropdown = (countries, dropdownId) => {
+        let countriesDrop = $(dropdownId);
         countriesDrop.empty();
-
-        var blank = $('<option value=""></option>');
+        let blank = $('<option value=""></option>');
 
         countriesDrop.append(blank);
 
-        for (var i = 0; i < countries.length; i++) {
-
-            var countryOption = $('<option></option>');
+        for(let i = 0; i < countries.length; i++) {
+            let countryOption = $('<option></option>');
             countryOption.attr('value', countries[i].code);
             countryOption.html(countries[i].name);
 
@@ -28,11 +21,11 @@ $(function () {
     }
 
     $('#countriesDropdown').change(function() {
-        var option = $(this).find(':selected');
-        var countryCode = option.val();
-        var countries2 = [];
+        let option = $(this).find(':selected');
+        let countryCode = option.val();
+        let countries2 = [];
 
-        for (var i = 0; i < countries.length; i++) {
+        for(let i = 0; i < countries.length; i++) {
             if (countries[i].code != countryCode) {
                 countries2.push(countries[i]);
             }
@@ -41,9 +34,8 @@ $(function () {
         buildDropdown(countries2, '#toCountryDropdown');
     });
 
-    function createDictionary(countries) {
-
-        for (var i = 0; i < countries.length; i++) {
+    const createDictionary = countries => {
+        for(let i = 0; i < countries.length; i++) {
             pointsDict[countries[i].code] = {
                 'points': [],
                 'countries': []
@@ -51,7 +43,7 @@ $(function () {
         }
     }
 
-    allCountriesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/Eurovision/2018/countries';
+    let allCountriesUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/Eurovision/2018/countries';
 
     $.ajax(allCountriesUrl, {
         method: 'GET',
@@ -66,18 +58,15 @@ $(function () {
         }
     });
 
-    function buildSimpleDropdown(points, dropdownId) {
-
-        var pointsDrop = $(dropdownId);
-
+    const buildSimpleDropdown = (points, dropdownId) => {
+        let pointsDrop = $(dropdownId);
         pointsDrop.empty();
 
-        var blank = $('<option value=""></option>');
-
+        let blank = $('<option value=""></option>');
         pointsDrop.append(blank);
 
-        for (var i = 0; i < points.length; i++) {
-            var pointsOption = $('<option></option>');
+        for(let i = 0; i < points.length; i++) {
+            let pointsOption = $('<option></option>');
             pointsOption.attr('value', points[i]);
             pointsOption.html(points[i]);
 
@@ -88,14 +77,13 @@ $(function () {
     buildSimpleDropdown(points, '#pointsDropdown');
 
     $('#voteCountry').on('click', function () {
+        let rootUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/Eurovision/2018/countries/{fromCountry}/votes/{toCountry}';
 
-        var rootUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/Eurovision/2018/countries/{fromCountry}/votes/{toCountry}';
+        let fromCountry = $('#countriesDropdown').val();
+        let toCountry = $('#toCountryDropdown').val();
+        let pointsGiven = $('#pointsDropdown').val();
 
-        var fromCountry = $('#countriesDropdown').val();
-        var toCountry = $('#toCountryDropdown').val();
-        var pointsGiven = $('#pointsDropdown').val();
-
-        var votesUrl = rootUrl.replace('{fromCountry}', fromCountry).replace('{toCountry}', toCountry);
+        let votesUrl = rootUrl.replace('{fromCountry}', fromCountry).replace('{toCountry}', toCountry);
 
         if (pointsDict[fromCountry].points.indexOf(pointsGiven) != -1) {
             return;
@@ -109,7 +97,7 @@ $(function () {
 
         pointsDict[fromCountry].countries.push(toCountry);
 
-        var clone = $('#countryVoteTemplate').clone();
+        let clone = $('#countryVoteTemplate').clone();
         clone.removeAttr('id');
 
         $('.dropdown-container').after(clone);
@@ -123,7 +111,6 @@ $(function () {
         });
 
         $('#pointsDropdown :selected').remove();
-
         $('#toCountryDropdown :selected').remove();
 
         $.ajax(votesUrl, {
