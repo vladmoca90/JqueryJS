@@ -93,14 +93,14 @@ const data = {
 }
 
 $(function () {
-    function addDepartures(data) {
-        if (data.departures.length == 0) {
+    const addDepartures = data => {
+        if(data.departures.length == 0) {
             throw new Error('The departures list must be given');
         }
 
         let body = $('#airlinesBody');
 
-        for (let i = 0; i < data.departures.length; i++) {
+        for(let i = 0; i < data.departures.length; i++) {
             let row = $('<tr></tr>');
             body.append(row);
 
