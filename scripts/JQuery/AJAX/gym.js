@@ -1,14 +1,10 @@
 $(function () {
+    let enter = $('#enter');
+    let exit = $('#exit');
+    let register = $('#register');
+    let unregister = $('#unregister');
 
-    var enter = $('#enter');
-
-    var exit = $('#exit');
-
-    var register = $('#register');
-
-    var unregister = $('#unregister');
-
-    function errorText(errorCode) {
+    const errorText = errorCode => {
         if (errorCode == 100) {
             return 'You PIN must be between 6 and 12 characters';
         }
@@ -20,12 +16,9 @@ $(function () {
     }
 
     enter.on('click', function () {
-
-        var enterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/enter';
-
-        var myPin = $('#pinNumber').val();
-
-        var pinEnterUrl = enterUrl.replace('[pin]', myPin);
+        let enterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/enter';
+        let myPin = $('#pinNumber').val();
+        let pinEnterUrl = enterUrl.replace('[pin]', myPin);
 
         $.ajax(pinEnterUrl, {
             method: 'POST',
@@ -35,19 +28,16 @@ $(function () {
             error: function (err) {
                 console.error(err);
 
-                var errorCode = err.responseJSON.ErrorCode;
-                var text = errorText(errorCode);
+                let errorCode = err.responseJSON.ErrorCode;
+                let text = errorText(errorCode);
                 alert(text);
             },
         });
     });
     exit.on('click', function () {
-
-        var exitUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/exit';
-
-        var myPin = $('#pinNumber').val();
-
-        var pinExitUrl = exitUrl.replace('[pin]', myPin);
+        let exitUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/exit';
+        let myPin = $('#pinNumber').val();
+        let pinExitUrl = exitUrl.replace('[pin]', myPin);
 
         $.ajax(pinExitUrl, {
             method: 'POST',
@@ -57,20 +47,17 @@ $(function () {
             error: function (err) {
                 console.error(err);
 
-                var errorCode = err.responseJSON.ErrorCode;
-                var text = errorText(errorCode);
+                let errorCode = err.responseJSON.ErrorCode;
+                let text = errorText(errorCode);
                 alert(text);
             }
         });
     });
 
     register.on('click', function () {
-
-        var registerUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/register';
-
-        var myPin = $('#pinNumber').val();
-
-        var pinRegisterUrl = registerUrl.replace('[pin]', myPin);
+        let registerUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/register';
+        let myPin = $('#pinNumber').val();
+        let pinRegisterUrl = registerUrl.replace('[pin]', myPin);
 
         $.ajax(pinRegisterUrl, {
             method: 'POST',
@@ -80,20 +67,17 @@ $(function () {
             error: function (err) {
                 console.error(err);
 
-                var errorCode = err.responseJSON.ErrorCode;
-                var text = errorText(errorCode);
+                let errorCode = err.responseJSON.ErrorCode;
+                let text = errorText(errorCode);
                 alert(text);
             }
         });
     });
 
     unregister.on('click', function () {
-
-        var unregisterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/unregister';
-
-        var myPin = $('#pinNumber').val();
-
-        var pinUnregisterUrl = unregisterUrl.replace('[pin]', myPin);
+        let unregisterUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/gym/[pin]/unregister';
+        let myPin = $('#pinNumber').val();
+        let pinUnregisterUrl = unregisterUrl.replace('[pin]', myPin);
 
         $.ajax(pinUnregisterUrl, {
             method: 'POST',
@@ -103,8 +87,8 @@ $(function () {
             error: function (err) {
                 console.error(err);
 
-                var errorCode = err.responseJSON.ErrorCode;
-                var text = errorText(errorCode);
+                let errorCode = err.responseJSON.ErrorCode;
+                let text = errorText(errorCode);
                 alert(text);
             }
         });
