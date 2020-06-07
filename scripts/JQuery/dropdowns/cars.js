@@ -24,11 +24,11 @@ $(function () {
     let makes = $('#makeDrop');
 
     const addModels = (cars, dropId) => {
-        if (cars.length == 0) {
+        if(cars.length == 0) {
             throw new Error('Cars list list be given');
         }
 
-        for (let i = 0; i < cars.length; i++) {
+        for(let i = 0; i < cars.length; i++) {
             let option = $('<option></option>');
 
             option.val(cars[i].model);
@@ -47,10 +47,10 @@ $(function () {
         let selectedOption = $(this).find(':selected');
         let carCode = selectedOption.val();
 
-        for (let i = 0; i < cars.length; i++) {
+        for(let i = 0; i < cars.length; i++) {
             let option = $('<option></option>');
 
-            if (cars[i].model == carCode) {
+            if(cars[i].model == carCode) {
                 option.val(cars[i].make);
                 option.html(cars[i].make);
 
@@ -59,7 +59,7 @@ $(function () {
         }
     });
     const includeStocksInCars = stocks => {
-        if (stocks.lenght == 0) {
+        if(stocks.lenght == 0) {
             throw new Error('Stocks list must be given');
         }
 
@@ -71,7 +71,7 @@ $(function () {
     makes.change(function() {
         let stockNumber = $('<span></span>');
 
-        for (let i = 0; i < cars.length; i++) {
+        for(let i = 0; i < cars.length; i++) {
             Object.assign(cars[i], {
                 stock: stocks[i]
             });
