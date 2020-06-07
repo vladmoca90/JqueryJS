@@ -1,10 +1,9 @@
 $(function () {
 
-    function getSelectedGroup(group) {
-
-        var table = $('<table class="world-cup-table table table-bordered"></table>');
-        var tableHead = $('<thead class="table-head"></thead>');
-        var heading = $('<th colspan="6"></th>');
+    const getSelectedGroup = group => {
+        let table = $('<table class="world-cup-table table table-bordered"></table>');
+        let tableHead = $('<thead class="table-head"></thead>');
+        let heading = $('<th colspan="6"></th>');
 
         heading.html(group.groupLabel);
 
@@ -12,15 +11,15 @@ $(function () {
         table.append(tableHead);
         tableHead.append(heading);
 
-        for (var i = 0; i < group.countries.length; i++) {
-            var tableBody = $('<tbody class="table-body"></tbody>');
-            var row = $('<tr></tr>');
-            var name = $('<td></td>');
-            var matches = $('<td></td>');
-            var wins = $('<td></td>');
-            var draws = $('<td></td>');
-            var loses = $('<td></td>');
-            var points = $('<td></td>');
+        for (let i = 0; i < group.countries.length; i++) {
+            let tableBody = $('<tbody class="table-body"></tbody>');
+            let row = $('<tr></tr>');
+            let name = $('<td></td>');
+            let matches = $('<td></td>');
+            let wins = $('<td></td>');
+            let draws = $('<td></td>');
+            let loses = $('<td></td>');
+            let points = $('<td></td>');
 
             name.html(group.countries[i].name);
             matches.html(0);
@@ -40,11 +39,11 @@ $(function () {
         }
     }
 
-    var currentUrl = window.location.href;
-    var beforeQuery = currentUrl.indexOf('group='); //98 is the first index
-    var query = currentUrl.substring(beforeQuery + 'group='.length); //returns the last element of the url
-    var groupUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/WorldCup/2018/groups/{groupLabel}';
-    var selectedGroupUrl = groupUrl.replace('{groupLabel}', query);
+    let currentUrl = window.location.href;
+    let beforeQuery = currentUrl.indexOf('group='); //98 is the first index
+    let query = currentUrl.substring(beforeQuery + 'group='.length); //returns the last element of the url
+    let groupUrl = 'http://sampleapis20180514091454.azurewebsites.net/api/v1/WorldCup/2018/groups/{groupLabel}';
+    let selectedGroupUrl = groupUrl.replace('{groupLabel}', query);
 
     $.ajax(selectedGroupUrl, {
         method: 'GET',
