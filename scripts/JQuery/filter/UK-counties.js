@@ -1,4 +1,4 @@
-var data = {
+const data = {
     counties: [{
             title: 'Berkshire',
             content: 'Berkshire is a county in south east England, west of London and is one of the home counties. It was recognised by the Queen as the Royal County of Berkshire in 1957 because of the presence of Windsor Castle, and letters patent were issued in 1974. Berkshire is a county of historic origin and is a home county',
@@ -21,7 +21,7 @@ $(function () {
             throw new Error('The data is empty');
         }
 
-        for (var i = 0; i < data.counties.length; i++) {
+        for (let i = 0; i < data.counties.length; i++) {
             let wrapper = $('<div class="wrapper"></div>');
             let container = $('.counties__container');
             let heading = $('<h3 class="counties__heading"></h3>');
@@ -39,7 +39,8 @@ $(function () {
     addCounties(data);
 
     $('.search-bar').on('keyup', function () {
-        var value = $(this).val(); //you don't always need .toLowerCase()
+        let value = $(this).val(); //you don't always need .toLowerCase()
+
         $('.wrapper').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
