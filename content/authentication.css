@@ -12,7 +12,8 @@ body {
       font-size: 14px; }
     body .content form label[for="Male"] {
       margin-right: 25px; }
-    body .content form label[for="Male"], body .content form label[for="Female"],
+    body .content form label[for="Male"],
+    body .content form label[for="Female"],
     body .content form label[for="Check"] {
       text-indent: 10px; }
     body .content form label {
