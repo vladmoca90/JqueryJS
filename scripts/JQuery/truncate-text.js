@@ -4,10 +4,10 @@ $(function () {
         let num = $('#numberValue').val();
 
         const truncateText = (text, num) => {
-            if (text.length == 0) {
+            if(text.length == 0) {
                 throw new Error('The text cannot be empty');
             }
-            if (num <= 0) {
+            if(num <= 0) {
                 throw new Error('n must be greater or equal to 1');
             }
 
