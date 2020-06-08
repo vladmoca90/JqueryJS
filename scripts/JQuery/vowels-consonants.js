@@ -6,18 +6,18 @@ $(function () {
         let text =  $('#textField').val();
 
         const countEachLetter = text => {
-            if (text.length == 0) {
+            if(text.length == 0) {
                 $('.alert-text').show();
             }
-            if (text.length > 0) {
+            if(text.length > 0) {
                 $('.alert-text').hide();
             }
 
             let count = 0;
 
-            for (let i = 0; i < text.length; i++) {
+            for(let i = 0; i < text.length; i++) {
                 let c = text.charAt(i);
-                if (isVowel(c)) {
+                if(isVowel(c)) {
                     count++;
                 }
             }

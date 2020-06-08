@@ -16,22 +16,22 @@ $(function () {
     comment.on('input', function () {
         let value = $(this).val().trim().replace(' ', '');
 
-        if (value.length >= 0 && value.length <= 40) {
+        if(value.length >= 0 && value.length <= 40) {
             clearClasses('#counter');
             counter.addClass('high');
             counter.html(maxCount - value.length);
         }
-        if (value.length >= 41 && value.length <= 100) {
+        if(value.length >= 41 && value.length <= 100) {
             clearClasses('#counter');
             counter.addClass('medium');
             counter.html(maxCount - value.length);
         }
-        if (value.length >= 101 && value.length <= 150) {
+        if(value.length >= 101 && value.length <= 150) {
             clearClasses('#counter');
             counter.addClass('low');
             counter.html(maxCount - value.length);
         }
-        if (value.length > 150) {
+        if(value.length > 150) {
             clearClasses('#counter');
             counter.addClass('negative');
             counter.html(maxCount - value.length);
@@ -51,10 +51,10 @@ $(function () {
         counter.html(maxCount);
         display.append(tweet);
 
-        if (content.trim().length == 0) {
+        if(content.trim().length == 0) {
             tweet.remove();
         }
-        if (content.trim().length > 150) {
+        if(content.trim().length > 150) {
             return;
         }
     });
