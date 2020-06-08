@@ -12,6 +12,8 @@ body {
       font-size: 14px; }
     body .content form label[for="Male"] {
       margin-right: 25px; }
+    body .content form label {
+      color: #333; }
     body .content form input {
       height: 32px;
       padding: 0 .35rem !important; }
