@@ -64,7 +64,6 @@ const tube = {
 }
 
 $(function () {
-
     const getTubeLines = tube => {
         if (tube.lines.length == 0) {
             throw new Error('The line names and statuses must be given.');
@@ -72,7 +71,7 @@ $(function () {
 
         let body = $('.tube-body');
 
-        for (let i = 0; i < tube.lines.length; i++) {
+        for(let i = 0; i < tube.lines.length; i++) {
             let row = $('<tr></tr>');
             let tubeLines = $('<td class="tube-lines"></td>');
             let linesStatus = $('<td class="tube-status"></td>');
@@ -88,10 +87,10 @@ $(function () {
 
     getTubeLines(tube);
 
-    function addColors() {
+    const addColors = () => {
         let status = $('.tube-status');
 
-        for (let i = 0; i < status.length; i++) {
+        for(let i = 0; i < status.length; i++) {
             let tubeStatus = status.eq(i).text();
 
             if(tubeStatus === 'Closed') {
