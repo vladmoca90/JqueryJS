@@ -1,4 +1,4 @@
-var prices = {
+const prices = {
     products: [
         {
             name: 'tomatoes',
@@ -18,11 +18,11 @@ var prices = {
     ],
 }
 
-var basket = [];
+let basket = [];
 
-function addToBasket(product) {
+const addToBaske = product => {
     // here you update the basket. you add one idem of the above product to the basket
-    if (!product) {
+    if(!product) {
         throw new Error('The product must be given');
     }
 
@@ -31,17 +31,16 @@ function addToBasket(product) {
     updateUi(basket);
 }
 
-function removeFromBasket(product) {
+const removeFromBasket = product => {
     // here you update the basket. you remove one idem of the above product from the basket
-    if (!product) {
+    if(!product) {
         throw new Error('The product must be given');
     }
-
-    if (basket.length == 0) {
+    if(basket.length == 0) {
         return;
     }
 
-    for (var i = 0; i < basket.length; i++) {
+    for(let i = 0; i < basket.length; i++) {
         if(basket[i].id == product.id) { // nu exista productId
             basket.splice(i, 1);
         }
@@ -50,16 +49,15 @@ function removeFromBasket(product) {
     updateUi(basket);
 }
 
-function updateUi(basket) {
+const updateUi = basket => {
     // for loop over basket. add all prices. add the end, show the sum on the screen
-
     if(basket == null) {
         throw new Error('The basket must exist');
     }
 
-    var total = 0;
+    let total = 0;
 
-    for(var i = 0; i < basket.length; i++) {
+    for(let i = 0; i < basket.length; i++) {
         total += basket[i].price;
     }
 
@@ -67,9 +65,9 @@ function updateUi(basket) {
     $('#totalItems').html(basket.length);
 }
 
-function getProduct(productId) {
-    for (var i = 0; i < prices.products.length; i++) {
-        if (prices.products[i].id == productId) {
+const getProduct = productId => {
+    for(let i = 0; i < prices.products.length; i++) {
+        if(prices.products[i].id == productId) {
             return prices.products[i];
         }
     }
@@ -81,10 +79,10 @@ $(function () {
     $('.product__btn--add').on('click', function () {
         console.log("Add clicked.");
 
-        var productId = $(this).attr('product-id');
-        var product = getProduct(productId);
+        let productId = $(this).attr('product-id');
+        let product = getProduct(productId);
 
-        if (product == null) {
+        if(product == null) {
             throw new Error('The product could not be found');
         }
 
@@ -95,10 +93,10 @@ $(function () {
         console.log("Remove clicked");
         // try this
 
-        var productId = $(this).attr('product-id');
-        var product = getProduct(productId);
+        let productId = $(this).attr('product-id');
+        let product = getProduct(productId);
         // now check if product is null and throw error if it is. do the same for add
-        if (product == null) {
+        if(product == null) {
             throw new Error('The product could not be found');
         }
 
