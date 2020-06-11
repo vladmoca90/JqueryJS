@@ -15,4 +15,4 @@ $(function() {
             throw new Error('');
         }
     });
-}
+});
