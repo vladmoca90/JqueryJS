@@ -33,4 +33,5 @@ body {
     body .content .validation-alerts {
       margin-top: 30px; }
       body .content .validation-alerts p {
-        color: #cb2000; }
+        color: #cb2000;
+        margin-bottom: 5px; }

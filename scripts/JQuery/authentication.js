@@ -4,6 +4,8 @@ $(function() {
     let email = $('#email');
     let password = $('#password');
     let check = $('#check');
+    
+    $('.validation-alerts > p').hide();
 
     $('#submit').on('click', function() {
         if(name.length < 3) {
