@@ -30,3 +30,7 @@ body {
       font-size: 14px;
       margin-top: 5px;
       width: 85px; }
+    body .content .validation-alerts {
+      margin-top: 30px; }
+      body .content .validation-alerts p {
+        color: #cb2000; }
