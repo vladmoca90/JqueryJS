@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0; }
   body .content {
-    background-color: #b7eafa;
+    background-color: rgba(183, 234, 250, 0.8);
     border: 1px solid #ccc;
     margin: 25px auto 0;
     max-width: 400px;
