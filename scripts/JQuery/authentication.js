@@ -8,10 +8,10 @@ $(function() {
     $('.validation-alerts p').hide();
 
     $('#submit').on('click', function() {
-        if(name.length < 3) {
+        if(name.length <= 3) {
             $('.name-alert').show();
         }
-        if(email.length < 3 || email.indexOf('@') == -1) {
+        if(email.length <= 6 || email.indexOf('@') == -1) {
             throw new Error('');
         }
     });
