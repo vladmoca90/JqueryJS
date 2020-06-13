@@ -9,7 +9,7 @@ $(function() {
 
     $('#submit').on('click', function() {
         if(name.length < 3) {
-            throw new Error('');
+            $('.name-alert').show();
         }
         if(email.length < 3 || email.indexOf('@') == -1) {
             throw new Error('');
