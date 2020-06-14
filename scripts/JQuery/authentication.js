@@ -12,7 +12,7 @@ $(function() {
             $('.name-alert').show();
         }
         if(email.length <= 6 || email.indexOf('@') == -1) {
-            throw new Error('');
+            $('.email-alert').show();
         }
     });
 });
