@@ -14,5 +14,8 @@ $(function() {
         if(email.length <= 6 || email.indexOf('@') == -1) {
             $('.email-alert').show();
         }
+        if(password.length < 6) {
+            $('.password-alert').show();
+        }
     });
 });
