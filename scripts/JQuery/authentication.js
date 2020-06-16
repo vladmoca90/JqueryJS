@@ -17,5 +17,8 @@ $(function() {
         if(password.length < 6) {
             $('.password-alert').show();
         }
+        if(!gender.checked) {
+            $('.gender-alert').show();
+        }
     });
 });
