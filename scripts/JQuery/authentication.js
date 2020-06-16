@@ -3,7 +3,7 @@ $(function() {
     let gender = $('#gender');
     let email = $('#email');
     let password = $('#password');
-    let check = $('#check');
+    let checkOut = $('#check');
     
     $('.validation-alerts p').hide();
 
@@ -19,6 +19,9 @@ $(function() {
         }
         if(!gender.checked) {
             $('.gender-alert').show();
+        }
+        if(!checkOut.checked) {
+            $('.checkOut-alert').show();
         }
     });
 });
