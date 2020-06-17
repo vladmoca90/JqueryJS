@@ -4,24 +4,22 @@ $(function() {
     let email = $('#email').val();
     let password = $('#password').val();
     let checkOut = $('#check');
-    
-    $('.validation-alerts p').hide();
 
     $('#submit').on('click', function() {
         if(name.length <= 3) {
-            $('.name-alert').show();
+            $('.name-alert').addClass('show-alert');
         }
         if(email.length <= 6 || email.indexOf('@') == -1) {
-            $('.email-alert').show();
+            $('.email-alert').addClass('show-alert');
         }
         if(password.length < 6) {
-            $('.password-alert').show();
+            $('.password-alert').addClass('show-alert');
         }
         if(!gender.checked) {
-            $('.gender-alert').show();
+            $('.gender-alert').addClass('show-alert');
         }
         if(!checkOut.checked) {
-            $('.checkOut-alert').show();
+            $('.checkOut-alert').addClass('show-alert');
         }
     });
 });

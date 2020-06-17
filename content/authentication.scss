@@ -45,7 +45,12 @@ body {
             p {
                 color:#cb2000;
                 font-size: 14px;
+                display: none;
                 margin-bottom: 5px;
+
+                &.show-alert {
+                    
+                }
             }
         }
     }

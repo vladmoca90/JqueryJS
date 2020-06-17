@@ -35,4 +35,5 @@ body {
       body .content .validation-alerts p {
         color: #cb2000;
         font-size: 14px;
+        display: none;
         margin-bottom: 5px; }
