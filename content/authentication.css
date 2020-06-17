@@ -19,8 +19,8 @@ body {
     body .content form label {
       color: #333; }
     body .content form input {
-      height: 32px;
-      padding: 0 .35rem !important; }
+      height: 30px;
+      padding: 0.2rem .35rem !important; }
     body .content form .form-check {
       margin: 10px 0; }
       body .content form .form-check .form-check-input {
