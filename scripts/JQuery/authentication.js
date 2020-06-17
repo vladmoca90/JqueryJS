@@ -5,7 +5,7 @@ $(function() {
     let password = $('#password');
     let checkOut = $('#check');
     
-    $('.validation-alerts p').hide();
+    $('.validation-alerts').hide();
 
     $('#submit').on('click', function() {
         if(name.length <= 3) {
