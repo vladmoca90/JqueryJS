@@ -6,10 +6,10 @@ $(function() {
     let checkOut = $('#check');
 
     $('#submit').on('click', function() {
-        if(name.length <= 3) {
+        if(name.length < 3) {
             $('.name-alert').addClass('show-alert');
         }
-        if(email.length <= 6 || email.indexOf('@') == -1) {
+        if(email.length < 6 && email.indexOf('@') == -1) {
             $('.email-alert').addClass('show-alert');
         }
         if(password.length < 6) {
