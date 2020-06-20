@@ -15,11 +15,11 @@ $(function() {
         if(password.length < 6) {
             $('.password-alert').addClass('show-alert');
         }
-        if(!gender.checked) {
-            $('.gender-alert').addClass('show-alert');
-        }
-        if(!checkOut.checked) {
-            $('.checkOut-alert').addClass('show-alert');
-        }
+        // if(!gender.checked) {
+        //     $('.gender-alert').addClass('show-alert');
+        // }
+        // if(!checkOut.checked) {
+        //     $('.checkOut-alert').addClass('show-alert');
+        // }
     });
 });
