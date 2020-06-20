@@ -2,8 +2,8 @@ $(function() {
     let name = $('#name').val();
     let email = $('#email').val();
     let password = $('#password').val();
-    // let gender = $('#gender');
-    // let checkOut = $('#check');
+    let gender = $('#gender:checked');
+    let checkOut = $('#check:checked');
 
     $('#submit').on('click', function() {
         if(name.length < 3) {
@@ -15,11 +15,11 @@ $(function() {
         if(password.length < 6) {
             $('.password-alert').css('display', 'block');
         }
-        // if(!gender.checked) {
-        //     $('.gender-alert').addClass('show-alert');
-        // }
-        // if(!checkOut.checked) {
-        //     $('.checkOut-alert').addClass('show-alert');
-        // }
+        if(gender.length == 0) {
+            $('.gender-alert').addClass('show-alert');
+        }
+        if(checkOut.length = 0) {
+            $('.checkOut-alert').addClass('show-alert');
+        }
     });
 });
