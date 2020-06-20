@@ -7,13 +7,13 @@ $(function() {
 
     $('#submit').on('click', function() {
         if(name.length < 3) {
-            $('.name-alert').addClass('show-alert');
+            $('.name-alert').css('display', 'block');
         }
         if(email.length < 6 && email.indexOf('@') == -1) {
-            $('.email-alert').addClass('show-alert');
+            $('.email-alert').css('display', 'block');
         }
         if(password.length < 6) {
-            $('.password-alert').addClass('show-alert');
+            $('.password-alert').css('display', 'block');
         }
         // if(!gender.checked) {
         //     $('.gender-alert').addClass('show-alert');
