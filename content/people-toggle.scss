@@ -10,13 +10,14 @@
 
     &__button {
         cursor: pointer;
+        font-weight: 600;
         padding: 8px 0;
     }
 
     &__list {
         display: none;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 400;
         list-style-type: none;
         margin: 0;
         padding: 0;
