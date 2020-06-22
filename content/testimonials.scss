@@ -2,6 +2,11 @@ body {
     margin: 0;
     padding: 0;
 
+    .testimonials {
+        max-width: 300px;
+        margin: 20px auto 0;
+    }
+
     .rslides {
         position: relative;
         list-style: none;
