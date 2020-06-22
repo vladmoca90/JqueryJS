@@ -5,6 +5,8 @@ $(function() {
     let gender = $('#gender:checked');
     let checkOut = $('#check:checked');
 
+    $('.validation-messages p').css('display', 'block');
+
     $('#submit').on('click', function() {
         if(name.length < 3) {
             $('.name-alert').css('display', 'block');
