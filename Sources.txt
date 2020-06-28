@@ -1,7 +1,13 @@
 https://codepen.io/btholt/pen/FArdh 
 
-https://googlechrome.github.io/samples/fetch-api/fetch-post.html 
+https://googlechrome.github.io/samples/fetch-api/fetch-post.html
+
 
 Find Udemy videos of Javascript and Jquery
 
 https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8
+
+
+GitHub for the car slider
+
+https://github.com/kenwheeler/slick/
