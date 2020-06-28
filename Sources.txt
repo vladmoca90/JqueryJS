@@ -10,4 +10,6 @@ https://codeburst.io/how-to-pure-css-carousel-ce1a8cb231c8
 
 GitHub for the car slider
 
+https://kenwheeler.github.io/slick/
+
 https://github.com/kenwheeler/slick/
