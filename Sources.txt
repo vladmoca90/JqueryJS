@@ -13,3 +13,5 @@ GitHub for the car slider
 https://kenwheeler.github.io/slick/
 
 https://github.com/kenwheeler/slick/
+
+https://codepen.io/Qvatra/pen/yOvBoM?css-preprocessor=less 
