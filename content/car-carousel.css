@@ -3,4 +3,5 @@ body {
   padding: 0; }
   body .car-carousel {
     max-width: 1400px;
-    margin: 0 auto; }
+    margin: 30px auto;
+    width: 100%; }
