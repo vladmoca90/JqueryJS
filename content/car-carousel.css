@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0; }
-  body .car-carousel {
+  body .container .car-carousel {
     max-width: 1400px;
     margin: 50px auto;
     width: 100%; }
