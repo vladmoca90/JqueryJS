@@ -10,9 +10,9 @@ body {
     width: 100%; }
     body .content form label, body .content form input {
       font-size: 14px; }
-    body .content form label[for="Male"] {
+    body .content form label[for="male"] {
       margin-right: 18px; }
-    body .content form label[for="Male"],
+    body .content form label[for="male"],
     body .content form label[for="Female"],
     body .content form label[for="Check"] {
       text-indent: 3px; }

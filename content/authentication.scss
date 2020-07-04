@@ -12,12 +12,12 @@ body {
             label, input {
                 font-size: 14px;
             }
-            label[for="Male"] {
+            label[for="male"] {
                 margin-right: 18px;
             }
-            label[for="Male"],
-            label[for="Female"],
-            label[for="Check"] {
+            label[for="male"],
+            label[for="female"],
+            label[for="check"] {
                 text-indent: 3px;
             }
             label {
