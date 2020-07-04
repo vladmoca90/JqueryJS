@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0; }
   body .content {
-    background-color: rgba(183, 234, 250, 0.8);
+    background-color: rgba(161, 216, 233, 0.8);
     border: 1px solid #ccc;
     margin: 25px auto 0;
     max-width: 400px;
@@ -13,8 +13,8 @@ body {
     body .content form label[for="male"] {
       margin-right: 18px; }
     body .content form label[for="male"],
-    body .content form label[for="Female"],
-    body .content form label[for="Check"] {
+    body .content form label[for="female"],
+    body .content form label[for="check"] {
       text-indent: 3px; }
     body .content form label {
       color: #5d5b5b; }
