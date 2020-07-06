@@ -1,3 +1,100 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /*xs*/
+  /*sm*/
+  /*md*/
+  /*lg*/ }
+  body .col-centered {
+    float: none;
+    margin: 0 auto; }
+  body .carousel-control {
+    width: 8%;
+    width: 0px; }
+  body .carousel-control.left,
+  body .carousel-control.right {
+    margin-right: 40px;
+    margin-left: 32px;
+    background-image: none;
+    opacity: 1; }
+  body .carousel-control > a > span {
+    color: white;
+    font-size: 29px !important; }
+  body .carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px;
+    float: left; }
+  body .active > div {
+    display: none; }
+  body .active > div:first-child {
+    display: block; }
+  @media (max-width: 767px) {
+    body .carousel-inner .active.left {
+      left: -50%; }
+    body .carousel-inner .active.right {
+      left: 50%; }
+    body .carousel-inner .next {
+      left: 50%; }
+    body .carousel-inner .prev {
+      left: -50%; }
+    body .carousel-col {
+      width: 50%; }
+    body .active > div:first-child + div {
+      display: block; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    body .carousel-inner .active.left {
+      left: -50%; }
+    body .carousel-inner .active.right {
+      left: 50%; }
+    body .carousel-inner .next {
+      left: 50%; }
+    body .carousel-inner .prev {
+      left: -50%; }
+    body .carousel-col {
+      width: 50%; }
+    body .active > div:first-child + div {
+      display: block; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    body .carousel-inner .active.left {
+      left: -33%; }
+    body .carousel-inner .active.right {
+      left: 33%; }
+    body .carousel-inner .next {
+      left: 33%; }
+    body .carousel-inner .prev {
+      left: -33%; }
+    body .carousel-col {
+      width: 33%; }
+    body .active > div:first-child + div {
+      display: block; }
+    body .active > div:first-child + div + div {
+      display: block; } }
+  @media (min-width: 1200px) {
+    body .carousel-inner .active.left {
+      left: -25%; }
+    body .carousel-inner .active.right {
+      left: 25%; }
+    body .carousel-inner .next {
+      left: 25%; }
+    body .carousel-inner .prev {
+      left: -25%; }
+    body .carousel-col {
+      width: 25%; }
+    body .active > div:first-child + div {
+      display: block; }
+    body .active > div:first-child + div + div {
+      display: block; }
+    body .active > div:first-child + div + div + div {
+      display: block; } }
+  body .block {
+    width: 306px;
+    height: 230px; }
+  body .red {
+    background: red; }
+  body .blue {
+    background: blue; }
+  body .green {
+    background: green; }
+  body .yellow {
+    background: yellow; }
