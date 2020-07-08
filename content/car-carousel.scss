@@ -117,19 +117,15 @@ body {
         .carousel-inner .prev {
             left: -25%;
         }
-
         .carousel-col {
             width: 25%;
         }
-
         .active>div:first-child+div {
             display: block;
         }
-
         .active>div:first-child+div+div {
             display: block;
         }
-
         .active>div:first-child+div+div+div {
             display: block;
         }
@@ -143,17 +139,13 @@ body {
     .red {
         background: red;
     }
-
     .blue {
         background: blue;
     }
-
     .green {
         background: green;
     }
-
     .yellow {
         background: yellow;
     }
-
 }
