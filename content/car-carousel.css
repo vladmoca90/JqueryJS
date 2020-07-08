@@ -29,7 +29,7 @@ body {
     display: none; }
   body .active > div:first-child {
     display: block; }
-  @media (max-width: 767px) {
+  @media all and (max-width: 767px) {
     body .carousel-inner .active.left {
       left: -50%; }
     body .carousel-inner .active.right {
@@ -42,7 +42,7 @@ body {
       width: 50%; }
     body .active > div:first-child + div {
       display: block; } }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media all and (min-width: 768px) and (max-width: 991px) {
     body .carousel-inner .active.left {
       left: -50%; }
     body .carousel-inner .active.right {
@@ -55,7 +55,7 @@ body {
       width: 50%; }
     body .active > div:first-child + div {
       display: block; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
+  @media all and (min-width: 992px) and (max-width: 1199px) {
     body .carousel-inner .active.left {
       left: -33%; }
     body .carousel-inner .active.right {
@@ -70,7 +70,7 @@ body {
       display: block; }
     body .active > div:first-child + div + div {
       display: block; } }
-  @media (min-width: 1200px) {
+  @media all and (min-width: 1200px) {
     body .carousel-inner .active.left {
       left: -25%; }
     body .carousel-inner .active.right {
