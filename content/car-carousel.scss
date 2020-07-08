@@ -6,12 +6,10 @@ body {
         float: none;
         margin: 0 auto;
     }
-
     .carousel-control {
         width: 8%;
         width: 0px;
     }
-
     .carousel-control.left,
     .carousel-control.right {
         margin-right: 40px;
@@ -19,23 +17,19 @@ body {
         background-image: none;
         opacity: 1;
     }
-
     .carousel-control>a>span {
         color: white;
         font-size: 29px !important;
     }
-
     .carousel-col {
         position: relative;
         min-height: 1px;
         padding: 5px;
         float: left;
     }
-
     .active>div {
         display: none;
     }
-
     .active>div:first-child {
         display: block;
     }
@@ -45,23 +39,18 @@ body {
         .carousel-inner .active.left {
             left: -50%;
         }
-
         .carousel-inner .active.right {
             left: 50%;
         }
-
         .carousel-inner .next {
             left: 50%;
         }
-
         .carousel-inner .prev {
             left: -50%;
         }
-
         .carousel-col {
             width: 50%;
         }
-
         .active>div:first-child+div {
             display: block;
         }
@@ -72,23 +61,18 @@ body {
         .carousel-inner .active.left {
             left: -50%;
         }
-
         .carousel-inner .active.right {
             left: 50%;
         }
-
         .carousel-inner .next {
             left: 50%;
         }
-
         .carousel-inner .prev {
             left: -50%;
         }
-
         .carousel-col {
             width: 50%;
         }
-
         .active>div:first-child+div {
             display: block;
         }
@@ -99,19 +83,15 @@ body {
         .carousel-inner .active.left {
             left: -33%;
         }
-
         .carousel-inner .active.right {
             left: 33%;
         }
-
         .carousel-inner .next {
             left: 33%;
         }
-
         .carousel-inner .prev {
             left: -33%;
         }
-
         .carousel-col {
             width: 33%;
         }
