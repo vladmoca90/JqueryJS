@@ -95,11 +95,9 @@ body {
         .carousel-col {
             width: 33%;
         }
-
         .active>div:first-child+div {
             display: block;
         }
-
         .active>div:first-child+div+div {
             display: block;
         }
@@ -110,15 +108,12 @@ body {
         .carousel-inner .active.left {
             left: -25%;
         }
-
         .carousel-inner .active.right {
             left: 25%;
         }
-
         .carousel-inner .next {
             left: 25%;
         }
-
         .carousel-inner .prev {
             left: -25%;
         }
