@@ -1,5 +1,5 @@
 #display {
-    margin: 40px auto;
+    margin: 20px auto;
     max-width: 115px;
     text-align: center;
 }
@@ -8,7 +8,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
     max-width: 115px;
     .digit {
         font-size: 15px;
