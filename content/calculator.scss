@@ -1,24 +1,32 @@
-#display {
-    margin: 20px auto;
-    max-width: 115px;
-    text-align: center;
-}
+body {
+    margin: 0;
+    padding: 0;
 
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin: 20px auto 0;
-    max-width: 115px;
-    .digit {
-        font-size: 15px;
-        margin-bottom: 5px;
-        padding: 10px;
-        .operators {
+    #display {
+        margin: 20px auto;
+        max-width: 115px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 20px auto 0;
+        max-width: 115px;
+
+        .digit {
+            font-size: 15px;
+            margin-bottom: 5px;
+            padding: 10px;
+
+            .operators {
+                margin-top: 10px;
+            }
+        }
+
+        .result>#equal {
             margin-top: 10px;
         }
-    }
-    .result>#equal {
-        margin-top: 10px;
     }
 }
