@@ -1,19 +1,21 @@
-#display {
-  margin: 20px auto;
-  max-width: 115px;
-  text-align: center; }
-
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  margin: 20px auto 0;
-  max-width: 115px; }
-  .container .digit {
-    font-size: 15px;
-    margin-bottom: 5px;
-    padding: 10px; }
-    .container .digit .operators {
+body {
+  margin: 0;
+  padding: 0; }
+  body #display {
+    margin: 20px auto;
+    max-width: 115px;
+    text-align: center; }
+  body .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 20px auto 0;
+    max-width: 115px; }
+    body .container .digit {
+      font-size: 15px;
+      margin-bottom: 5px;
+      padding: 10px; }
+      body .container .digit .operators {
+        margin-top: 10px; }
+    body .container .result > #equal {
       margin-top: 10px; }
-  .container .result > #equal {
-    margin-top: 10px; }
