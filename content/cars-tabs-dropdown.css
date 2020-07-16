@@ -1,29 +1,30 @@
-.search-form {
-  margin: 0 auto;
-  max-width: 350px; }
-
-.form-tabs {
-  margin: 20px 0; }
-  .form-tabs input {
-    display: none; }
-  .form-tabs label {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 32px;
-    line-height: 28px;
-    text-align: center;
+body {
+  margin: 0;
+  padding: 0; }
+  body .search-form {
+    margin: 0 auto;
+    max-width: 350px; }
+  body .form-tabs {
+    margin: 20px 0; }
+    body .form-tabs input {
+      display: none; }
+    body .form-tabs label {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      height: 32px;
+      line-height: 28px;
+      text-align: center;
+      width: 150px; }
+      body .form-tabs label:hover {
+        background-color: #ddd; }
+  body .search-panel select,
+  body .search-panel option {
+    font-size: 15px;
+    padding: 2px;
     width: 150px; }
-    .form-tabs label:hover {
-      background-color: #ddd; }
-
-.search-panel select, .search-panel option {
-  font-size: 15px;
-  padding: 2px;
-  width: 150px; }
-
-.number-of-cars,
-.number-of-vans {
-  display: block;
-  margin-top: 20px; }
+  body .number-of-cars,
+  body .number-of-vans {
+    display: block;
+    margin-top: 20px; }

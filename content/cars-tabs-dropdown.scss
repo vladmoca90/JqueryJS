@@ -1,37 +1,48 @@
-.search-form {
-    margin: 0 auto;
-    max-width: 350px;
-}
-.form-tabs {
-    margin: 20px 0;
+body {
+    margin: 0;
+    padding: 0;
 
-    input {
-        display: none;
+    .search-form {
+        margin: 0 auto;
+        max-width: 350px;
     }
-    label {
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-        height: 32px;
-        line-height: 28px;
-        text-align: center;
-        width: 150px;
 
-        &:hover {
-            background-color: #ddd;
+    .form-tabs {
+        margin: 20px 0;
+
+        input {
+            display: none;
+        }
+
+        label {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            height: 32px;
+            line-height: 28px;
+            text-align: center;
+            width: 150px;
+
+            &:hover {
+                background-color: #ddd;
+            }
         }
     }
-}
-.search-panel {
-    select, option {
-        font-size: 15px;
-        padding: 2px;
-        width: 150px;
+
+    .search-panel {
+
+        select,
+        option {
+            font-size: 15px;
+            padding: 2px;
+            width: 150px;
+        }
     }
-}
-.number-of-cars,
-.number-of-vans {
-    display: block;
-    margin-top: 20px;
+
+    .number-of-cars,
+    .number-of-vans {
+        display: block;
+        margin-top: 20px;
+    }
 }
