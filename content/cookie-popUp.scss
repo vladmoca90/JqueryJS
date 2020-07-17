@@ -1,8 +1,9 @@
 @import 'variables/variables.scss';
-
 @import 'mixins/mixins.scss';
 
 body {
+    margin: 0;
+    padding: 0;
     position: relative;
 
     .pop-up {

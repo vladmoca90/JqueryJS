@@ -1,20 +1,26 @@
-.content {
-    margin: 30px auto;
-    width: 450px;
+body {
+    margin: 0;
+    padding: 0;
 
-    >div {
-        justify-content: space-between;
+    .content {
+        margin: 30px auto;
+        width: 450px;
 
-        input {
-            height: 30px;
+        >div {
+            justify-content: space-between;
 
-            &#text {
-                width: 250px;
+            input {
+                height: 30px;
+
+                &#text {
+                    width: 250px;
+                }
             }
-        }
-        button,
-        #numberOfVowels {
-            font-size: 15px;
+
+            button,
+            #numberOfVowels {
+                font-size: 15px;
+            }
         }
     }
 }
