@@ -8,7 +8,8 @@ body {
     max-width: 400px;
     padding: 12px;
     width: 100%; }
-    body .content form label, body .content form input {
+    body .content form label,
+    body .content form input {
       font-size: 14px; }
     body .content form label[for="male"] {
       margin-right: 18px; }
