@@ -1,10 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+
     .prices-container {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 20px auto 0;
         max-width: 600px;
+
         .title-link {
             color: #222;
             display: flex;
@@ -12,15 +14,18 @@ body {
             text-decoration: none;
             width: 100%;
         }
+
         .vehicle-title {
             font-size: 16px;
             margin: 0;
         }
+
         .titles {
             border: 1px solid #ccc;
             margin-top: 25px;
             padding: 30px 10px;
         }
+
         .vehicle-price {
             line-height: 21px;
             text-align: right;
@@ -29,6 +34,7 @@ body {
                 font-size: 15px;
             }
         }
+
         .monthly-price {
             display: block;
             font-size: 13px;
