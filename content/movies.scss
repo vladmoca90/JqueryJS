@@ -1,9 +1,7 @@
 @import 'variables/variables.scss';
-
 @import 'mixins/mixins.scss';
 
 body {
-
     #searchList {
         margin: 25px auto;
         width: 400px;
@@ -17,6 +15,7 @@ body {
             padding: 20px;
             width: 90%;
         }
+
         h2 {
             font-style: normal;
             margin-bottom: 3px;
