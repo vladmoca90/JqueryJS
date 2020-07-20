@@ -8,10 +8,12 @@ $red: #f00;
     flex-direction: column;
     margin: 30px auto 0;
     width: 400px;
+
     #commentSection {
         font-size: 15px;
         width: 100%;
     }
+
     button {
         background-color: #03A9F4;
         border-color: #03A9F4;
@@ -21,17 +23,21 @@ $red: #f00;
         outline: none;
         text-transform: uppercase;
         width: 80px;
+
         &:hover {
             background-color: #0288D1;
             border-color: #0288D1;
         }
     }
+
     .content-comments {
         padding-top: 10px;
         width: 400px;
     }
+
     #commentDisplay {
         overflow: hidden;
+
         .text {
             background-color: #B3E5FC;
             border-radius: 6px;
@@ -43,24 +49,30 @@ $red: #f00;
             position: relative;
             word-break: break-all;
             width: 100%;
+
             &:after {
                 position: absolute;
             }
         }
     }
+
     #counter {
         font-weight: bold;
         margin-top: 10px;
     }
+
     .high {
         color: $black;
     }
+
     .medium {
         color: $green;
     }
+
     .low {
         color: $pink;
     }
+
     .negative {
         color: $red;
     }
