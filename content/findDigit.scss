@@ -13,17 +13,23 @@
             &#number {
                 width: 200px;
             }
+
             &#digit {
                 width: 50px;
             }
         }
-        .digit-btn, p {
+
+        .digit-btn,
+        p {
             font-size: 14px;
         }
+
         .digit-btn {
             padding: .25rem 0.75rem;
         }
-        .btn:focus, .btn {
+
+        .btn:focus,
+        .btn {
             box-shadow: 0 0 0 0 transparent !important;
             outline: 0 !important;
         }
