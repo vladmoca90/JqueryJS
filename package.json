@@ -10,7 +10,6 @@
     "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0",
-    "sass": "^1.32.5",
     "scss": "^0.2.4"
   },
   "scripts": {
