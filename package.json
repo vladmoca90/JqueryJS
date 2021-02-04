@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch content -o content"
+    "scss": "node-sass –-watch content -o content"
   },
   "repository": {
     "type": "git",
