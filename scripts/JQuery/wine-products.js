@@ -1,43 +1,43 @@
 $(function () {
-    let products = [];
-    let list = $('#productsList');
+    let wines = [];
+    let list = $('#winesList');
 
-    const createProductsList = products => {
-        if(!products) {
-            throw new Error('The products parameter must be populated');
+    const createWinesList = wines => {
+        if(!wines) {
+            throw new Error('The wines parameter must be populated');
         }
 
-        let productsList = $('.products-container').find('.product');
+        let winesList = $('.wines-container').find('.product');
 
-        for(let i = 0; i < productsList.length; i++) {
-            let productsObj = new Object();
+        for(let i = 0; i < winesList.length; i++) {
+            let winesObj = new Object();
 
-            productsObj.name = $('.product').eq(i).attr('data-product-name'),
-            productsObj.id = $('.product').eq(i).attr('data-product-id'),
-            products.push(productsObj);
+            winesObj.name = $('.product').eq(i).attr('data-product-name'),
+            winesObj.id = $('.product').eq(i).attr('data-product-id'),
+            wines.push(winesObj);
         }
     }
 
-    createProductsList(products);
+    createWinesList(wines);
 
-    const addProductsToList = products => {
-        if(products.length == 0) {
-            throw new Error('The products list must be given');
+    const addWinesToList = wines => {
+        if(wines.length == 0) {
+            throw new Error('The wines list must be given');
         }
 
         list.find('option').eq(0).val(0);
 
-        for(let i = 0; i < products.length; i++) {
+        for(let i = 0; i < wines.length; i++) {
             let option = $('<option></option>');
 
             list.append(option);
-            option.attr('value', products[i].id);
-            option.val(products[i].id);
-            option.html(products[i].name);
+            option.attr('value', wines[i].id);
+            option.val(wines[i].id);
+            option.html(wines[i].name);
         }
     }
 
-    addProductsToList(products);
+    addWinesToList(wines);
 
     list.change(function () {
         let selected = $(this).find(':selected');
