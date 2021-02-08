@@ -56,4 +56,5 @@ body {
           font-weight: 100;
           position: absolute;
           right: 6px;
-          top: 4px; }
+          top: 4px;
+          z-index: 100; }
