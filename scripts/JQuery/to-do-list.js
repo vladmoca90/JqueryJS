@@ -1,7 +1,7 @@
 $(function () {
     let btn = $('button');
     let list = $('.list-container');
-    let text = $('#textField');
+    let text = $('#field');
 
     btn.on('click', function () {
         let listItem = $('<li></li>');

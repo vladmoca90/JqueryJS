@@ -24,7 +24,7 @@ body {
       body .main-container .type-field .btn-success:not(:disabled):not(.disabled):active:focus,
       body .main-container .type-field .show > .btn-success.dropdown-toggle:focus {
         box-shadow: 0 0 0 0 transparent; }
-      body .main-container .type-field #textField {
+      body .main-container .type-field #field {
         border: 1px solid #a29e9e;
         width: 100%;
         border-top-left-radius: 0 !important;
