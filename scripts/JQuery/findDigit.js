@@ -2,10 +2,12 @@
 
 $(function () {
     const btn = $('button');
+
     btn.on('click', function () {
         let n = $('#number').val();
         let m = $('#digit').val();
         let digit = n.toString()[m];
+
         const findDigit = (n, m) => {
             if(n.toString().length == 0) {
                 throw new Error('The number must be given');
