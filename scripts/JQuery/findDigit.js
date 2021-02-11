@@ -16,7 +16,7 @@ $(function () {
                 throw new Error('The number must have at leat two digits');
             }
             if(m < 0) {
-                throw new Error('m must be greater than 0');
+                throw new Error('The digit must be greater than 0');
             }
             if(m >= n.toString().length) {
                 throw new Error('The digit does not exist');
