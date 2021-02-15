@@ -123,11 +123,11 @@ $(function () {
         }
 
         let stationsDropdown = $(dropdownId);
-
         stationsDropdown.empty();
 
         let station = $('<option value="Choose station">Choose station:</option>');
         $('#fromStation').append(station);
+
         let destination = $('<option value="Choose destination">Choose destination:</option>');
         $('#toStation').append(destination);
 
