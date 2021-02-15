@@ -2,8 +2,8 @@ $(function () {
     getMovies(function (result) {
         console.log(result);
 
-        for (var i = 0; i < result.movies.length; i++) {
-            var elem = createMovieElement(result.movies[i]);
+        for (let i = 0; i < result.movies.length; i++) {
+            let elem = createMovieElement(result.movies[i]);
 
             $('#moviesList').append(elem);
         }
@@ -12,7 +12,7 @@ $(function () {
     // the function in click() is also a callback: it says when you click the button (or whatever), please execute this function
     // callbacks are used very frequently in jQuery and in JS in general
     $('#searchBtn').on('click', function () {
-        var searchQuery = $('#searchBar').val();
+        let searchQuery = $('#searchBar').val();
 
         console.log(searchQuery);
 
@@ -20,8 +20,8 @@ $(function () {
             console.log(result);
             $('#moviesList').empty();
 
-            for (var i = 0; i < result.movies.length; i++) {
-                var searchElem = createMovieElement(result.movies[i]);
+            for (let i = 0; i < result.movies.length; i++) {
+                let searchElem = createMovieElement(result.movies[i]);
 
                 $('#moviesList').append(searchElem);
             }
