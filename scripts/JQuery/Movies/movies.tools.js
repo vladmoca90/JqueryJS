@@ -1,7 +1,7 @@
 // given a movie (JSON object), returns a jquery element
 // that will contain the movie data
 function createMovieElement(movie) {
-	var clone = $('#movieTemplate').clone();
+	let clone = $('#movieTemplate').clone();
 
 	clone.attr('data-movie-id', movie.id);
 	clone.find('.movie-title').html(movie.title);
@@ -17,7 +17,7 @@ function createMovieElement(movie) {
 // 	// given a movie (JSON object), returns a jquery element
 // 	// that will contain the movie data
 // 	this.createMovieElement = function(movie) {
-// 		var clone = $('#movieTemplate').clone();
+// 		let clone = $('#movieTemplate').clone();
 
 // 		clone.attr('data-movie-id', movie.id);
 // 		clone.find('.movie-title').html(movie.title);
