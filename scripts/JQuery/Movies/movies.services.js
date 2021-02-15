@@ -3,7 +3,7 @@
 // but instead you decided that whoever calls your function can
 // decide what to do on success
 function getMovies(callback) {
-	var moviesUrl = "http://sampleapis20180514091454.azurewebsites.net/api/movies";
+	let moviesUrl = "http://sampleapis20180514091454.azurewebsites.net/api/movies";
 
 	$.ajax(moviesUrl, {
 		"method": "GET",
@@ -12,7 +12,7 @@ function getMovies(callback) {
 }
 
 function searchMovies(query, callback) {
-	var searchUrl = "http://sampleapis20180514091454.azurewebsites.net/api/movies/search?query=" + query;
+	let searchUrl = "http://sampleapis20180514091454.azurewebsites.net/api/movies/search?query=" + query;
 
 	$.ajax(searchUrl, {
 		"method": "GET",
@@ -21,7 +21,7 @@ function searchMovies(query, callback) {
 }
 
 // function MoviesService() {
-// 	var endpoint = "http://sampleapis20180514091454.azurewebsites.net/api/movies";
+// 	let endpoint = "http://sampleapis20180514091454.azurewebsites.net/api/movies";
 
 // 	// callback is a function that should have one parameter, which represents the response from the endpoint
 // 	this.getMovies = function (callback) {
@@ -34,7 +34,7 @@ function searchMovies(query, callback) {
 // 	// http://sampleapis20180514091454.azurewebsites.net/api/movies/search?query=titanic (for example)
 
 // 	this.searchMovies = function (query, callback) {
-// 		var searchUrl = endpoint + "/search?query=" + query;
+// 		let searchUrl = endpoint + "/search?query=" + query;
 // 		$.get(searchUrl, {
 // 			"success": callback
 // 		});
@@ -50,12 +50,12 @@ function searchMovies(query, callback) {
 
 
 
-// var service = new MoviesService();
+// let service = new MoviesService();
 // service.getMovies(function (data) {
 
 // });
 
-// var movieWord = "Madrid";
+// let movieWord = "Madrid";
 // service.searchMovies(movieWord, function(searchResult) {
 // 	console.log(searchResult.movies);
 // });
