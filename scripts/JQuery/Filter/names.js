@@ -28,7 +28,7 @@ const names = [
         id: 20,
     },
     {
-        name: "Gabriela-Simina Adamescu",
+        name: "Rachel Tyson",
         id: 11,
     },
     {
@@ -48,7 +48,7 @@ const names = [
         id: 21,
     },
     {
-        name: "Andreea-Corina Nisipeanu",
+        name: "Sarah Potter",
         id: 20,
     },
 ];
