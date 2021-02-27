@@ -8,6 +8,7 @@
     */
 $(function () {
     let digit = $('.digit');
+    let zero = $('#zero');
 
     digit.on('click', function () {
         // call function that:
@@ -16,7 +17,7 @@ $(function () {
 
         let number = $('<span class="number"></span>');
 
-        $('#zero').css('display', 'none');
+        zero.css('display', 'none');
         number.html($(this).html());
         $('#display').append(number);
     });
