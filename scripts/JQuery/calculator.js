@@ -9,6 +9,7 @@
 $(function () {
     let digit = $('.digit');
     let zero = $('#zero');
+    let buttonOp = $('.operators button');
 
     digit.on('click', function () {
         // call function that:
@@ -22,7 +23,7 @@ $(function () {
         $('#display').append(number);
     });
 
-    $('.operators button').on('click', function () {
+    buttonOp.on('click', function () {
         let operator = $('<span class="operator"></span>');
 
         operator.html($(this).html());
