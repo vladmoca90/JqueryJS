@@ -4,8 +4,9 @@ $(function() {
     let password = $('#password').val();
     let gender = $('#gender:checked');
     let checkOut = $('#check:checked');
+    let validation = $('.validation-messages').find('p');
 
-    $('.validation-messages>p').css('display', 'none');
+    validation.css('display', 'none');
 
     $('#submit').on('click', function() {
         if(name.length < 3) {
