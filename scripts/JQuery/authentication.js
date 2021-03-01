@@ -3,6 +3,7 @@ $(function() {
     let email = $('#email').val();
     let password = $('#password').val();
     let gender = $('#gender:checked');
+    
     let checkOut = $('#check:checked');
     let validation = $('.validation-messages').find('p');
 
