@@ -3,7 +3,7 @@
 @import '../mixins/mixins.scss';
 
 .teams {
-    @include font(15px, $font-color, $gill-sans);
+    @include font(15px, $font, $gill-sans);
     margin: 25px auto;
     max-width: 550px;
     text-align: center;

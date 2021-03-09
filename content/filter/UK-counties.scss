@@ -2,7 +2,7 @@
 @import '../variables/variables.scss';
 
 .counties {
-    color: $font-color;
+    color: $font;
     font-family: $gill-sans;
     margin: 0 auto;
     max-width: 550px;
@@ -29,7 +29,7 @@
     }
     .search-bar {
         @include borders(1px, 0, 1px, 0, solid, #ccc);
-        color: $font-color;
+        color: $font;
         display: inline-block;
         font-size: 16px;
         margin: 20px auto 40px;
