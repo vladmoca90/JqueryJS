@@ -1,9 +1,9 @@
 //A function that returns a certain digit from a number. The position m of a digit in a number.
 
 $(function () {
-    const btn = $('button');
+    const digitBtn = $('button');
 
-    btn.on('click', function () {
+    digitBtn.on('click', function () {
         let n = $('#number').val();
         let m = $('#digit').val();
         let digit = n.toString()[m];
