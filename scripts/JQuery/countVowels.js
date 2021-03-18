@@ -1,7 +1,7 @@
 $(function () {
-    let btn = $('button');
+    let countBtn = $('button');
 
-    btn.on('click', function () {
+    countBtn.on('click', function () {
         let text = $('#text').val();
 
         const countVowels = text => {
