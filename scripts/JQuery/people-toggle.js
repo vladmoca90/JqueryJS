@@ -22,10 +22,10 @@ const people = [
 ]
 
 $(function () {
-    let button = $('.dropdown__button');
+    let dropBtn = $('.dropdown__dropBtn');
     let list = $('.dropdown__list');
 
-    button.on('click', function () {
+    dropBtn.on('click', function () {
         list.slideToggle(250);
     });
 
