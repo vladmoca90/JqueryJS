@@ -8,6 +8,7 @@
     "node": "^15.10.0"
   },
   "devDependencies": {
+    "gulp-scss": "^1.4.0",
     "node-sass": "^5.0.0"
   },
   "scripts": {
