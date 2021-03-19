@@ -14,14 +14,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass –-watch content -o content"
+    "scss": "node-sass --watch content -o content"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vladmoca90/Jquery.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ag_dubs <vladmoca90@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vladmoca90/Jquery/issues"
   },
