@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/vladmoca90/Jquery/issues"
   },
-  "homepage": "https://github.com/vladmoca90/Jquery#readme"
+  "homepage": "https://github.com/vladmoca90/Jquery#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  }
 }
