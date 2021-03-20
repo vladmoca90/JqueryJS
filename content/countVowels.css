@@ -1,18 +1,13 @@
 body {
   margin: 0;
-  padding: 0;
-}
-body .content {
-  margin: 30px auto;
-  width: 450px;
-}
-body .content > div {
-  justify-content: space-between;
-}
-body .content > div #text {
-  width: 250px;
-}
-body .content > div button,
-body .content > div #numberOfVowels {
-  font-size: 15px;
-}
+  padding: 0; }
+  body .content {
+    margin: 30px auto;
+    width: 450px; }
+    body .content > div {
+      justify-content: space-between; }
+      body .content > div #text {
+        width: 250px; }
+      body .content > div button,
+      body .content > div #numberOfVowels {
+        font-size: 15px; }
