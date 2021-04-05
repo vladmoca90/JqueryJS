@@ -19,8 +19,7 @@ body {
       width: 150px; }
       body .form-tabs label:hover {
         background-color: #ddd; }
-  body .search-panel select,
-  body .search-panel option {
+  body .search-panel select, body .search-panel option {
     font-size: 15px;
     padding: 2px;
     width: 150px; }
