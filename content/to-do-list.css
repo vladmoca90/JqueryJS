@@ -15,11 +15,11 @@ body {
   width: 100%; }
   .container .main-container .type-field {
     display: flex; }
-    .container .main-container .type-field button {
+    .container .main-container .type-field .add-button {
       border-color: transparent;
       border: 0;
       border-radius: 0 !important; }
-      .container .main-container .type-field button:focus {
+      .container .main-container .type-field .add-button:focus {
         box-shadow: 0 0 0 0 transparent;
         outline: 0 !important; }
     .container .main-container .type-field .btn-success:not(:disabled):not(.disabled).active:focus,
