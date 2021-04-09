@@ -40,9 +40,9 @@ body {
     padding-left: 25px; }
     .container .main-container .list-container ul li {
       background-color: #6AB7CA;
-      border: 2px solid #2a6173;
+      border: 1px solid #2a6173;
       border-radius: 5px;
-      box-shadow: 1px -1px 16px #2a6173;
+      box-shadow: 1px -1px 24px #2a6173;
       color: #fff;
       font-weight: 600;
       letter-spacing: 1px;
