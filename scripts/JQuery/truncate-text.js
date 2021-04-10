@@ -14,7 +14,7 @@ $(function () {
             let splitText = text.trim().split('');
             let truncatedText = splitText.splice(0, Number).join('');
 
-            $('p').text(truncatedText);
+            $('.result').text(truncatedText);
         }
 
         truncateText(text, num);
