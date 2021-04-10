@@ -12,7 +12,7 @@
         width: 200px; }
       .content > div input#numberValue {
         width: 100px; }
-    .content > div button {
+    .content > div .truncate-btn {
       background-color: #1e7e34;
       border-radius: 6px;
       border: 0 solid transparent;

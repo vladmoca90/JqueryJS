@@ -1,5 +1,5 @@
 $(function () {
-    $('button').on('click', function () {
+    $('.truncate-btn').on('click', function () {
         let text = $('#textContent').val();
         let num = $('#numberValue').val();
 
