@@ -7,7 +7,7 @@ body {
     margin: 50px auto 0;
     padding: 5px;
     max-width: 300px; }
-    body #textSection textarea {
+    body #textSection #message {
       margin: 0 auto;
       height: 100px;
       width: 100%; }
