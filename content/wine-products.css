@@ -22,7 +22,7 @@
     width: 320px; }
     .box .product-description__left {
       text-align: center; }
-    .box .product h3 {
+    .box .product .product-title {
       font-size: 18px; }
-    .box .product img {
+    .box .product .product-img {
       max-width: 300px; }
