@@ -1,6 +1,6 @@
 $(function () {
     let words = $('#maxWords');
-    let field = $('#textarea');
+    let field = $('#message');
 
     field.on('keyup', function () {
         let count = $(this).val().trim().replace(' ', '');
