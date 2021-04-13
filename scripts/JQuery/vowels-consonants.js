@@ -1,17 +1,17 @@
 $(function () {
     let check = $('.check-btn');
-    let textAlert = $('.alert-text');
-    textAlert.hide();
+    let textWarning = $('.alert-text');
+    textWarning.hide();
 
     check.on('click', function () {
         let text =  $('#textField').val();
 
         const countEachLetter = text => {
             if(text.length == 0) {
-                textAlert.show();
+                textWarning.show();
             }
             if(text.length > 0) {
-                textAlert.hide();
+                textWarning.hide();
             }
 
             let count = 0;
