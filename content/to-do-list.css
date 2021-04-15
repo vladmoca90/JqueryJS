@@ -56,7 +56,7 @@ body {
       .container .main-container .list-container ul li i {
         color: #2a6173;
         cursor: pointer;
-        display: block;
+        display: inline-block;
         font-size: 21px;
         font-weight: 100;
         position: relative;
