@@ -18,7 +18,7 @@ body {
   .container .main-container .type-field {
     display: flex; }
     .container .main-container .type-field .add-button {
-      background-color: #02025e;
+      background-color: #28a745;
       border-color: transparent;
       border: 0;
       border-radius: 0 !important;
