@@ -10,12 +10,13 @@
   .main .check-btn {
     background-color: #0b3f0b;
     color: #fff;
+    cursor: pointer;
     display: inline-block;
     font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: .3em;
-    padding: 10px 15px;
+    padding: 10px 25px;
     text-transform: uppercase; }
   .main p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
