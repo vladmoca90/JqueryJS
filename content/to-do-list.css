@@ -6,8 +6,10 @@ body {
 .container .title {
   color: #fff;
   font-family: Tahoma;
+  font-weight: 500;
   margin: 45px 0;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .container .main-container {
   margin: 20px auto 0;
