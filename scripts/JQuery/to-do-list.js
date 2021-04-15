@@ -4,7 +4,7 @@ $(function () {
     let text = $('#field');
     let close = $('<i class="fa fa-close"></i>');
 
-    addBtn.on('click', function () {
+    addBtn.on('click', function() {
         let listItem = $('<li></li>');
         let listContent = text.val();
         let listText = listItem.text(listContent);
@@ -18,5 +18,8 @@ $(function () {
         if(listContent.length > 0) {
             return text.val(null);
         }
+    });
+    close.on('click', function() {
+        // Add the code to close the list item 
     });
 });
