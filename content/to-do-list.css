@@ -56,10 +56,8 @@ body {
       .container .main-container .list-container ul li i {
         color: #2a6173;
         cursor: pointer;
-        display: inline-block;
         font-size: 21px;
         font-weight: 100;
         position: relative;
-        right: 6px;
-        top: 4px;
-        z-index: 100; }
+        float: right;
+        top: -5px; }
