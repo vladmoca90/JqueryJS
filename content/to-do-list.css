@@ -27,7 +27,8 @@ body {
       font-weight: bold;
       padding: 5px 0;
       width: 85px;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
     .container .main-container .type-field #field {
       border: 1px solid #a29e9e;
       width: 100%;
