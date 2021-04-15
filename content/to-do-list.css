@@ -20,7 +20,8 @@ body {
     .container .main-container .type-field .add-button {
       border-color: transparent;
       border: 0;
-      border-radius: 0 !important; }
+      border-radius: 0 !important;
+      padding: 5px 10px; }
       .container .main-container .type-field .add-button:focus {
         box-shadow: 0 0 0 0 transparent;
         outline: 0 !important; }
