@@ -37,9 +37,12 @@ body {
             display: flex;
 
             .add-button {
+                background-color: rgb(2, 2, 94);
                 border-color: transparent;
                 border: 0;
                 border-radius: 0 !important;
+                color: #fff;
+                font-weight: bold;
                 padding: 5px 0;
                 width: 75px;
                 text-align: center;
