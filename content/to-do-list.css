@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0; }
 
-.container h3 {
+.container .title {
   color: #fff;
   font-family: Tahoma;
   margin: 45px 0;
