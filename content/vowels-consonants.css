@@ -9,11 +9,12 @@
   .main .check-btn {
     background-color: #0b3f0b;
     color: #fff;
+    display: inline-block;
     font-size: 15px;
+    letter-spacing: 1px;
     margin-bottom: .3em;
     padding: 10px 15px;
-    text-transform: uppercase;
-    width: 85px; }
+    text-transform: uppercase; }
   .main p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px 0 0; }
