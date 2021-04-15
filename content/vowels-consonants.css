@@ -4,26 +4,25 @@
   max-width: 220px; }
   .main #textField {
     margin: 0 auto 1em;
-    padding: .25em;
+    padding: 5px;
     width: 100%; }
-  .main #textField, .main .check-btn, .main p {
-    font-size: .8em; }
   .main .check-btn {
     background-color: #0b3f0b;
     color: #fff;
     font-size: 16px;
     margin-bottom: .3em;
-    padding: .15em .1em;
+    padding: 10px .15px;
+    text-transform: uppercase;
     width: 85px; }
   .main p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: .5em 0 0; }
+    margin: 10px 0 0; }
     .main p span, .main p .alert-text {
       font-weight: bold; }
     .main p span {
-      margin-left: .2em; }
+      margin-left: 10px; }
     .main p.alert-text {
       color: #c0002b;
-      margin: .8em 0;
+      margin: 15px 0;
       text-align: center;
       text-transform: uppercase; }
