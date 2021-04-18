@@ -1,29 +1,31 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  padding: 10px; }
-  body .box-weekdays {
-    margin: 20px; }
-  body #excluded {
-    padding: 15px; }
-  body #selectable {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    max-width: 70%;
-    padding-left: 0; }
-    body #selectable li {
-      background-color: #a31800;
-      border-radius: 4px;
-      color: #fff;
-      cursor: pointer;
-      list-style-type: none;
-      margin-right: 15px;
-      padding: 10px 25px;
-      text-align: center; }
-      body #selectable li.clicked {
-        background-color: #039403; }
-      body #selectable li.disable-day {
-        background-color: #ccc;
-        color: #000; }
+  font-size: 14px; }
+
+.box-weekdays {
+  margin: 20px; }
+
+#excluded {
+  padding: 15px; }
+
+#selectable {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-width: 70%;
+  padding-left: 0; }
+  #selectable li {
+    background-color: #a31800;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: 15px;
+    padding: 10px 25px;
+    text-align: center; }
+    #selectable li.clicked {
+      background-color: #039403; }
+    #selectable li.disable-day {
+      background-color: #ccc;
+      color: #000; }
