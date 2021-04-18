@@ -1,7 +1,10 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
-    padding: 10px;
+
+    .box-weekdays {
+        margin: 20px;
+    }
 
     #excluded {
         padding: 15px;
