@@ -18,18 +18,18 @@ body {
   margin: 10px;
   padding-left: 0;
   width: 100%; }
-  @media all and (min-width: 768px) {
-    #selectable {
-      margin: 20px 0 0; } }
   #selectable li {
     background-color: #a31800;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
     list-style-type: none;
-    margin-right: 15px;
+    margin: 15px;
     padding: 10px 25px;
     text-align: center; }
+    @media all and (min-width: 768px) {
+      #selectable li {
+        margin: 0 15px 0 0; } }
     #selectable li.clicked {
       background-color: #039403; }
     #selectable li.disable-day {
