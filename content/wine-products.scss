@@ -43,7 +43,9 @@
             text-transform: uppercase;
         }
         .product-img {
-            max-width: 300px;
+            display: block;
+            max-width: 250px;
+            margin: 0 auto;
         }
     }
 }
