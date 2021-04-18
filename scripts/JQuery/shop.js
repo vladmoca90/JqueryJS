@@ -19,6 +19,8 @@ const prices = {
 }
 
 let basket = [];
+let add= $('.product__btn--add');
+let remove = $('.product__btn--remove');
 
 const addToBaske = product => {
     // here you update the basket. you add one idem of the above product to the basket
@@ -76,7 +78,7 @@ const getProduct = productId => {
 }
 
 $(function () {
-    $('.product__btn--add').on('click', function () {
+    add.on('click', function () {
         console.log("Add clicked.");
 
         let productId = $(this).attr('product-id');
@@ -89,7 +91,7 @@ $(function () {
         addToBasket(product);
     });
 
-    $('.product__btn--remove').on('click', function () {
+    remove.on('click', function () {
         console.log("Remove clicked");
         // try this
 
