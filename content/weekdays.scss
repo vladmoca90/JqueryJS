@@ -18,9 +18,13 @@ body {
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 0;
     padding-left: 0;
     width: 100%;
+
+    @media all and (min-width: 768px) {
+        margin: 10px;
+    }
 
     li {
         background-color: #a31800;
