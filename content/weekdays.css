@@ -15,8 +15,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  max-width: 70%;
-  padding-left: 0; }
+  padding-left: 0;
+  width: 100%; }
   #selectable li {
     background-color: #a31800;
     border-radius: 4px;
