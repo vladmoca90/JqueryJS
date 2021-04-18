@@ -2,6 +2,7 @@
   margin: 0 auto;
   max-width: 1080px; }
   .box #productsList {
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin: 25px 0;
     padding: 3px;
