@@ -27,9 +27,10 @@ body {
       display: inline-block;
       font-size: 28px;
       font-weight: bold;
-      height: 25px;
+      height: 40px;
+      line-height: 40px;
       text-align: center;
-      width: 25px; }
+      width: 40px; }
       body .product__btn--add {
         border: 1px solid #0a493e;
         color: #0a493e; }
