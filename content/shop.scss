@@ -43,18 +43,19 @@ body {
             font-size: 28px;
             font-weight: bold;
             height: 40px;
-            line-height: 40px;
             text-align: center;
             width: 40px;
 
             &--add {
                 border: 1px solid $green-dark;
                 color: $green-dark;
+                line-height: 40px;
             }
 
             &--remove {
                 border: 1px solid $red;
                 color: $red;
+                line-height: 30px;
             }
         }
     }
