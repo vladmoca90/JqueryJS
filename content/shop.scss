@@ -22,11 +22,9 @@ body {
             max-width: 250px;
             width: 100%;
         }
-
         &__img {
             margin-bottom: 10px;
         }
-
         &__text {
             font-size: 21px;
             text-align: center;
@@ -35,7 +33,6 @@ body {
                 justify-content: space-evenly;
             }
         }
-
         &__btn {
             border-radius: 8px;
             cursor: pointer;
@@ -51,7 +48,6 @@ body {
                 color: $green-dark;
                 line-height: 40px;
             }
-
             &--remove {
                 border: 1px solid $red;
                 color: $red;
