@@ -1,5 +1,5 @@
 $(function () {
-    let countBtn = $('button');
+    let countBtn = $('.countBtn');
 
     countBtn.on('click', function () {
         let text = $('#text').val();

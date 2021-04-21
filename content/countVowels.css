@@ -8,6 +8,6 @@ body {
       justify-content: space-between; }
       body .content > div #text {
         width: 250px; }
-      body .content > div button,
+      body .content > div .countBtn,
       body .content > div #numberOfVowels {
         font-size: 15px; }
