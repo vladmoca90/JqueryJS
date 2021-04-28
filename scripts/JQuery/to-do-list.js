@@ -20,6 +20,6 @@ $(function () {
         }
     });
     close.on('click', function() {
-        // Add the code to close the list item 
+        $(this).parent().remove();
     });
 });
