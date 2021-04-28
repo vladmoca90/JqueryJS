@@ -18,17 +18,14 @@ body {
     padding: 0;
 }
 
-.container {
-    .title {
-        color: $white;
-        font-family: $font;
-        font-weight: 500;
-        margin: 45px 0;
-        text-align: center;
-        text-transform: uppercase;
-    }
+.container .title {
+    color: $white;
+    font-family: $font;
+    font-weight: 400;
+    margin: 45px 0;
+    text-align: center;
+    text-transform: uppercase;
 }
-
 
 .main-container {
     margin: 20px auto 0;
