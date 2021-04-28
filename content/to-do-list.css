@@ -47,6 +47,7 @@ body {
       border-radius: 5px;
       box-shadow: 1px -1px 24px #2a6173;
       color: #fff;
+      display: none;
       font-weight: 600;
       letter-spacing: 1px;
       margin: 18px 0;
