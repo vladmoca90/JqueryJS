@@ -36,29 +36,30 @@ body {
       border-bottom-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important; }
-  .main-container .list-container .list-main {
+
+.list-container .list-main {
+  color: #fff;
+  list-style-position: outside;
+  list-style-type: none;
+  padding-left: 25px; }
+  .list-container .list-main li {
+    background-color: #6AB7CA;
+    border: 1px solid #2a6173;
+    border-radius: 5px;
+    box-shadow: 1px -1px 24px #2a6173;
     color: #fff;
-    list-style-position: outside;
-    list-style-type: none;
-    padding-left: 25px; }
-    .main-container .list-container .list-main li {
-      background-color: #6AB7CA;
-      border: 1px solid #2a6173;
-      border-radius: 5px;
-      box-shadow: 1px -1px 24px #2a6173;
-      color: #fff;
-      display: none;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin: 18px 0;
-      padding: 14px;
+    display: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 18px 0;
+    padding: 14px;
+    position: relative;
+    width: 100%; }
+    .list-container .list-main li i {
+      color: #2a6173;
+      cursor: pointer;
+      font-size: 21px;
+      font-weight: 100;
       position: relative;
-      width: 100%; }
-      .main-container .list-container .list-main li i {
-        color: #2a6173;
-        cursor: pointer;
-        font-size: 21px;
-        font-weight: 100;
-        position: relative;
-        float: right;
-        top: -5px; }
+      float: right;
+      top: -5px; }
