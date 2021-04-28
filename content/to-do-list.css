@@ -11,13 +11,13 @@ body {
   text-align: center;
   text-transform: uppercase; }
 
-.container .main-container {
+.main-container {
   margin: 20px auto 0;
   max-width: 615px;
   width: 100%; }
-  .container .main-container .type-field {
+  .main-container .type-field {
     display: flex; }
-    .container .main-container .type-field .add-button {
+    .main-container .type-field .add-button {
       background-color: #28a745;
       border-color: transparent;
       border: 0;
@@ -29,19 +29,19 @@ body {
       width: 85px;
       text-align: center;
       text-transform: uppercase; }
-    .container .main-container .type-field #field {
+    .main-container .type-field #field {
       border: 1px solid #a29e9e;
       width: 100%;
       border-top-left-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
       border-top-right-radius: 0 !important;
       border-bottom-right-radius: 0 !important; }
-  .container .main-container .list-container ul {
+  .main-container .list-container ul {
     color: #fff;
     list-style-position: outside;
     list-style-type: none;
     padding-left: 25px; }
-    .container .main-container .list-container ul li {
+    .main-container .list-container ul li {
       background-color: #6AB7CA;
       border: 1px solid #2a6173;
       border-radius: 5px;
@@ -53,7 +53,7 @@ body {
       padding: 14px;
       position: relative;
       width: 100%; }
-      .container .main-container .list-container ul li i {
+      .main-container .list-container ul li i {
         color: #2a6173;
         cursor: pointer;
         font-size: 21px;
