@@ -1,6 +1,6 @@
 $(function () {
     let addBtn = $('.add-button');
-    let list = $('.list-container');
+    let list = $('.list-main');
     let text = $('#field');
 
     addBtn.on('click', function() {
@@ -8,7 +8,7 @@ $(function () {
         let listContent = text.val();
         let listText = listItem.text(listContent);
 
-        list.find('ul').append(listText);
+        list.append(listText);
 
         if(listContent.trim().length == 0) {
             listItem.remove();
