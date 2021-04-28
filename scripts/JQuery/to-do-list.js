@@ -2,7 +2,7 @@ $(function () {
     let addBtn = $('.add-button');
     let list = $('.list-container');
     let text = $('#field');
-    let close = $('<i class="fa fa-close"></i>');
+    // let close = $('<i class="fa fa-close"></i>');
 
     addBtn.on('click', function() {
         let listItem = $('<li></li>');
@@ -10,7 +10,7 @@ $(function () {
         let listText = listItem.text(listContent);
 
         list.find('ul').append(listText);
-        listItem.append(close);
+        // listItem.append(close);
 
         if(listContent.trim().length == 0) {
             listItem.remove();
@@ -19,7 +19,7 @@ $(function () {
             return text.val(null);
         }
     });
-    close.on('click', function() {
-        $(this).parent().remove();
-    });
+    // close.on('click', function() {
+    //     $(this).parent().remove();
+    // });
 });
