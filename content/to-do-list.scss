@@ -56,36 +56,34 @@ body {
         }
     }
 
-    .list-container {
-        .list-main {
+    .list-container .list-main {
+        color: $white;
+        list-style-position: outside;
+        list-style-type: none;
+        padding-left: 25px;
+
+        li {
+            background-color: $blue;
+            border: 1px solid $dark-blue;
+            border-radius: 5px;
+            box-shadow: 1px -1px 24px $dark-blue;
             color: $white;
-            list-style-position: outside;
-            list-style-type: none;
-            padding-left: 25px;
+            display: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 18px 0;
+            padding: 14px;
+            position: relative;
+            width: 100%;
 
-            li {
-                background-color: $blue;
-                border: 1px solid $dark-blue;
-                border-radius: 5px;
-                box-shadow: 1px -1px 24px $dark-blue;
-                color: $white;
-                display: none;
-                font-weight: 600;
-                letter-spacing: 1px;
-                margin: 18px 0;
-                padding: 14px;
+            i {
+                color: $dark-blue;
+                cursor: pointer;
+                font-size: 21px;
+                font-weight: 100;
                 position: relative;
-                width: 100%;
-
-                i {
-                    color: $dark-blue;
-                    cursor: pointer;
-                    font-size: 21px;
-                    font-weight: 100;
-                    position: relative;
-                    float: right;
-                    top: -5px;
-                }
+                float: right;
+                top: -5px;
             }
         }
     }
