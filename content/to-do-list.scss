@@ -69,13 +69,16 @@ body {
         border-radius: 5px;
         box-shadow: 1px -1px 24px $dark-blue;
         color: $white;
-        display: none;
         font-weight: 600;
         letter-spacing: 1px;
         margin: 18px 0;
         padding: 14px;
         position: relative;
         width: 100%;
+
+        &:nth-of-type(1) {
+            display: none;
+        }
 
         i {
             color: $dark-blue;
