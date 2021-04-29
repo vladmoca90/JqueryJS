@@ -4,15 +4,15 @@ $(function () {
     let text = $('#field');
 
     addBtn.on('click', function() {
-        let listItem = list.find('li').clone();
+        let clone = list.find('li').clone();
 
         let listContent = text.val();
-        let listText = listItem.text(listContent);
+        let listText = clone.text(listContent);
 
         list.append(listText);
 
         if(listContent.trim().length == 0) {
-            listItem.remove();
+            clone.remove();
         }
         if(listContent.length > 0) {
             return text.val(null);
