@@ -4,7 +4,8 @@ $(function () {
     let text = $('#field');
 
     addBtn.on('click', function() {
-        let listItem = $('<li></li>');
+        let listItem = list.find('li').clone();
+
         let listContent = text.val();
         let listText = listItem.text(listContent);
 
