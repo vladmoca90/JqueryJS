@@ -4,6 +4,7 @@ $bg-color: #00a8cc;
 $blue: #6AB7CA;
 $dark-blue: #2a6173;
 $gray: #a29e9e;
+$green: #28a745;
  
 @mixin listBorder {
     border-top-left-radius: 0 !important;
@@ -37,7 +38,7 @@ body {
         display: flex;
 
         .add-button {
-            background-color: #28a745;
+            background-color: $green;
             border-color: transparent;
             border: 0;
             border-radius: 0 !important;
