@@ -18,25 +18,25 @@ body {
   width: 100%; }
   .main-container .type-field {
     display: flex; }
-    .main-container .type-field .add-button {
-      background-color: #28a745;
-      border-color: transparent;
-      border: 0;
-      border-radius: 0 !important;
-      color: #fff;
-      cursor: pointer;
-      font-weight: 400;
-      padding: 5px 0;
-      width: 85px;
-      text-align: center;
-      text-transform: uppercase; }
-    .main-container .type-field #field {
-      border: 1px solid #a29e9e;
-      width: 100%;
-      border-top-left-radius: 0 !important;
-      border-bottom-left-radius: 0 !important;
-      border-top-right-radius: 0 !important;
-      border-bottom-right-radius: 0 !important; }
+  .main-container .add-button {
+    background-color: #28a745;
+    border-color: transparent;
+    border: 0;
+    border-radius: 0 !important;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 5px 0;
+    width: 85px;
+    text-align: center;
+    text-transform: uppercase; }
+  .main-container #field {
+    border: 1px solid #a29e9e;
+    width: 100%;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important; }
 
 .list-container .list-main {
   color: #fff;

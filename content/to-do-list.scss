@@ -36,26 +36,26 @@ body {
 
     .type-field {
         display: flex;
+    }
+    
+    .add-button {
+        background-color: $green;
+        border-color: transparent;
+        border: 0;
+        border-radius: 0 !important;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 400;
+        padding: 5px 0;
+        width: 85px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 
-        .add-button {
-            background-color: $green;
-            border-color: transparent;
-            border: 0;
-            border-radius: 0 !important;
-            color: #fff;
-            cursor: pointer;
-            font-weight: 400;
-            padding: 5px 0;
-            width: 85px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        #field {
-            border: 1px solid $gray;
-            width: 100%;
-            @include listBorder;
-        }
+    #field {
+        border: 1px solid $gray;
+        width: 100%;
+        @include listBorder;
     }
 }
 
