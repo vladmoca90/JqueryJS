@@ -11,6 +11,7 @@ $(function () {
         let listText = clone.text(listContent);
 
         list.append(listText);
+        listText.append(close);
 
         if(listContent.trim().length == 0) {
             clone.remove();
