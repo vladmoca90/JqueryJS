@@ -30,14 +30,14 @@ body {
       height: 40px;
       text-align: center;
       width: 40px; }
-      body .product__btn--add {
-        border: 1px solid #0a493e;
-        color: #0a493e;
-        line-height: 40px; }
-      body .product__btn--remove {
-        border: 1px solid #c0002b;
-        color: #c0002b;
-        line-height: 32px; }
+    body .product__btn--add {
+      border: 1px solid #0a493e;
+      color: #0a493e;
+      line-height: 40px; }
+    body .product__btn--remvoe {
+      border: 1px solid #c0002b;
+      color: #c0002b;
+      line-height: 32px; }
   body .product__total {
     font-size: 21px;
     margin: 50px auto;
