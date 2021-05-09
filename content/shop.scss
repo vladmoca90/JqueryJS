@@ -4,6 +4,7 @@
 body {
     background-color: #eee8e8;
 }
+
 #main {
     color: $font;
     font-family: $gill-sans;
@@ -11,6 +12,7 @@ body {
     max-width: 1100px;
     width: 100%;
 }
+
 .product {
     background-color: #fff;
     justify-content: space-between;
@@ -21,16 +23,20 @@ body {
         max-width: 250px;
         width: 100%;
     }
+
     &__img {
         margin-bottom: 10px;
     }
+
     &__text {
         font-size: 21px;
         text-align: center;
     }
+
     &__text + div {
         justify-content: space-evenly;
     }
+
     &__btn {
         border-radius: 8px;
         cursor: pointer;
@@ -41,11 +47,13 @@ body {
         text-align: center;
         width: 40px;
     }
+
     &__btn--add {
         border: 1px solid $green-dark;
         color: $green-dark;
         line-height: 40px;
     }
+
     &__btn--remvoe {
         border: 1px solid $red;
         color: $red;
