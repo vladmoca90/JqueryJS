@@ -1,44 +1,47 @@
 body {
   background-color: #eee8e8; }
-  body #main {
-    color: #444;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin: 20px auto;
-    max-width: 1100px;
+
+#main {
+  color: #444;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 20px auto;
+  max-width: 1100px;
+  width: 100%; }
+
+.product {
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 20px; }
+  .product__box {
+    flex-direction: column;
+    max-width: 250px;
     width: 100%; }
-  body .product {
-    background-color: #fff;
-    justify-content: space-between;
-    padding: 20px; }
-    body .product__box {
-      flex-direction: column;
-      max-width: 250px;
-      width: 100%; }
-    body .product__img {
-      margin-bottom: 10px; }
-    body .product__text {
-      font-size: 21px;
-      text-align: center; }
-    body .product__text + div {
-      justify-content: space-evenly; }
-    body .product__btn {
-      border-radius: 8px;
-      cursor: pointer;
-      display: inline-block;
-      font-size: 28px;
-      font-weight: bold;
-      height: 40px;
-      text-align: center;
-      width: 40px; }
-    body .product__btn--add {
-      border: 1px solid #0a493e;
-      color: #0a493e;
-      line-height: 40px; }
-    body .product__btn--remvoe {
-      border: 1px solid #c0002b;
-      color: #c0002b;
-      line-height: 32px; }
-  body .product__total {
+  .product__img {
+    margin-bottom: 10px; }
+  .product__text {
     font-size: 21px;
-    margin: 50px auto;
     text-align: center; }
+  .product__text + div {
+    justify-content: space-evenly; }
+  .product__btn {
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+    width: 40px; }
+  .product__btn--add {
+    border: 1px solid #0a493e;
+    color: #0a493e;
+    line-height: 40px; }
+  .product__btn--remvoe {
+    border: 1px solid #c0002b;
+    color: #c0002b;
+    line-height: 32px; }
+
+.product__total {
+  font-size: 21px;
+  margin: 50px auto;
+  text-align: center; }
