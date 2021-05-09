@@ -22,10 +22,6 @@ body {
     padding-left: 0;
     max-width: 1200px;
 
-    @media all and (min-width: 768px) {
-        margin: 10px;
-    }
-
     li {
         background-color: #a31800;
         border-radius: 4px;
