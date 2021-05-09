@@ -1,22 +1,22 @@
 body {
     margin: 0;
     padding: 0;
+}
 
-    .content {
-        margin: 30px auto;
-        width: 450px;
+.content {
+    margin: 30px auto;
+    width: 450px;
+}
 
-        &>div {
-            justify-content: space-between;
+.content>div {
+    justify-content: space-between;
 
-            #text {
-                width: 250px;
-            }
+    #text {
+        width: 250px;
+    }
 
-            .countBtn,
-            #numberOfVowels {
-                font-size: 15px;
-            }
-        }
+    .countBtn,
+    #numberOfVowels {
+        font-size: 15px;
     }
 }

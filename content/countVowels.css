@@ -1,13 +1,15 @@
 body {
   margin: 0;
   padding: 0; }
-  body .content {
-    margin: 30px auto;
-    width: 450px; }
-    body .content > div {
-      justify-content: space-between; }
-      body .content > div #text {
-        width: 250px; }
-      body .content > div .countBtn,
-      body .content > div #numberOfVowels {
-        font-size: 15px; }
+
+.content {
+  margin: 30px auto;
+  width: 450px; }
+
+.content > div {
+  justify-content: space-between; }
+  .content > div #text {
+    width: 250px; }
+  .content > div .countBtn,
+  .content > div #numberOfVowels {
+    font-size: 15px; }
