@@ -15,15 +15,18 @@ body {
         text-decoration: none;
         width: 100%;
     }
+
     .vehicle-title {
         font-size: 16px;
         margin: 0;
     }
+
     .titles {
         border: 1px solid #ccc;
         margin-top: 25px;
         padding: 30px 10px;
     }
+
     .vehicle-price {
         line-height: 21px;
         text-align: right;
@@ -32,6 +35,7 @@ body {
             font-size: 15px;
         }
     }
+
     .monthly-price {
         display: block;
         font-size: 13px;
