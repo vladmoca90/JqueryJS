@@ -16,11 +16,15 @@ body {
 #selectable {
     align-items: center;
     display: flex;
-    justify-content: space-between; 
+    justify-content: start; 
     flex-wrap: wrap;
     margin: 20px auto 0;
     padding-left: 0;
     max-width: 1200px;
+
+    @media all and (min-width: 1200px) {
+        justify-content: space-between; 
+    }
 
     li {
         background-color: #a31800;
