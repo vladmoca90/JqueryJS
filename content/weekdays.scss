@@ -18,9 +18,9 @@ body {
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
-    margin: 10px auto 0;
+    margin: 20px auto 0;
     padding-left: 0;
-    max-width: 960px;
+    max-width: 1200px;
 
     @media all and (min-width: 768px) {
         margin: 10px;
