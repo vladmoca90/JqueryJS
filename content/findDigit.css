@@ -11,12 +11,10 @@
         width: 200px; }
       .content > div input#digit {
         width: 50px; }
-    .content > div .digit-btn,
-    .content > div p {
+    .content > div .digit-btn, .content > div p {
       font-size: 14px; }
     .content > div .digit-btn {
       padding: .25rem 0.75rem; }
-    .content > div .btn:focus,
-    .content > div .btn {
+    .content > div .btn:focus, .content > div .btn {
       box-shadow: 0 0 0 0 transparent !important;
       outline: 0 !important; }
