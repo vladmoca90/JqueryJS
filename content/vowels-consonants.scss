@@ -11,6 +11,7 @@
         padding: 5px;
         width: 100%;
     }
+
     .check-btn {
         background-color: #0b3f0b;
         color: #fff;
@@ -23,6 +24,7 @@
         padding: 10px 25px;
         text-transform: uppercase;
     }
+
     p {
         font-family: $verdana;
         margin: 10px 0 0;
@@ -30,9 +32,11 @@
         span, .alert-text {
             font-weight: bold;
         }
+    
         span {
             margin-left: 10px;
         }
+    
         &.alert-text {
             color: $red;
             margin: 15px 0;
