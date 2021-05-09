@@ -19,8 +19,8 @@ body {
     body .product__text {
       font-size: 21px;
       text-align: center; }
-      body .product__text + div {
-        justify-content: space-evenly; }
+    body .product__text + div {
+      justify-content: space-evenly; }
     body .product__btn {
       border-radius: 8px;
       cursor: pointer;
