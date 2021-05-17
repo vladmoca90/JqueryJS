@@ -16,7 +16,6 @@ $(function () {
         if(listContent.trim().length == 0) {
             clone.remove();
         }
-        
         if(listContent.length > 0) {
             return text.val(null);
         }
