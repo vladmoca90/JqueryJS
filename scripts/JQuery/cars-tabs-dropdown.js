@@ -55,7 +55,6 @@ $(function () {
 
   changeTab();
 
-  
   $('.number-of-cars').text(cars.length);
   $('.number-of-vans').text(vans.length);
 });
