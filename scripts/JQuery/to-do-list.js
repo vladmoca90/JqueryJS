@@ -4,6 +4,7 @@ $(function () {
     let text = $('#field');
     let close = $('<i class="fa fa-close"></i>');
 
+    
     addBtn.on('click', function() {
         let clone = list.find('.list-item:first').clone();
 
