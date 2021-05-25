@@ -18,7 +18,6 @@ $(function () {
         }
         if(listContent.length > 0) {
             return text.val(null);
-        }
-        
+        }   
     });
 });
